@@ -1,11 +1,10 @@
 ---
 layout: page
 title: Partners
-nav_order: 4
+nav_order: 14
 ---
 
 # Partners
-List the partner organizations for each workshop here.
 
-## Partner Organization 1
-Description
+## Lybra
+
