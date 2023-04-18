@@ -23,8 +23,6 @@ If you have any questions about the material, please submit a question below! We
 
 ## Agenda
 
-This table is just an example. Actual 12-day overview will differ based on the country.
-
 | Instruction Day |                                             Theme                                             |        Date       |   Format  |
 |:---------------:|:---------------------------------------------------------------------------------------------:|:-----------------:|:---------:|
 |        1        |                              Introduction to GIS & Remote Sensing                             |       10 May      | In-person |
