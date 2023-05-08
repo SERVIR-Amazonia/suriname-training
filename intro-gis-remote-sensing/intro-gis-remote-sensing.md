@@ -21,11 +21,9 @@ Navigate through the different lesson sections by using the menu on the lefthand
 | 09:00 – 09:30 |                                                     Welcome remarks - USAID, Lybra.                                                    |
 | 09:30 – 10:00 | Set-up check<br>Remote sensing overview: how data is collected and stored, spatial and temporal resolution, key satellites and sensors |
 | 10:00 – 10:15 |                                     Data collection: Earth Explorer and Copernicus Open Access Hub                                     |
-| 10:15 – 11:00 |                     How to visualize and interpret remote sensing data<br>Examine differences between data products                    |
+| 10:15 – 11:00 |                     How to visualize and interpret remote sensing data                    |
 | 11:00 – 11:15 |                                                              Coffee break                                                              |
-| 11:15 – 12:00 |                        Create a cloud-free true color image<br>Visualize vegetation with color infrared imagery                        |
+| 11:15 – 12:00 |                        Examine differences between data products                        |
 | 12:00 – 13:00 |                                                                  Lunch                                                                 |
-| 13:00 – 15:00 |                             Making and customizing a map using raster data: create a DEM and hillshade map                             |
-
-
+                                                      |
 Content coming soon...
