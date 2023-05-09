@@ -33,16 +33,15 @@ The processing infrastructure automatically parallelizes analysis across many pr
 
 Goals:
 
-"our mission is to organize the world's geospatial information and make it universally accessible and useful."
+"Our mission is to organize the world's geospatial information and make it universally accessible and useful."
 
-
-- Ease
-- Escalation, script compartment
+- Facilitate
+- Scalable, script sharing
 - Access to all
 
 Focused on current problems:
 
-- Size
+- Logging
 - Disasters
 - Climate change
 - Drought
@@ -58,7 +57,7 @@ Earth Engine's public data archive includes more than forty years of historical 
 - More than 100 data sets added annually
 - 1+ PB of new data every month
 
-(those numbers are always being updated)
+(These numbers are always being updated)
 
 Types of data:
 
@@ -72,7 +71,7 @@ Types of data:
 
 <font size=2> Source: Google </font>
 
-To explore all data sets:
+To explore all datasets:
 
 - [https://developers.google.com/earth-engine/datasets](https://developers.google.com/earth-engine/datasets)
 - [https://developers.google.com/earth-engine/datasets/catalog](https://developers.google.com/earth-engine/datasets/catalog)
