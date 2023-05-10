@@ -10,7 +10,7 @@ nav_order: 15
 
 - [A Gentle GIS Introduction](https://docs.qgis.org/3.22/en/docs/gentle_gis_introduction/index.html)
 
-## Teledetección
+## Remote Sensing
 
 - [What is remote sensing?](https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing)
 
