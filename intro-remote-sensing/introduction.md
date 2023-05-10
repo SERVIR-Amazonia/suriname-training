@@ -80,7 +80,7 @@ The values stored in these bands are accessed and analyzed using different tools
 
 ## Key Satellites and Sensors
 
-A number of these satellites and sensors are particularly useful for hydrologic applications.
+A number of these satellites and sensors are particularly useful for land cover/land use & hydrologic applications.
 
 | Satellite    | Sensor                                  | Dates          | Resolution   | Revisit Time | Provider  |
 |--------------|-----------------------------------------|----------------|--------------|--------------|-----------|
