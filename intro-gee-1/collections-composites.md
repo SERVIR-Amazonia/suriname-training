@@ -177,9 +177,9 @@ Map.addLayer(firstPreprocessed,
              'First preprocessed image');
 ```
 
-<img align="center" src="../images/intro-gee/fig42.png" vspace="10" width="500">
-
 <img align="center" src="../images/intro-gee/fig41.png" vspace="10" width="500">
+
+<img align="center" src="../images/intro-gee/fig42.png" vspace="10" width="500">
 
 Now, we can create a median composite:
 
