@@ -110,9 +110,9 @@ What coverages stand out in these band combinations?
 "`4 Image Visualization`" script from repository and `T1 & T2` folder or direct link:
 [https://code.earthengine.google.com/1e545677e7f9fa17aa99d49ff775fd34](https://code.earthengine.google.com/1e545677e7f9fa17aa99d49ff775fd34).
 
-## vector data
+## Vector data
 
-There are also other types of data in Earth Engine, such as vector data. We are going to use a dataset from the Food and Agriculture Organization of the United Nations (FAO) to select the administrative limits of the Dominican Republic (extract a polygon). This dataset contains boundary vectors of all the countries in the world and is a collection of features (`ee.FeatureCollection`). Creating a new script:
+There are also other types of data in Earth Engine, such as vector data. We are going to use a dataset from the Food and Agriculture Organization of the United Nations (FAO) to select the administrative limits of the Suriname (extract a polygon). This dataset contains boundary vectors of all the countries in the world and is a collection of features (`ee.FeatureCollection`). Note that this might not correspond to official national boundaries defined by each country. However, we can use it as an example. Creating a new script:
 
 ```javascript
 var countries = ee.FeatureCollection('FAO/GAUL_SIMPLIFIED_500m/2015/level0');
@@ -137,7 +137,7 @@ Now, we can filter the collection of features. We are also going to use the `Map
 ```javascript
 var suriname = countries.filter(ee.Filter.eq('ADM0_NAME', 'Suriname'));
 Map.centerObject(suriname, 7);
-Map.addLayer(suriname, {color: 'red'}, 'Suriname');
+Map.addLayer(suriname, {}, 'Suriname');
 ```
 
 <img align="center" src="../images/intro-gee/fig35.png" vspace="10" width="500">
@@ -146,9 +146,11 @@ Notice that the "countries" layer is in the Layer Manager but turned off.
 
 <img align="center" src="../images/intro-gee/fig36.png" vspace="10" width="200">
 
-You can change the color of the feature by adding the `color` parameter and choosing a color (example for red): `Map.addLayer(Dominican Republic, {color: 'red'}, 'Dominican Republic')`;
+You can change the color of the feature by adding the `color` parameter and choosing a color (example for red): `Map.addLayer(suriname, {color: 'red'}, 'Suriname')`;
 
 Now we are going to use vector data in conjunction with images.
+
+In other to use the official Suriname boundary, we can import a Google Earth Engine asset which is a shapefile that was uploaded.
 
 ### Complete code
 
