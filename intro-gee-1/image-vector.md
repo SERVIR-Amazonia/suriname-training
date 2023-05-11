@@ -158,6 +158,8 @@ Comment out or erase the first lines before `Map.addLayer` and add:
 var suriname = ee.FeatureCollection('projects/caribbean-trainings/assets/suriname-2023/boundary');
 ```
 
+<img align="center" src="../images/intro-gee/fig44.png" vspace="10" width="400">
+
 ### Complete code
 
 Script "`5 Vector data`" del repositorio y la carpeta `T1 & T2` o link directo:
