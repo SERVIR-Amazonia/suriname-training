@@ -152,6 +152,12 @@ Now we are going to use vector data in conjunction with images.
 
 In other to use the official Suriname boundary, we can import a Google Earth Engine asset which is a shapefile that was uploaded.
 
+Comment out or erase the first lines before `Map.addLayer` and add:
+
+```javascript
+var suriname = ee.FeatureCollection('projects/caribbean-trainings/assets/suriname-2023/boundary');
+```
+
 ### Complete code
 
 Script "`5 Vector data`" del repositorio y la carpeta `T1 & T2` o link directo:
