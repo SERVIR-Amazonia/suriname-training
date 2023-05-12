@@ -16,6 +16,7 @@ nav_order: 15
 - [Landsat Band Designations](https://gisgeography.com/landsat-8-bands-combinations/)
 - [Band Combinations](https://fsapps.nwcg.gov/gtac/CourseDownloads/Reimbursables/FY20/FHM/Day2/Track3/BandComboCheatSheet.pdf)
 - [Band Combinations](https://eos.com/make-an-analysis/)
+- [Landsat Scale Factors](https://www.usgs.gov/faqs/how-do-i-use-scale-factor-landsat-level-2-science-products)
 
 ## Google Earth Engine
 
