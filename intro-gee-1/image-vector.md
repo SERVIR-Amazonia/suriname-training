@@ -107,8 +107,13 @@ What coverages stand out in these band combinations?
 
 ### Complete code
 
-"`4 Image Visualization`" script from repository and `T1 & T2` folder or direct link:
-[https://code.earthengine.google.com/1e545677e7f9fa17aa99d49ff775fd34](https://code.earthengine.google.com/1e545677e7f9fa17aa99d49ff775fd34).
+"`4 Image Visualization - Landsat 9`" script from repository and `T1 & T2` folder or direct link:
+[https://code.earthengine.google.com/5be8a63f2b192f8835904676481d22bd](https://code.earthengine.google.com/5be8a63f2b192f8835904676481d22bd).
+
+### Example with Landsat 9 and Sentinel-2
+
+"`4 Image Visualization - L9 & S2`" script from repository and `T1 & T2` folder or direct link:
+[https://code.earthengine.google.com/8909f4360f49c80071c830c2fd66738a](https://code.earthengine.google.com/8909f4360f49c80071c830c2fd66738a).
 
 ## Vector data
 
@@ -163,4 +168,4 @@ var suriname = ee.FeatureCollection('projects/caribbean-trainings/assets/surinam
 ### Complete code
 
 Script "`5 Vector data`" del repositorio y la carpeta `T1 & T2` o link directo:
-[https://code.earthengine.google.com/414b4017b0d5eda5713d0ae75e6a8fd2](https://code.earthengine.google.com/414b4017b0d5eda5713d0ae75e6a8fd2).
+[https://code.earthengine.google.com/e0f6fa1afa0d8a65c85d71fb44559b20](https://code.earthengine.google.com/e0f6fa1afa0d8a65c85d71fb44559b20).

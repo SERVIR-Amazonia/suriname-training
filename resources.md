@@ -13,6 +13,9 @@ nav_order: 15
 ## Remote Sensing
 
 - [What is remote sensing?](https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing)
+- [Landsat Band Designations](https://gisgeography.com/landsat-8-bands-combinations/)
+- [Band Combinations](https://fsapps.nwcg.gov/gtac/CourseDownloads/Reimbursables/FY20/FHM/Day2/Track3/BandComboCheatSheet.pdf)
+- [Band Combinations](https://eos.com/make-an-analysis/)
 
 ## Google Earth Engine
 

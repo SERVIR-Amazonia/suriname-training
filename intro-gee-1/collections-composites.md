@@ -16,9 +16,7 @@ We are going to filter the Landsat 8 Collection 2, Tier 1, Level 2, to the limit
 // Define area of interest (vector data)
 //--------------------------------------------------------------
 
-var countries = ee.FeatureCollection('FAO/GAUL_SIMPLIFIED_500m/2015/level0');
-var suriname = countries.filter(ee.Filter.eq('ADM0_NAME', 'Suriname'));
-Map.centerObject(suriname, 7);
+var suriname = ee.FeatureCollection('projects/caribbean-trainings/assets/suriname-2023/boundary');
 // TIP: Centering the map before adding a layer is more efficient 
 // than adding it afterward.
 
