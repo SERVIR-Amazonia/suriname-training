@@ -16,11 +16,11 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 **Instructors:** Andréa Puzzi Nicolau ([apnicolau@sig-gis.com](apnicolau@sig-gis.com)) & Natalia Uribe ([N.Uribe@cgiar.org](N.Uribe@cgiar.org)) 
 
-|      Time     |                                   Topics                                  |
-|:-------------:|:-------------------------------------------------------------------------:|
-| 09:00 – 09:45 | Welcome and set-up check<br>Google Earth Engine Objects (continued)       |
-|  9:45 – 10:45 | Introduction to JavaScript in Google Earth Engine<br>Exercises            |
-| 10:45 – 11:00 |                                Coffee break                               |
-| 11:00 – 12:00 | Accessing Images in GEE                                                   |
-| 12:00 – 13:00 |                                   Lunch                                   |
-| 13:00 – 15:00 | Accessing vector data  in GEE<br>Introduction to Image Collections in GEE |
+|      Time     |                                Topics                               |
+|:-------------:|:-------------------------------------------------------------------:|
+| 09:00 – 09:45 | Welcome and set-up check<br>Google Earth Engine Objects (continued) |
+|  9:45 – 10:45 | Introduction to JavaScript in Google Earth Engine                   |
+| 10:45 – 11:00 |                             Coffee break                            |
+| 11:00 – 12:00 | JavaScript exercises<br>Accessing Images in GEE                     |
+| 12:00 – 13:00 |                                Lunch                                |
+| 13:00 – 15:00 | Accessing Images in GEE<br>Accessing vector data  in GEE            |

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Image Collections & Composites in Earth Engine
-parent: Introduction to Google Earth Engine 1
+parent: Introduction to Google Earth Engine 2
 nav_order: 4
 ---
 
@@ -216,7 +216,7 @@ Export.image.toDrive({
   maxPixels: 1e13
 });
 
-// Exportar como un GEE Asset.
+// Export as a GEE Asset.
 Export.image.toAsset({
   image: composite,
   description: 'medianL8composite_2017-2021',
@@ -229,6 +229,4 @@ Export.image.toAsset({
 
 ## Complete code
 
-Script "`6 ImageCollections & Composite`" del repositorio y la carpeta `T1 & T2` o link directo:
-
-[https://code.earthengine.google.com/56778dd1a508c78473589e3045840577](https://code.earthengine.google.com/56778dd1a508c78473589e3045840577)
+Script "`6 ImageCollections & Composite`" in the repository and folder `T3` or direct link: [https://code.earthengine.google.com/56778dd1a508c78473589e3045840577](https://code.earthengine.google.com/56778dd1a508c78473589e3045840577)

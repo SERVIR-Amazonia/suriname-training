@@ -109,7 +109,7 @@ Examples of applications developed by SERVIR based on or using GEE:
 - [RAMI](https://rami.servirglobal.net/) - SERVIR-Amazon
 - [RLCMS](https://landcovermapping.org/en/landcover/) - SERVIR-Mekong & SERVIR-HKH
 - [Collect Earth Online](https://collect.earth) - SERVIR Global
-- [HYDRAFloods](http://hydrafloods-servir.adpc.net/mapviewer/) - SERVIR-Mekong
+- [HYDRAFloods](https://hydrafloods-servir.adpc.net/map/) - SERVIR-Mekong
 - [EcoDash](http://ecodash-servir.adpc.net/) - SERVIR-Mekong
 - [Wheat Mapping](http://geoapps.icimod.org/afwheat/) - SERVIR-HKH
 - [Fire Forecasting](https://servir-amazonia.earthengine.app/view/aptitud-incendios) - SERVIR-Amazonia

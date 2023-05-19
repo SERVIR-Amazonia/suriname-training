@@ -108,7 +108,7 @@ What coverages stand out in these band combinations?
 ### Complete code
 
 "`4 Image Visualization - Landsat 9`" script from repository and `T1 & T2` folder or direct link:
-[https://code.earthengine.google.com/5be8a63f2b192f8835904676481d22bd](https://code.earthengine.google.com/5be8a63f2b192f8835904676481d22bd).
+[https://code.earthengine.google.com/86e9cf5640f967eae536df99349b2c65](https://code.earthengine.google.com/86e9cf5640f967eae536df99349b2c65).
 
 ### Example with Landsat 9 and Sentinel-2
 
@@ -137,7 +137,7 @@ Map.addLayer(countries, {}, 'countries', false);
 
 Thus, the layer will be available in the Layer Manager but is not loaded to the map once the code is run.
 
-Now, we can filter the collection of features. We are also going to use the `Map.centerObject` function to center the map to Suriname. We chose a zoom level of 7. Zoom levels are from 1 to 24.
+Now, we can filter the collection of features. We are also going to use the `Map.centerObject` function to center the map to Suriname. The first argument to this function is the object we want to center the map to (in this case, the `suriname` variable, our polygon). The second argument is the zoom level, which ranges from 1 to 24. We chose a zoom level of 7.
 
 ```javascript
 var suriname = countries.filter(ee.Filter.eq('ADM0_NAME', 'Suriname'));
@@ -157,7 +157,7 @@ Now we are going to use vector data in conjunction with images.
 
 In other to use the official Suriname boundary, we can import a Google Earth Engine asset which is a shapefile that was uploaded.
 
-Comment out or erase the first lines before `Map.addLayer` and add:
+Comment out or erase the first lines before `Map.centerObject` and add:
 
 ```javascript
 var suriname = ee.FeatureCollection('projects/caribbean-trainings/assets/suriname-2023/boundary');
@@ -167,5 +167,4 @@ var suriname = ee.FeatureCollection('projects/caribbean-trainings/assets/surinam
 
 ### Complete code
 
-Script "`5 Vector data`" del repositorio y la carpeta `T1 & T2` o link directo:
-[https://code.earthengine.google.com/e0f6fa1afa0d8a65c85d71fb44559b20](https://code.earthengine.google.com/e0f6fa1afa0d8a65c85d71fb44559b20).
+Script "`5 Vector data`" in the repository and folder `T1 & T2` or direct link: [https://code.earthengine.google.com/9ee6d2160b2ea3ff546b2648f35e6752](https://code.earthengine.google.com/9ee6d2160b2ea3ff546b2648f35e6752).
