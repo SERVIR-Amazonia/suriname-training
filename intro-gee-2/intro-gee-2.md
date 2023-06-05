@@ -22,4 +22,4 @@ Navigate through the different lesson sections by using the menu on the lefthand
 | 09:30 – 11:00 | Image Visualization - Landsat 9 and Sentinel-2, Elevation data<br>Exporting data |
 | 11:00 – 11:15 |                                   Coffee break                                   |
 | 11:15 – 12:00 |            Importing data - Mercury data example<br>Surface water data           |
-| 12:00 – 13:30 |     Introductionto Image Collections & Pre-processing(Scaling, Cloud Masking)    |
+| 12:00 – 13:30 |    Introduction to Image Collections & Pre-processing (Scaling, Cloud Masking)   |
