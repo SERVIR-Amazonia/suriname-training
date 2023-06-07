@@ -19,8 +19,8 @@ Navigate through the different lesson sections by using the menu on the lefthand
 |      Time     |                                                                     Topics                                                                     |
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------:|
 | 09:00 – 09:30 | Welcome and set-up checkup<br>Q&A from in-person sessions                                                                                      |
-| 09:30 – 11:00 | Introduction to SAR: theory and concepts<br>Available SAR data                                                                                 |
-| 11:00 – 11:15 |                                                                  Coffee break                                                                  |
-| 11:15 – 12:00 | SAR Sentinel-1 in GEE<br>- Visualizing an image<br>- Polarizations<br>- Scale, dB power conversion<br>- Color composite (Multitemporal, Ratio) |
-| 12:00 – 13:00 |                                                                      Lunch                                                                     |
-| 13:00 – 15:00 | SAR Sentinel-1 in GEE<br>- Continued<br>Exercises                                                                                              |
+| 09:30 – 10:45 | Introduction to SAR: theory and concepts<br>Available SAR data                                                                                 |
+| 10:45 – 11:00 |                                                                  Coffee break                                                                  |
+| 11:00 – 13:00 | SAR Sentinel-1 in GEE<br>- Visualizing an image<br>- Polarizations<br>- Scale, dB power conversion<br>- Color composite (Multitemporal, Ratio) |
+| 13:00 – 14:00 |                                                                      Lunch                                                                     |
+| 14:00 – 15:00 | SAR Sentinel-1 in GEE<br>- Continued<br>Exercises                                                                                              |
