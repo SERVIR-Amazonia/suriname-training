@@ -157,8 +157,9 @@ o (dB) = 10.Log10 (energy ratio)
 whereby the energy ration is the ration between the received energy by the sensor and the
 energy reflected in an isotropic way.
 
-
 <img align="center" src="../images/intro-sar/radar-measures.png"  vspace="10" width="600">
+
+<font size=2> Source: [FAO](https://www.fao.org/3/cb9049en/cb9049en.pdf) </font>
 
 ## Radar Instruments
 
@@ -269,6 +270,12 @@ The Extra Wide swath imaging mode is intended for maritime, ice and polar zone o
 SENTINEL-1 Wave mode, in conjunction with global ocean wave models, can help determine the direction, wavelength and heights of waves on the open oceans.
 
 Wave mode acquisitions are composed of stripmap imagettes of 20 km by 20 km, acquired alternately on two different incidence angles. Wave imagettes are acquired every 100 km, with imagettes on the same incidence angle separated by 200 km.
+
+# Orbits
+
+<img align="center" src="../images/intro-sar/orbits.png"  vspace="10" width="600">
+
+<font size=2> Source: [Tre Altamira](https://site.tre-altamira.com/insar). 2022. In: InSar at a glance. </font>
 
 # Data Analysis and Interpretation
 Now that we have an analysis ready image, we can begin to do a bit of analysis and interpretation. Remember that radar imagery is not the same as optical imagery – you’re not looking at visible or infrared light, but rather the **amount, or level, of energy that scattered back to the radar system** that is taking the measurement. We went over these ideas in the introduction of this lesson, but I’ll review them again here to better be able to interpret radar imagery. 
