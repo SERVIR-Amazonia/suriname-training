@@ -118,6 +118,10 @@ There are plenty of different characteristics that distinguish sensors from each
 * HV: horizontal transmit, vertical receive
 * VH: vertical transmit, horizontal receive
 
+<img align="center" src="../images/intro-sar/polarizations.png"  vspace="10" width="400">
+
+<font size=2> Horizontal and vertical polarization of an electromagnetic wave horizontal polarization is defined as the state in which the electric vector propagates parallel to the earth's surface and vertical polarization is the propagation orthogonal to the direction of propagation. Souce: Lee & Pottier 2009.</font>
+
 **Incidence angle.** The final factor to consider is the incidence angle, &theta;, which is the angle between the direction of the radar beam and the plan perpendicular to the surface of the Earth.
 
 <img align="center" src="../images/intro-sar/incidence-angle.png"  vspace="10" width="400">
@@ -189,6 +193,14 @@ The data values collected by SAR systems can be distorted in two primary ways: g
 
 
 **Layover.** This type of distortion occurs more often in mountainous areas. This error will cause features to appear at the wrong location or in the wrong direction because of the timing in which the radar beam hits the object. For example, a radar beam may hit the top of a tall mountain before it hits the base of the mountain. Since it reached the top of the mountain first, it will receive the signal from the top of the mountain earlier than the signal from the base of the mountain, and will thus appear shifted towards the radar system and look as though the top of the mountain is *laid over* the base.
+
+<img align="center" src="../images/intro-sar/geometric-distortions.png"  vspace="10" width="600">
+
+<font size=2> Geometric distortion on synthetic aperture radar (SAR) imagery as the effect of terrain. Courtesy of Lillesand, T.M.; Kiefer, R.W.; Chipman, J.W. Remote Sensing and Image Interpretation, 7th ed.; John Wiley &Sons, Inc.: Hoboken, NJ, USA, 2015. </font>
+
+<img align="center" src="../images/intro-sar/geometric-effects.png"  vspace="10" width="600">
+
+<font size=2> Examples of Geometric Effects in SAR Imagery. Source: ERS, ESA. </font>
 
 **Foreshortening.** This type of distortion occurs when an object is tilted towards the radar system, as in mountainous areas. The angle between the base and the top of the object will appear compressed due to the timing in which the radar beam hits the object and the fact that radars have slant range distortions. Foreshortening severity can vary, and is most severe when the radar beam is directly perpendicular to the object’s slope. For example, if a radar beam hits the base of a mountain before it hits the top of the mountain, the distance between the base and the top of the mountain will appear much shorter than the actual physical distance because of slant range distortions. 
 
