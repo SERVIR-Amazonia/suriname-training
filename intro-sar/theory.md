@@ -25,6 +25,10 @@ Create a [Google Earth Engine account](https://code.earthengine.google.com/regis
 ## What is RADAR?
 As a recap, remote sensing is the process of gaining information about an object or an area without directly being in contact with that object. Sensors take advantage of the electromagnetic radiation reflected or emitted from the Earth’s surface to monitor and map changes to the surface of the Earth over time. Thus far, we have worked with remote sensing data that uses energy in the visible and infrared portion of the electromagnetic spectrum. RADAR, which is actually an acronym that stands for Radio Detection and Ranging, uses energy that falls within the microwave portion of the spectrum. These longer energy wavelengths equip radar data with a number of advantages over optical remote sensing data that we will explore throughout this section.
 
+<img align="center" src="../images/intro-sar/electromagnetic-spectrum.jpg"  vspace="10" width="600">
+
+<font size=2> Electromagnetic spectrum. Image *Source: Google sites*. </font>
+
 ### Pros and Cons of Radar
 Let’s start with the positive: what can radar achieve that optical remote sensing cannot?
 
