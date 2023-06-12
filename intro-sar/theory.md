@@ -143,6 +143,14 @@ The factors we discussed above are all radar properties that will affect the bac
 
 <font size=2> Backscattering mechanisms. Source: Advantages and Applications of Synthetic Aperture Radar as a Decision Support Tool, Molthan et al., NASA </font>
 
+<img align="center" src="../images/intro-sar/sar-hb-backscattering.png"  vspace="10" width="600">
+
+<font size=2> 9 Schematic sketch of the three main scattering types considered for SAR data. Source: SAR Handbook </font>
+
+<img align="center" src="../images/intro-sar/relative-scattering-objects.png"  vspace="10" width="400">
+
+<font size=2> Source: SAR Handbook </font>
+
 **Dielectric properties.** The dielectric properties of a material have a big effect on the surface’s ability to absorb or reflect microwaves – so much so that the magnitude of the backscatter is proportional to the dielectric constant of the surface. Liquid water has a much higher dielectric constant than other materials including frozen water (a dielectric constant of 80 compared to a range of 0-10), and so the presence or absence of water defines a surface’s dielectric properties. For the most part, surfaces with high dielectric constants have higher reflectivity and thus appear brighter than those with lower dielectric constants.
 
 ### What does Radar measures?
@@ -207,6 +215,10 @@ The data values collected by SAR systems can be distorted in two primary ways: g
 <img align="center" src="../images/intro-sar/foreshortening-correction.png"  vspace="10" width="600">
 
 <font size=2> Foreshortening before (left) and after (right) correction. Source: NASA Applied Remote Sensing Training Program</font>
+
+<img align="center" src="../images/intro-sar/sar-hb-geometric.png"  vspace="10" width="600">
+
+<font size=2> Source: SAR Handbook. </font>
 
 ### Radiometric
 **Antennae pattern and signal strength.** Radar beams emit more power in the middle of the swath rather than the near or far portions of the swath. This results in an image that has stronger results in the center rather than the near or far edges. This distortion is called the *antennae pattern*, and it varies significantly depending on the range of the image. Across an image swath, the strength of the return signal diminishes in the farther ranges of the swath. Part of the antennae correction may include a step to produce a uniform average brightness to correct for this effect. 
