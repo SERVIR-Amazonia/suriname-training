@@ -27,7 +27,7 @@ As a recap, remote sensing is the process of gaining information about an object
 
 <img align="center" src="../images/intro-sar/electromagnetic-spectrum.jpg"  vspace="10" width="600">
 
-<font size=2> Electromagnetic spectrum. Image *Source: Google sites*. </font>
+<font size=2> Electromagnetic spectrum. Image Source: Google sites. </font>
 
 ### Pros and Cons of Radar
 Let’s start with the positive: what can radar achieve that optical remote sensing cannot?
@@ -40,7 +40,7 @@ Let’s start with the positive: what can radar achieve that optical remote sens
 
 <img align="center" src="../images/intro-sar/radar-smoky-clear.gif"  vspace="10" width="600">
 
-<font size=2> Optical imagery (left) vs. radar imagery (right) of the Kliuchevskoi Volcano erupting. *Source: Michigan Tech Volcanology* </font>
+<font size=2> Optical imagery (left) vs. radar imagery (right) of the Kliuchevskoi Volcano erupting. Source: Michigan Tech Volcanology </font>
 
 These advantages are very powerful, though there are always multiple sides to consider when selecting the correct type of data for your research project. Let’s examine some of the cons of radar data.
 
@@ -66,7 +66,7 @@ Imaging radars are side-looking, which means they transmit energy at a 90 degree
 
 <img align="center" src="../images/intro-sar/side-looking-radar.png"  vspace="10" width="600">
 
-<font size=2> Side-looking radar. *Source: Side looking airborne radar, Charly Whisky.* </font>
+<font size=2> Side-looking radar. Source: Side looking airborne radar, Charly Whisky. </font>
 
 ### What do radars measure?
 
@@ -105,7 +105,7 @@ There are plenty of different characteristics that distinguish sensors from each
 
 <img align="center" src="../images/intro-sar/band-penetration.png"  vspace="10" width="600">
 
-<font size=2> Surface penetration based on wavelength. *Source: SAR 101: An Introduction to Synthetic Aperture Radar, Daniel Hogan* </font>
+<font size=2> Surface penetration based on wavelength. Source: SAR 101: An Introduction to Synthetic Aperture Radar, Daniel Hogan*</font>
 
 <img align="center" src="../images/intro-sar/wavelength-sensitivity-canopy.png"  vspace="10" width="600">
 
@@ -122,7 +122,7 @@ There are plenty of different characteristics that distinguish sensors from each
 
 <img align="center" src="../images/intro-sar/incidence-angle.png"  vspace="10" width="400">
 
-<font size=2> Incidence angle. *Source: NASA Applied Remote Sensing Training Program* </font>
+<font size=2> Incidence angle. Source: NASA Applied Remote Sensing Training Program </font>
 
 The larger the incidence angle, the greater the sensitivity to surface roughness. These beams will be able to penetrate less deep than beams that have smaller incidence angles, and also result in lower levels of backscatter.
 
@@ -137,9 +137,28 @@ The factors we discussed above are all radar properties that will affect the bac
 
 <img align="center" src="../images/intro-sar/backscattering-mechanism.png"  vspace="10" width="600">
 
-<font size=2> Backscattering mechanisms. *Source: Advantages and Applications of Synthetic Aperture Radar as a Decision Support Tool, Molthan et al., NASA* </font>
+<font size=2> Backscattering mechanisms. Source: Advantages and Applications of Synthetic Aperture Radar as a Decision Support Tool, Molthan et al., NASA </font>
 
 **Dielectric properties.** The dielectric properties of a material have a big effect on the surface’s ability to absorb or reflect microwaves – so much so that the magnitude of the backscatter is proportional to the dielectric constant of the surface. Liquid water has a much higher dielectric constant than other materials including frozen water (a dielectric constant of 80 compared to a range of 0-10), and so the presence or absence of water defines a surface’s dielectric properties. For the most part, surfaces with high dielectric constants have higher reflectivity and thus appear brighter than those with lower dielectric constants.
+
+### What does Radar measures?
+
+Differently from a True color optical imagery, the brightness of the pixel is not indicative of the
+color of the target object on the land. Instead, its intensity depends on a number of other
+factors:
+- the amount of energy transmitted from the satellite;
+- the properties of the target;
+- the shape of the target;
+- the angle from which the target is viewed.
+
+The satellite's receiver records the backscatter coefficient (o), given by the following formula:
+o (dB) = 10.Log10 (energy ratio)
+
+whereby the energy ration is the ration between the received energy by the sensor and the
+energy reflected in an isotropic way.
+
+
+<img align="center" src="../images/intro-sar/radar-measures.png"  vspace="10" width="600">
 
 ## Radar Instruments
 
@@ -165,7 +184,7 @@ The data values collected by SAR systems can be distorted in two primary ways: g
 
 <img align="center" src="../images/intro-sar/slant-vs-ground-range.png"  vspace="10" width="600">
 
-<font size=2> Slant range vs ground range. *Source: Tiago Silva, Quantifying Antarctic Icebergs and their Melting in the Ocean.* </font>
+<font size=2> Slant range vs ground range. Source: Tiago Silva, Quantifying Antarctic Icebergs and their Melting in the Ocean. </font>
 
 
 **Layover.** This type of distortion occurs more often in mountainous areas. This error will cause features to appear at the wrong location or in the wrong direction because of the timing in which the radar beam hits the object. For example, a radar beam may hit the top of a tall mountain before it hits the base of the mountain. Since it reached the top of the mountain first, it will receive the signal from the top of the mountain earlier than the signal from the base of the mountain, and will thus appear shifted towards the radar system and look as though the top of the mountain is *laid over* the base.
@@ -174,7 +193,7 @@ The data values collected by SAR systems can be distorted in two primary ways: g
 
 <img align="center" src="../images/intro-sar/foreshortening-correction.png"  vspace="10" width="600">
 
-<font size=2> Foreshortening before (left) and after (right) correction. *Source: NASA Applied Remote Sensing Training Program*</font>
+<font size=2> Foreshortening before (left) and after (right) correction. Source: NASA Applied Remote Sensing Training Program</font>
 
 ### Radiometric
 **Antennae pattern and signal strength.** Radar beams emit more power in the middle of the swath rather than the near or far portions of the swath. This results in an image that has stronger results in the center rather than the near or far edges. This distortion is called the *antennae pattern*, and it varies significantly depending on the range of the image. Across an image swath, the strength of the return signal diminishes in the farther ranges of the swath. Part of the antennae correction may include a step to produce a uniform average brightness to correct for this effect. 
@@ -183,21 +202,21 @@ The data values collected by SAR systems can be distorted in two primary ways: g
 
 <img align="center" src="../images/intro-sar/radiometric-before-after.jpg"  vspace="10" width="600">
 
-<font size=2> Radiometric correction: before (left) and after (right). *Source: Alaska Satellite Facility* </font>
+<font size=2> Radiometric correction: before (left) and after (right). Source: Alaska Satellite Facility </font>
 
 ### Additional Challenges
 **Shadow.** This type of error is conceptually similar to that of clouds in optical imagery. When the radar beam illuminates a large or steep vertical object, such as a mountain or tall building, it may be unable to illuminate the ground on the farther side of the object, resulting in shadow effects on the image. The effect is particularly pronounced at the top of the vertical object, where the incidence angle is larger. Although you can apply some shadow corrections and attempt to fill in the data gaps using interpolation methods, many researchers choose to treat the shadows as missing data – just like the masked out portions of cloudy images.
 
 <img align="center" src="../images/intro-sar/radar-shadow.png"  vspace="10" width="600">
 
-<font size=2> Shadow in SAR imagery. *Source: Jolanda Patruno, Polarimetric RADARSAT-2 and ALOS PALSAR multi-frequency analysis over the archaeological site of Gebel Barkal (Sudan).* </font>
+<font size=2> Shadow in SAR imagery. Source: Jolanda Patruno, Polarimetric RADARSAT-2 and ALOS PALSAR multi-frequency analysis over the archaeological site of Gebel Barkal (Sudan). </font>
 
 
 **Speckle.** This error is the result of random noise and interference from the radar waves that occurs within the pixel cell. It results in a grainy, almost salt-and-pepper image appearance. There are lots of different gray tones that may appear within a single, uniform surface as the result of speckling.  These variations must be filtered in order to improve the visual quality of the data and make it easier to identify features. Unfortunately, the correction method often used to reduce speckling reduces the resolution, so you must balance the visual quality of the image with the resolution of data.
 
 <img align="center" src="../images/intro-sar/radar-speckle.jpg"  vspace="10" width="600">
 
-<font size=2> Speckle in SAR imagery. *Source: Natural Resources Canada* </font>
+<font size=2> Speckle in SAR imagery. Source: Natural Resources Canada </font>
 
 # Sentinel-1 data in Earth Engine (from the Developers page)
 
