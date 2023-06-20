@@ -23,16 +23,16 @@ If you have any questions about the material, please submit a question below! We
 
 ## Agenda
 
-| Instruction Day |                                             Theme                                             |        Date       |   Format  |
-|:---------------:|:---------------------------------------------------------------------------------------------:|:-----------------:|:---------:|
-|        1        |                              Introduction to GIS & Remote Sensing                             |       10 May      | In-person |
-|      2 - 3      |                              Introduction to Google Earth Engine                              |   11 and 12 May   | In-person |
-|        4        |                         Introduction to Synthetic Aperture Radar (SAR)                        |      12 June      |  Virtual  |
-|      5 - 6      | Intermediate Google Earth Engine - applied use case (e.g. Mangrove mapping and Flood mapping) |   7 and 19 July   |  Virtual  |
-|      7 - 8      |                        Advanced Google Earth Engine - Change Detection                        | 21 July and 2 Aug |  Virtual  |
-|        9        |                            Map Validation with Collect Earth Online                           |       4 Aug       |  Virtual  |
-|     10 - 11     |                          Introduction to ArcGIS Online and ArcGIS Pro                         |    16 & 18 Aug    | In-person |
-|        12       |                   Capstone and Follow-up Support or<br>MEL and Communication                  |       6 Sep       |  Virtual  |
+| Instruction Day |                                             Theme                                             |       Date      |   Format  |
+|:---------------:|:---------------------------------------------------------------------------------------------:|:---------------:|:---------:|
+|        1        |                              Introduction to GIS & Remote Sensing                             |      10 May     | In-person |
+|      2 - 3      |                              Introduction to Google Earth Engine                              |   11 & 12 May   | In-person |
+|        4        |                         Introduction to Synthetic Aperture Radar (SAR)                        |     12 June     |  Virtual  |
+|      5 - 6      | Intermediate Google Earth Engine - applied use case (e.g. Mangrove mapping and Flood mapping) |   7 & 19 July   |  Virtual  |
+|      7 - 8      |                        Advanced Google Earth Engine - Change Detection                        | 28 July & 4 Aug |  Virtual  |
+|        9        |                            Map Validation with Collect Earth Online                           |      11 Aug     |  Virtual  |
+|     10 - 11     |                          Introduction to ArcGIS Online and ArcGIS Pro                         |   16 & 18 Aug   | In-person |
+|        12       |                   Capstone and Follow-up Support or<br>MEL and Communication                  |      6 Sep      |  Virtual  |
 
 ## Feedback
 
