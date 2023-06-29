@@ -335,5 +335,73 @@ Script "`5 Power and dB scales`" from the repository and folder `T4` or direct l
 
 ## Multitemporal Composite
 
+SAR data can also be used to track changes over time. We will select three images from different dates and take the VV band from each of them to create a one single image with these three bands. We will do this by using the `ee.Image.cat` to concatenate the VV bands from one image from 2019, one from 2021 and one from 2023. 
+
+```javascript
+// Define area of interest
+var aoi = ee.Geometry.Point([-55.6931, 5.2936]);
+
+Map.centerObject(aoi, 9);
+
+// Define time period.
+var start = '2019-01-01';
+var end = '2023-06-01';
+
+// Filter Sentinel-1 image collection, considering polarization, instrument mode, orbit direction, and the area of interest.
+var s1 = ee.ImageCollection("COPERNICUS/S1_GRD")
+  .filterMetadata('transmitterReceiverPolarisation', 'equals', ['VV', 'VH'])
+  .filter(ee.Filter.eq('instrumentMode', 'IW'))
+  .filter(ee.Filter.eq('orbitProperties_pass', 'DESCENDING')) 
+  .filterBounds(aoi)
+  .filterDate(start, end);
+
+// Print the collection.
+print(s1);
+
+// Select images for multitemporal composite.
+var img1 = s1.filterDate('2019-01-01','2019-02-01').first();
+var img2 = s1.filterDate('2021-07-01','2021-08-01').first();
+var img3 = s1.filterDate('2023-05-01','2023-06-01').first();
+
+// Concatenate images together into one single image.
+var rgbTemp = ee.Image.cat(img1,img2,img3);
+
+// Add images to the map.
+Map.addLayer(img1,{bands:['VV'],min:-25,max:0},'2019 image',false);
+Map.addLayer(img2,{bands:['VV'],min:-25,max:0},'2021 image',false);
+Map.addLayer(img3,{bands:['VV'],min:-25,max:0},'2023 image',false);
+Map.addLayer(rgbTemp, {bands: ['VV', 'VV_1', 'VV_2'], min:-15, max:-5}, 'Multitemporal R:2019-01 G:2021-07 B:2023-05');
+``` 
+
+Areas that are colored represent areas that suffered some type of change. Black, white and gray areas are stable.
+
+<img align="center" src="../images/intro-sar/20.png"  vspace="10" width="700">
+
+How do we interpret the colors? Let's assume we are working with an index such as NBR, TCW, or NDVI where high values indicate more vegetation and low values indicate less vegetation.
+First, let's consider an area with no colors -- an area that is black, white or some grey tone in between. If an area is some shade of black to white, it means that the trajectory of spectral values is stable across the years. In the schematic below, the black horizontal lines are three different pixel trajectories, all perfectly flat (i.e. stable across time):
+
+<img align="center" src="../images/intro-sar/21.png"  vspace="10" width="700">
+
+If we have a disturbance between the Green and Blue years, that means the index will be high in both Red and Green colors, but low in blue. Following additive color theory (see [https://en.wikipedia.org/wiki/Additive_color](https://en.wikipedia.org/wiki/Additive_color)), this would result in a yellow color.
+
+<img align="center" src="../images/intro-sar/22.png"  vspace="10" width="700">
+
+If, on the other hand, the disturbance occurred before the green year and did not see much recovery by the blue year, we would have high values mostly in red.
+
+<img align="center" src="../images/intro-sar/23.png"  vspace="10" width="700">
+
+If there were recovery by the time of the blue year, then there would be high red and blue, making some shade of purple or magenta.
+
+<img align="center" src="../images/intro-sar/24.png"  vspace="10" width="700">
+
+A couple of other variants are commonly seen and worth learning.
+If an area sees consistent growth in vegetation across all years, it will have relatively low red, slightly higher green, and highest blue, making some form of cyan to blue.
+
+<img align="center" src="../images/intro-sar/25.png"  vspace="10" width="700">
+
+Finally, if there is persistent decline over the full time period, red will be highest, followed by green and then blue -- making some version of brown or orange.
+
+<img align="center" src="../images/intro-sar/26.png"  vspace="10" width="700">
+
 
 Script "`6 Multitemporal Composite`" from the repository and folder `T4` or direct link: [https://code.earthengine.google.com/199aff35b26742db8ff473638af3a88e](https://code.earthengine.google.com/199aff35b26742db8ff473638af3a88e).
