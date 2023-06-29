@@ -377,16 +377,15 @@ Areas that are colored represent areas that suffered some type of change. Black,
 
 <img align="center" src="../images/intro-sar/20.png"  vspace="10" width="700">
 
-How do we interpret the colors? Let's assume we are working with an index such as NBR, TCW, or NDVI where high values indicate more vegetation and low values indicate less vegetation.
-First, let's consider an area with no colors -- an area that is black, white or some grey tone in between. If an area is some shade of black to white, it means that the trajectory of spectral values is stable across the years. In the schematic below, the black horizontal lines are three different pixel trajectories, all perfectly flat (i.e. stable across time):
+How do we interpret the colors? First, let's consider an area with no colors - an area that is black, white or some grey tone in between. If an area is some shade of black to white, it means that the trajectory of backscatter values is stable across the years. In the schematic below, the black horizontal lines are three different pixel trajectories, all perfectly flat (i.e. stable across time):
 
 <img align="center" src="../images/intro-sar/21.png"  vspace="10" width="700">
 
-If we have a disturbance between the Green and Blue years, that means the index will be high in both Red and Green colors, but low in blue. Following additive color theory (see [https://en.wikipedia.org/wiki/Additive_color](https://en.wikipedia.org/wiki/Additive_color)), this would result in a yellow color.
+If we have a change between the Green and Blue years, that means the backscatter will be high in both Red and Green colors, but low in blue. Following additive color theory (see [https://en.wikipedia.org/wiki/Additive_color](https://en.wikipedia.org/wiki/Additive_color)), this would result in a yellow color.
 
 <img align="center" src="../images/intro-sar/22.png"  vspace="10" width="700">
 
-If, on the other hand, the disturbance occurred before the green year and did not see much recovery by the blue year, we would have high values mostly in red.
+If, on the other hand, the change occurred before the green year and did not see much signal recovery by the blue year, we would have high values mostly in red.
 
 <img align="center" src="../images/intro-sar/23.png"  vspace="10" width="700">
 
@@ -395,13 +394,39 @@ If there were recovery by the time of the blue year, then there would be high re
 <img align="center" src="../images/intro-sar/24.png"  vspace="10" width="700">
 
 A couple of other variants are commonly seen and worth learning.
-If an area sees consistent growth in vegetation across all years, it will have relatively low red, slightly higher green, and highest blue, making some form of cyan to blue.
+If an area sees consistent growth in vegetation across all years, for example, it will have relatively low red, slightly higher green, and highest blue, making some form of cyan to blue.
 
 <img align="center" src="../images/intro-sar/25.png"  vspace="10" width="700">
 
-Finally, if there is persistent decline over the full time period, red will be highest, followed by green and then blue -- making some version of brown or orange.
+Finally, if there is persistent decline over the full time period, red will be highest, followed by green and then blue - making some version of brown or orange.
 
 <img align="center" src="../images/intro-sar/26.png"  vspace="10" width="700">
 
+We can also plot a time series at a point of interest (e.g. a point of change) to observe how the backscatter has changed over time.
+
+```javascript
+// Chart time series for point of interest.
+var poi = ee.Geometry.Point([-56.7352, 5.8609]);
+
+var timeSeries = ui.Chart.image.seriesByRegion({
+  imageCollection: s1,
+  regions: poi,
+  reducer: ee.Reducer.mean(),
+  band: 'VV',
+  scale: 10
+}).setOptions({
+  title: 'VV backscatter time series',
+  vAxis: {title: 'dB'},
+  lineWdith: 1,
+  pointSize: 4,
+  series: {
+    0: {color: 'CCCC00'}
+  }});
+print(timeSeries);
+```
+
+You can input any longitude, latitude to the `poi` variable. Use the inspector tab is needed.
+
+<img align="center" src="../images/intro-sar/27.png"  vspace="10" width="700">
 
 Script "`6 Multitemporal Composite`" from the repository and folder `T4` or direct link: [https://code.earthengine.google.com/199aff35b26742db8ff473638af3a88e](https://code.earthengine.google.com/199aff35b26742db8ff473638af3a88e).
