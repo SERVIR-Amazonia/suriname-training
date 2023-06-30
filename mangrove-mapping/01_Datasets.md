@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Preparing Datasets
-parent: Mangrove Mapping Using Multiple Sensors
+parent: Intermediate Google Earth Engine - Mangrove Mapping
 nav_order: 1
 ---
-# Step-Through Part 2
 
-# Image Compositing
+# Dataset Identification and Preparation
