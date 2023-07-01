@@ -16,7 +16,9 @@ We first have to identify the data that best satisty our needs, for example: wha
 
 The mangrove trees have a spectral signature, which can help us to disguinsh and separate them from other objects. However, those spectral signatures in multispectral data may be limited by the number of bands available, which can make difficult to separate some objects or classes from others.
 
+<p align="center">
 <img src="../images/mangrove/T5_1_01.png" vspace="10" width="1000">
+<p/>
 
 Additionally, the mangrove mapping may use other ancillary data to increase mapping performance. In this we will use digital elevation data (DEM), normalized difference vegetation index (NDVI), and normalized difference water index (NDWI). Previously known mangrove distribution is useful to delimitate our mapping area nad to collect sampling points. The [global mangrove distribution](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_MANGROVE_FORESTS?hl=en) is available in GEE and it was produced by using Landsat imagery at 30 m per pixel.
 
@@ -46,8 +48,10 @@ var suriname = ee.FeatureCollection("USDOS/LSIB/2017")
 Map.addLayer(suriname, {}, 'Suriname');
 ```
 
+<p align="center">
 <img src="../images/mangrove/T5_1_02.png" vspace="10" width="600">
-
+<p/>
+  
 Now, let's load the [Global mangrove distribution dataset](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_MANGROVE_FORESTS), which is derived from Landsat imagery from 2000 at 30 m per pixel. We will focus on Suriname.
 
 ```javascript
@@ -58,8 +62,10 @@ var globalMangrove = ee.ImageCollection("LANDSAT/MANGROVE_FORESTS");
 Map.addLayer(globalMangrove, {palette:['green']}, 'Global Mangrove');
 ```
 
-<img src="../images/mangrove/T5_1_03.png" vspace="10" width="600">
-
+<p align="center">
+<img src="../images/mangrove/T5_1_03.png" vspace="10" width="1000">
+<p/>
+  
 The next collection is the [Global DEM from Copernicus](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_DEM_GLO30) at 30 m per pixel. This collection contain several bands and we have to make sure to select the `DEM` band. We will clip the DEM to show only valid data in Suriname and will explore the best way to visualize this data (e.g. identify minimum and maximum elevations).
 
 ```javascript
@@ -71,8 +77,9 @@ var demSuriname = dem.mosaic().clip(suriname);
 var demPalette = ['#002bff','#00f3ff','#00ff37','#fbff00','#ff0000'];
 Map.addLayer(demSuriname, {palette: demPalette, min:0, max:850}, 'DEM');
 ```
-
+<p align="center">
 <img src="../images/mangrove/T5_1_04.png" vspace="10" width="600">
+<p/>
 
 Finally, we will load the Sentinel-2 L2A multispectral data at 10 m per pixel. This collection require some preprocessing before using for mangrove mapping. We will define the time range of interest, study area, and cloud percentage per image. Then, we can apply a cloud mask function to the image collection to clean any clouds, and finally we can create a composite. The composite will be clipped to a define area of interest defined in the variable `aoi`.
 
@@ -127,4 +134,6 @@ var visParams = {bands: ['B4','B3','B2'], min:0, max:2000};
 Map.addLayer(s2Cloudless, visParams, 'Composite');
 ```
 
-<img src="../images/mangrove/T5_1_04.png" vspace="10" width="600">
+<p align="center">
+<img src="../images/mangrove/T5_1_05.png" vspace="10" width="600">
+<p/>
