@@ -3,7 +3,7 @@ layout: page
 title: "Intermediate Google Earth Engine - Mangrove Mapping"
 permalink: /mangrove-mapping
 has_children: True
-nav_order: 6
+nav_order: 7
 ---
 
 # Intermediate Google Earth Engine - Mangrove Mapping
