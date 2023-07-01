@@ -145,3 +145,5 @@ Map.addLayer(s2Cloudless, visParams, 'Composite');
 <p align="center">
 <img src="../images/mangrove/T5_1_05.png" vspace="10" width="600">
 <p/>
+
+## 3. Calculate NDVI & NDWI from composite
