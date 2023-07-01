@@ -3,7 +3,7 @@ layout: page
 title: "Introduction to ArcGIS Online and ArcGIS Pro 2"
 permalink: /intro-arcgis-2
 has_children: True
-nav_order: 12
+nav_order: 13
 ---
 
 # Introduction to ArcGIS Online and ArcGIS Pro 2
