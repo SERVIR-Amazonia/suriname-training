@@ -3,7 +3,7 @@ layout: page
 title: "Advanced Google Earth Engine - Change Detection 2"
 permalink: /change-detection-2
 has_children: True
-nav_order: 9
+nav_order: 10
 ---
 
 # Advanced Google Earth Engine - Change Detection 2
