@@ -81,7 +81,7 @@ Map.addLayer(demSuriname, {palette: demPalette, min:0, max:850}, 'DEM');
 <img src="../images/mangrove/T5_1_04.png" vspace="10" width="600">
 <p/>
 
-Finally, we will load the Sentinel-2 L2A multispectral data at 10 m per pixel. This collection require some preprocessing before using for mangrove mapping. We will define the time range of interest, study area, and cloud percentage per image. Then, we can apply a cloud mask function to the image collection to clean any clouds, and finally we can create a composite. The composite will be clipped to a define area of interest defined in the variable `aoi`.
+Finally, we will load the Sentinel-2 L2A multispectral data at 10 m per pixel. This collection require some preprocessing before using for mangrove mapping. We will define the time range of interest, study area, and cloud percentage per image. If we set the location to Suriname, time range to `filterDate('2019-01-01','2023-12-31')`, and cloud percentage to less than 20%, we will obtain a collection of 807 images.
 
 ```javascript
 ////////////  Multispectral data: Sentinel-2 at 10m  /////////////
@@ -91,6 +91,14 @@ var s2Suriname = sentinel2.filterBounds(suriname)
                           .filterDate('2019-01-01','2023-12-31')
                           .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE',20));
 
+print('Sentinel-2 collection', s2Suriname);
+```
+
+## 2. Cloudless Composite
+
+After filtering the Sentinel-2 collection we can apply a cloud mask function to clean any clouds, and finally we can create a composite. The composite will be clipped to a define area of interest defined in the variable `aoi`. Note that clouds are sometimes hard to remove from certain areas.
+
+```javascript
 // Function for masking clouds of Sentinel-2 images
 function maskS2clouds(image) {
   var qa = image.select('QA60'); // Select QA bands
