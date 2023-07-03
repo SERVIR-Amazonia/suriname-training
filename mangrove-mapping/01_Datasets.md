@@ -186,3 +186,51 @@ Map.addLayer(ndwi, {palette:ndwiPalette,min:0,max:1}, 'NDWI');
 <p align="center">
 <img src="../images/mangrove/T5_1_07.png" vspace="10" width="800">
 <p/>
+
+## 4. Export images
+
+We will export the Sentinel-2 composite, NDVI and NDWI images to our personal assets. The argument `assetId` is where we specfify the folder and file name to save. Other arguments are important such as the scale, crs, region, maximum of pixels. Once we run the script we need to go to teh Tasks tab, hit run and submit the task to the GEE server. We can monitor the submitted tasks whenever we want in this section.
+
+```javascript
+//// Export Images to Assets:
+
+// Sentinel-2 Map
+Export.image.toAsset({
+  image: s2Cloudless,
+  description: 'Sentinel2_Suriname_Map',
+  assetId: 'Suriname/Suriname_Map',
+  region: aoi,
+  scale: 10,
+  crs: 'EPSG:4326',
+  maxPixels: 1e13
+});
+
+<p align="center">
+<img src="../images/mangrove/T5_1_08.png" vspace="10" width="800">
+<p/>
+// NDVI Map
+Export.image.toAsset({
+  image: ndvi,
+  description: 'NDVI_Suriname_Map',
+  assetId: 'Suriname/NDVI_Map',
+  region: aoi,
+  scale: 10,
+  crs: 'EPSG:4326',
+  maxPixels: 1e13
+});
+
+// NDWI Map
+Export.image.toAsset({
+  image: ndwi,
+  description: 'NDWI_Suriname_Map',
+  assetId: 'Suriname/NDWI_Map',
+  region: aoi,
+  scale: 10,
+  crs: 'EPSG:4326',
+  maxPixels: 1e13
+});
+```
+
+<p align="center">
+<img src="../images/mangrove/T5_1_08.png" vspace="10" width="600">
+<p/>
