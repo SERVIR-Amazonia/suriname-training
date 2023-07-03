@@ -147,3 +147,44 @@ Map.addLayer(s2Cloudless, visParams, 'Composite');
 <p/>
 
 ## 3. Calculate NDVI & NDWI from composite
+
+### NDVI: Normalized Difference Vegetation Index
+
+The NDVI values range from -1 to +1. Tipically, negative NDVI values may indicate presence of water bodies. In the other side, if the NDVI values are closer to +1 it is very likey this is indicating dense vegetation. When the NDVI is closer to zero it may indicate urban areas.
+
+We use the following equation to obtain NDVI:
+
+$$\frac{(NIR-RED)}{(NIR+RED)}$$
+
+The ratio between the NIR and RED bands provide a vegetation index:
+
+<p align="center">
+<img src="../images/mangrove/T5_1_06.jpg" vspace="10" width="600">
+<p/>
+
+
+### NDWI: Normalized Difference Water Index
+
+Este índice permite detectar cuerpos de agua usando las bandas Verde y NIR. Las propiedades opticas del agua permiten mayor penetración de la longitud de onda verde, en comparación con el infrarrojo, el cual es absorbido inmediatamente en superficie. Sin embargo, los cuerpos de agua pueden contener diversos elementos disueltos que pueden alterar la eficacia de detección por el índice, por ejemplo alto contenido de algas, material suspendido, o materia orgánica disuelta. El umbral para detección de agua está alrededor de 0.3, donde valores más altos que este indican presencia de agua. 
+
+The equation to obtain NDWI is:
+
+$$\frac{(GREEN-NIR)}{(GREEN+NIR)}$$
+
+En GEE vamos a crear una función donde se incluya el cálculo del NDWI y otras variables para limpiar la máscara y visualizar solo píxeles de agua usando un umbral definido, pero que puede ser modificado. Adicionalmente, aplicaremos el NDWI sobre un área de interés más pequeña, que en este ejemplo será en el noroccidente de Colombia.
+
+```javascript
+// Calculate NDVI and NDWI
+var ndvi = s2Cloudless.normalizedDifference(['B8','B4']).rename('NDVI');
+var ndwi = s2Cloudless.normalizedDifference(['B3','B8']).rename('NDWI');
+
+// Visualize layers
+var ndviPalette = ['#edf8e9','#c7e9c0','#a1d99b','#74c476','#41ab5d','#238b45','#005a32'];
+var ndwiPalette = ['#ffffff','#0059ff','#1d00ff','#0c00b0'];
+Map.addLayer(ndvi, {palette:ndviPalette,min:0,max:1}, 'NDVI');
+Map.addLayer(ndwi, {palette:ndwiPalette,min:0,max:1}, 'NDWI');
+```
+
+<p align="center">
+<img src="../images/mangrove/T5_1_07.jpg" vspace="10" width="600">
+<p/>
