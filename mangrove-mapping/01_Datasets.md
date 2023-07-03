@@ -159,19 +159,17 @@ $$\frac{(NIR-RED)}{(NIR+RED)}$$
 The ratio between the NIR and RED bands provide a vegetation index:
 
 <p align="center">
-<img src="../images/mangrove/T5_1_06.jpg" vspace="10" width="600">
+<img src="../images/mangrove/T5_1_06.jpg" vspace="10" width="500">
 <p/>
 
 
 ### NDWI: Normalized Difference Water Index
 
-Este índice permite detectar cuerpos de agua usando las bandas Verde y NIR. Las propiedades opticas del agua permiten mayor penetración de la longitud de onda verde, en comparación con el infrarrojo, el cual es absorbido inmediatamente en superficie. Sin embargo, los cuerpos de agua pueden contener diversos elementos disueltos que pueden alterar la eficacia de detección por el índice, por ejemplo alto contenido de algas, material suspendido, o materia orgánica disuelta. El umbral para detección de agua está alrededor de 0.3, donde valores más altos que este indican presencia de agua. 
+This index allows to detect water bodies using the GREEN and NIR bands. The water allows deeper penetration of shorter wavelenghts such as blue and green, in comparison to longer wavelenghts such as red or infrared. However, this optical properties may be altered by content of other elements in water such as colored dissolved organic matter, suspended particles, or algal concentration. The threshold for water detection is around 0.3, where equal or higher values indicate the presence of water.
 
 The equation to obtain NDWI is:
 
 $$\frac{(GREEN-NIR)}{(GREEN+NIR)}$$
-
-En GEE vamos a crear una función donde se incluya el cálculo del NDWI y otras variables para limpiar la máscara y visualizar solo píxeles de agua usando un umbral definido, pero que puede ser modificado. Adicionalmente, aplicaremos el NDWI sobre un área de interés más pequeña, que en este ejemplo será en el noroccidente de Colombia.
 
 ```javascript
 // Calculate NDVI and NDWI
@@ -186,5 +184,5 @@ Map.addLayer(ndwi, {palette:ndwiPalette,min:0,max:1}, 'NDWI');
 ```
 
 <p align="center">
-<img src="../images/mangrove/T5_1_07.jpg" vspace="10" width="600">
+<img src="../images/mangrove/T5_1_07.png" vspace="10" width="800">
 <p/>
