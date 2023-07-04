@@ -129,5 +129,36 @@ print('Validation points:', validation.aggregate_histogram(property));
 ### 3. Training & Classification
 
 
+```javascript
+// Train Random Forest classifier with 10 trees:
+var rf = ee.Classifier.smileRandomForest(10).train({
+   features: training,
+   classProperty: property,
+   inputProperties: bands
+});
+
+// Classify image and visualize
+var rfMap = finalImage.classify(rf);
+var vis = {min: 0, max: 1, palette: ['white','green']};
+Map.addLayer(rfMap, vis,'RF');
+```
 
 ### 4. Accuracy Assessment
+
+```javascript
+//// Apply classifier to validation dataset:
+var validate = validation.classify(rf);
+
+// Calculate error matrices
+var errorMatrixVal = validate.errorMatrix(property, 'classification');
+print('Error Matrix Validation',errorMatrixVal);
+
+// Calculate overall accuracy
+print('Overall Validation Accuracy: ', errorMatrixVal.accuracy());
+
+// User and Producer Accuracy
+var producerAccuracy = errorMatrixVal.producersAccuracy();
+var userAccuracy = errorMatrixVal.consumersAccuracy();
+print('Producer Accuracy: ',producerAccuracy);
+print('User Accuracy: ',userAccuracy);
+```
