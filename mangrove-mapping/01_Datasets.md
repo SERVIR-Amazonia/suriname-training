@@ -206,9 +206,6 @@ Export.image.toAsset({
   maxPixels: 1e13
 });
 
-<p align="center">
-<img src="../images/mangrove/T5_1_08.png" vspace="10" width="800">
-<p/>
 // NDVI Map
 Export.image.toAsset({
   image: ndvi,
