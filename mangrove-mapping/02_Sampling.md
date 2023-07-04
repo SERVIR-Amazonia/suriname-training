@@ -16,13 +16,13 @@ All the exported data can be found in the tab `Assets`, we can click in any of t
 
 <p align="center">
 <img src="../images/mangrove/T5_2_01.png" vspace="10" width="400">
-<p/>
+</p>
 
 The data in our Assets is private for default, and can be shared with some other user or shared publicly. For example, in this section we will import and work with data from my assets.
 
 <p align="center">
 <img src="../images/mangrove/T5_2_02.png" vspace="10" width="500">
-<p/>
+</p>
 
 ## Steps
 1. Import datasets
@@ -84,7 +84,7 @@ Map.addLayer(sentinel2, visParams, 'Composite');
 
 <p align="center">
 <img src="../images/mangrove/T5_2_03.png" vspace="10" width="600">
-<p/>
+</p>
 
 ### 2. Sampling points
 
@@ -112,7 +112,7 @@ var aoi = /* color: #0b4a8b */ee.Geometry.Polygon(
 
 <p align="center">
 <img src="../images/mangrove/T5_2_04.png" vspace="10" width="1000">
-<p/>
+</p>
 
 Now, we will use the DEM data to define an elevation area where the mangroves usually grow. This elevation area can be in the range of 0-15 m. So, for this step we will mask out elevation out of that range and will clip it to our AOI.
 
@@ -129,7 +129,7 @@ Map.addLayer(demAoi, {palette: demPalette, min:0, max:15}, 'DEM-AOI');
 
 <p align="center">
 <img src="../images/mangrove/T5_2_05.png" vspace="10" width="1000">
-<p/>
+</p>
 
 Finally, we create a mask for land/water using our NDWI data and we set a threshold of -0.1. With this we will be able to mask out water pixels and clean some false mangrove pixels from the Global Mangrove Distribution data.
 
@@ -141,7 +141,7 @@ Map.addLayer(ndwiMask, {palette: ['blue','white'], min:0, max:1}, 'NDWI-Mask');
 
 <p align="center">
 <img src="../images/mangrove/T5_2_06.png" vspace="10" width="1000">
-<p/>
+</p>
 
 Now, we apply the DEM and NDWI masks to the Global Mangrove Distribution layer.
 
@@ -186,7 +186,7 @@ Map.addLayer(collectedPts.filter(ee.Filter.eq('mangroves',1)),{color:'green'},'M
 
 <p align="center">
 <img src="../images/mangrove/T5_2_07.png" vspace="10" width="1000">
-<p/>
+</p>
 
 ### 3. Export data
 
