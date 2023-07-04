@@ -18,7 +18,7 @@ The mangrove trees have a spectral signature, which can help us to disguinsh and
 
 <p align="center">
 <img src="../images/mangrove/T5_1_01.png" vspace="10" width="1000">
-<p/>
+</p>
 
 Additionally, the mangrove mapping may use other ancillary data to increase mapping performance. In this we will use digital elevation data (DEM), normalized difference vegetation index (NDVI), and normalized difference water index (NDWI). Previously known mangrove distribution is useful to delimitate our mapping area nad to collect sampling points. The [global mangrove distribution](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_MANGROVE_FORESTS?hl=en) is available in GEE and it was produced by using Landsat imagery at 30 m per pixel.
 
@@ -51,7 +51,7 @@ Map.addLayer(suriname, {}, 'Suriname');
 
 <p align="center">
 <img src="../images/mangrove/T5_1_02.png" vspace="10" width="600">
-<p/>
+</p>
   
 Now, let's load the [Global mangrove distribution dataset](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_MANGROVE_FORESTS), which is derived from Landsat imagery from 2000 at 30 m per pixel. We will focus on Suriname.
 
@@ -65,7 +65,7 @@ Map.addLayer(globalMangrove, {palette:['green']}, 'Global Mangrove');
 
 <p align="center">
 <img src="../images/mangrove/T5_1_03.png" vspace="10" width="1000">
-<p/>
+</p>
   
 The next collection is the [Global DEM from Copernicus](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_DEM_GLO30) at 30 m per pixel. This collection contain several bands and we have to make sure to select the `DEM` band. We will clip the DEM to show only valid data in Suriname and will explore the best way to visualize this data (e.g. identify minimum and maximum elevations).
 
@@ -80,7 +80,7 @@ Map.addLayer(demSuriname, {palette: demPalette, min:0, max:850}, 'DEM');
 ```
 <p align="center">
 <img src="../images/mangrove/T5_1_04.png" vspace="10" width="600">
-<p/>
+</p>
 
 Finally, we will load the Sentinel-2 L2A multispectral data at 10 m per pixel. This collection require some preprocessing before using for mangrove mapping. We will define the time range of interest, study area, and cloud percentage per image. If we set the location to Suriname, time range to `filterDate('2019-01-01','2023-12-31')`, and cloud percentage to less than 20%, we will obtain a collection of 807 images.
 
@@ -145,7 +145,7 @@ Map.addLayer(s2Cloudless, visParams, 'Composite');
 
 <p align="center">
 <img src="../images/mangrove/T5_1_05.png" vspace="10" width="600">
-<p/>
+</p>
 
 ## 3. Calculate NDVI & NDWI from composite
 
@@ -161,7 +161,7 @@ The ratio between the NIR and RED bands provide a vegetation index:
 
 <p align="center">
 <img src="../images/mangrove/T5_1_06.jpg" vspace="10" width="500">
-<p/>
+</p>
 
 
 ### NDWI: Normalized Difference Water Index
@@ -186,7 +186,7 @@ Map.addLayer(ndwi, {palette:ndwiPalette,min:0,max:1}, 'NDWI');
 
 <p align="center">
 <img src="../images/mangrove/T5_1_07.png" vspace="10" width="800">
-<p/>
+</p>
 
 ## 4. Export images
 
@@ -231,6 +231,6 @@ Export.image.toAsset({
 
 <p align="center">
 <img src="../images/mangrove/T5_1_08.png" vspace="10" width="600">
-<p/>
+</p>
 
 After exporting this data we will be all set to start with the next section of collecting training data.
