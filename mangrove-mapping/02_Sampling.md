@@ -90,5 +90,73 @@ Map.addLayer(sentinel2, visParams, 'Composite');
 
 Before doing a randomized sampling of mangrove presence/absence points, it is important to define an area of interest and refine the Global Mangrove Distribution data.
 
+Our area of interest will define where the points will be collected. We will try to draw a polygon around the shore covering the known mangrove dsitribution. There is no need to sample points very inland, because there is obviusly no mangroves in those areas, but those sample points may change the result of the classification.
 
+```javascript
+// Let's define an area of interest where points will be collected:
+var aoi = /* color: #0b4a8b */ee.Geometry.Polygon(
+        [[[-57.179476764081386, 5.6061686726455555],
+          [-54.023654010175136, 5.562431921222313],
+          [-53.933016803143886, 5.786547856059797],
+          [-53.956511362469065, 5.879613752921527],
+          [-54.206450327312815, 5.972498485618363],
+          [-55.085356577312815, 6.057173785340803],
+          [-55.236418589031565, 5.980693444646814],
+          [-55.884611948406565, 6.0599050265548815],
+          [-56.060393198406565, 5.904202407299404],
+          [-56.689360483562815, 6.018934960499998],
+          [-56.950285776531565, 6.068098667242195],
+          [-57.14391980973469, 5.957474075694997],
+          [-57.200224741375315, 5.7334255849746585]]]);
+```
 
+<p align="center">
+<img src="../images/mangrove/T5_2_04.png" vspace="10" width="1000">
+<p/>
+
+Now, we will use the DEM data to define an elevation area where the mangroves usually grow. This elevation area can be in the range of 0-15 m. So, for this step we will mask out elevation out of that range and will clip it to our AOI.
+
+```javascript
+// Create DEM mask above 15 m:
+var demMask = demSuriname.lte(15);
+var demRange = demSuriname.updateMask(demMask);
+Map.addLayer(demRange, {palette: demPalette, min:0, max:15}, 'DEM-Range');
+
+// Clip DEM to AOI:
+var demAoi = demRange.clip(aoi);
+Map.addLayer(demAoi, {palette: demPalette, min:0, max:15}, 'DEM-AOI');
+```
+
+<p align="center">
+<img src="../images/mangrove/T5_2_05.png" vspace="10" width="1000">
+<p/>
+
+Finally, we create a mask for land/water using our NDWI data and we set a threshold of -0.1. With this we will be able to mask out water pixels and clean some false mangrove pixels from the Global Mangrove Distribution data.
+
+```javascript
+// Create NDWI mask to separate water/land settin threohold at -0.1:
+var ndwiMask = ndwi.lte(-0.1);
+Map.addLayer(ndwiMask, {palette: ['blue','white'], min:0, max:1}, 'NDWI-Mask');
+```
+
+<p align="center">
+<img src="../images/mangrove/T5_2_06.png" vspace="10" width="1000">
+<p/>
+
+Now, we apply the DEM and NDWI masks to the Global Mangrove Distribution layer and see the difference before and after.
+
+```javascript
+// Update the Mangrove distribution layer using the DEM range and NDWI mask.
+// This will help to reduce false mangrove pixels.
+var mangroveRange = globalMangrove.updateMask(demAoi.mask())
+                    .updateMask(ndwiMask)
+                    .rename('mangroves')
+                    .mask();
+
+// Visualize mangrove dataset:
+Map.addLayer(mangroveRange, {}, 'Updated Mangroves');
+```
+
+<p align="center">
+<img src="../images/mangrove/T5_2_07.png" vspace="10" width="1000">
+<p/>
