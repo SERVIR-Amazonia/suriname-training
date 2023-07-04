@@ -40,7 +40,7 @@ We will load country boundaries, global mangrove distribution, DEM, NDVI, NDWI, 
 var suriname = ee.FeatureCollection("USDOS/LSIB/2017")
                 .filter(ee.Filter.eq('COUNTRY_NA','Suriname'));
 
-Map.addLayer(suriname);
+Map.addLayer(suriname, {}, 'Suriname');
 
 /////////  Global Mangrove Distribution Data  //////////
 var globalMangrove = ee.ImageCollection("LANDSAT/MANGROVE_FORESTS").mosaic();
@@ -67,11 +67,10 @@ Map.addLayer(ndvi, {palette: ndviPalette, min:0, max:0.8}, 'NDVI');
 
 
 /////////  Normalized Difference Water Index - NDWI  //////////
-// Let's import NDWI and set the thershold for water/land (-0.1):
-var ndwi = ee.Image('users/lsandoval-sig/Suriname/NDWI_Map').lte(-0.1);
+var ndwi = ee.Image('users/lsandoval-sig/Suriname/NDWI_Map');
 
 // Clip and Visualize NDWI:
-var ndwiPalette = ['#0c00b0','#ffffff'];
+var ndwiPalette = ['#ffffff','#0059ff','#1d00ff','#0c00b0'];
 Map.addLayer(ndwi, {palette: ndwiPalette, min:0, max:1}, 'NDWI');
 
 
@@ -82,4 +81,14 @@ var sentinel2 = ee.Image("users/lsandoval-sig/Suriname/Suriname_Map");
 var visParams = {bands: ['B4','B3','B2'], min:0, max:2000};
 Map.addLayer(sentinel2, visParams, 'Composite');
 ```
+
+<p align="center">
+<img src="../images/mangrove/T5_2_03.png" vspace="10" width="600">
+<p/>
+
+### 2. Sampling points
+
+Before doing a randomized sampling of mangrove presence/absence points, it is important to define an area of interest and refine the Global Mangrove Distribution data.
+
+
 
