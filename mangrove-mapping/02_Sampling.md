@@ -15,7 +15,7 @@ Ground-truth data is all the data we can collect from the field, visual observat
 All the exported data can be found in the tab `Assets`, we can click in any of them to see their properties and the ID for importing each dataset in the code editor.
 
 <p align="center">
-<img src="../images/mangrove/T5_2_01.png" vspace="10" width="500">
+<img src="../images/mangrove/T5_2_01.png" vspace="10" width="400">
 <p/>
 
 The data in our Assets is private for default, and can be shared with some other user or shared publicly. For example, in this section we will import and work with data from my assets.
