@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 ## Script
-The script of this section is available [here]().
+The script of this section is available [here](https://code.earthengine.google.com/7ae14b3fbce4d009658ad3c88b9de95a).
 
 # Dataset Identification and Preparation
 
@@ -234,3 +234,5 @@ Export.image.toAsset({
 <p align="center">
 <img src="../images/mangrove/T5_1_08.png" vspace="10" width="600">
 <p/>
+
+After exporting this data we will be all set to start with the next section of collecting training data.
