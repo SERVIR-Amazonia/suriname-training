@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Clasification
+title: Classification
 parent: Intermediate Google Earth Engine - Mangrove Mapping
 nav_order: 3
 ---
