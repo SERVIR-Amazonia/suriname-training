@@ -40,6 +40,7 @@ The steps for this section are:
 
 We will load the [LSIB 2017](https://developers.google.com/earth-engine/datasets/catalog/USDOS_LSIB_2017) collection of international boundary polygons and select the polygon that corresponds to Suriname. The property containing country names is `COUNTRY_NA`.
 
+
 ```javascript
 // Define country boundaries
 var suriname = ee.FeatureCollection("USDOS/LSIB/2017")
