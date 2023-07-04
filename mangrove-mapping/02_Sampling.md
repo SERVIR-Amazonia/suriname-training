@@ -143,7 +143,7 @@ Map.addLayer(ndwiMask, {palette: ['blue','white'], min:0, max:1}, 'NDWI-Mask');
 <img src="../images/mangrove/T5_2_06.png" vspace="10" width="1000">
 <p/>
 
-Now, we apply the DEM and NDWI masks to the Global Mangrove Distribution layer and see the difference before and after.
+Now, we apply the DEM and NDWI masks to the Global Mangrove Distribution layer.
 
 ```javascript
 // Update the Mangrove distribution layer using the DEM range and NDWI mask.
@@ -157,6 +157,46 @@ var mangroveRange = globalMangrove.updateMask(demAoi.mask())
 Map.addLayer(mangroveRange, {}, 'Updated Mangroves');
 ```
 
+The updated Global Mangrove Distribution layer will be used to define areas where mangroves are and collect points in those areas, specifically. The rest of the areas are where no mangrove points will be colelcted. For doing this we will convert the updated mangrove layer to integer type using `.int()`, and then we will use the `.stratifiedSample()` function to collect randomized points inside the Area of Interest. We will specify to collect 200 points, from which 100 will represent No mangroves with value of 0, and 100 will represent Mangroves with value of 1.
+
+```javascript
+// Sample mangrove absence / presence data
+// Values in 'mangroves' property: 0-Not Mangrove,  1-Mangrove
+var collectedPts = mangroveRange.int().stratifiedSample({
+  numPoints:200, // Number of points
+  classBand:'mangroves', 
+  region:aoi, 
+  scale:10, 
+  projection:'EPSG:4326', 
+  seed:1010, 
+  classValues:[0,1], // Specific class codes
+  classPoints:[100,100], // 100 points per class
+  dropNulls:true, 
+  tileScale:2, 
+  geometries:true
+  });
+
+// Print collection
+print('Collected Points', collectedPts);
+
+// Visualize location of points (Mangrove and No Mangrove)
+Map.addLayer(collectedPts.filter(ee.Filter.eq('mangroves',0)),{color:'red'},'No Mangroves');
+Map.addLayer(collectedPts.filter(ee.Filter.eq('mangroves',1)),{color:'green'},'Mangroves');
+```
+
 <p align="center">
 <img src="../images/mangrove/T5_2_07.png" vspace="10" width="1000">
 <p/>
+
+### 3. Export data
+
+Once the points have been collected, we proceed to export them to our `Assets` as CSV using the `Export.table.toAsset` funtion.
+
+```javascript
+// Export data to Assets
+Export.table.toAsset({
+  collection: collectedPts,
+  description: 'Mangrove_samples',
+  assetId: 'Suriname/Mangrove_samples'
+});
+```
