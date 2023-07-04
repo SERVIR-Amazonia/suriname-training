@@ -6,7 +6,7 @@ nav_order: 2
 ---
 
 ## Script
-The script of this section is available [here]().
+The script of this section is available [here](https://code.earthengine.google.com/a3b01fbc368d6dae6b05df1d42e3772c).
 
 # Collecting Ground-Truth Data
 
