@@ -10,6 +10,10 @@ The script of this section is available [here](https://code.earthengine.google.c
 
 # Dataset Identification and Preparation
 
+<p align="center">
+<img src="../images/mangrove/MangroveForest.jpeg" vspace="10" width="600">
+</p>
+
 Before running any habitat mapping it is important to identify the type of data and processing we require to achieve the best possible outcome. In this case we will use data available in the catalog of GEE for mapping mangroves in Suriname. The mangrove trees grow in coastal areas, this means we can focus on those areas and there is no need to search for mangroves in inland or highland areas.
 
 We first have to identify the data that best satisty our needs, for example: what pixel, temporal or spectral resolution is better? We will use multispectral data from [Sentinel-2](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED), which delivers data at 10 m per pixel every ~5 days from ~2016 to present. 
