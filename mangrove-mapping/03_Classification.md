@@ -12,6 +12,7 @@ nav_order: 3
 2. Data sampling (Training & Validation data)
 3. Training & Classification
 4. Accuracy assessment
+5. Extra: Area calculation & Export map
 
 ### 1. Import and prepare collections
 
@@ -128,7 +129,7 @@ print('Validation points:', validation.aggregate_histogram(property));
 
 ### 3. Training & Classification
 
-We will use our training set of points to train the model or classifier. In this case, we will use the Random Forest classifier, which can be called in GEE by the function `ee.Classifier.smileRandomForest()`. This classifier is made of n number of decision trees, which help to take a final decision by majority voting. 
+We will use our training set of points to train the model or classifier. In this case, we will use the Random Forest classifier, which can be called in GEE by the function `ee.Classifier.smileRandomForest()`. This classifier is made of n number of decision trees, which help to take a final decision by majority voting. More information about the RF classifier can be found [here](https://towardsdatascience.com/understanding-random-forest-58381e0602d2).
 
 <p align="center">
 <img src="../images/mangrove/RandomForest.png" vspace="10" width="600">
@@ -256,7 +257,7 @@ Map.addLayer(rfMapClean, vis,'RF_Clean');
 <img src="../images/mangrove/T5_3_05.png" vspace="10" width="1000">
 </p>
 
-Alternative to Random Forest Classifier is the Maxent Classifier, which is adequate to estimate habitat suitability, or probability to find certain organism by using presence and absence data, along with other physical, geological or chemical data.
+For presence/absence data exist another alternative to Random Forest Classifier, which is the Maxent (Maximum Entropy) Classifier. This is classifier is adequate to estimate habitat suitability or modeling species distribution. Usually, for running this classifier we require other physical, geological or chemical data. In this case, we can take our presence/absence mangrove points, plus multispectral, elevation, NDVI and NDWI as complementary data to the mangrove distribution. This classifier can be called in GEE by using the function `ee.Classifier.amnhMaxent()`. The output is a single band named 'probability', containing the modeled probability, and an additional band named 'clamp' when the 'writeClampGrid' argument is true. More information about Maxent can be found in the [official site](https://biodiversityinformatics.amnh.org/open_source/maxent/).
 
 ```javascript
 ////// MAXENT Alternative
@@ -275,7 +276,7 @@ Map.addLayer(maxentMap, vis2,'Maxent');
 <img src="../images/mangrove/T5_3_06.png" vspace="10" width="1000">
 </p>
 
-We can apply a kernel to obtain a smoother map and filter pixels by higher values than 0.7 (70% habitat suitability).
+We can apply a kernel to obtain a smoother map and filter pixels by higher values than 0.7 (>70% probability).
 
 ```javascript
 //Create kernel
@@ -298,6 +299,8 @@ Map.addLayer(maxentClean, {palette:['red']},'Maxent-Kernel');
 
 ### 4. Accuracy Assessment
 
+It is time to test our the accuracy of our model (RF Classifier). We will use the validation set of points for this.
+
 ```javascript
 //// Apply classifier to validation dataset:
 var validate = validation.classify(rf);
@@ -308,10 +311,73 @@ print('Error Matrix Validation',errorMatrixVal);
 
 // Calculate overall accuracy
 print('Overall Validation Accuracy: ', errorMatrixVal.accuracy());
+```
 
+<p align="center">
+<img src="../images/mangrove/T5_3_08.png" vspace="10" width="500">
+</p>
+
+We obtained an 80% of accuracy, which is very good. However, we just saw how the classification may vary quantitavively and qualitatively. Other parameters can be estimated to help with the interpretation of results, from an individual perspective. These are the producer and user accuracy. For example, in the image below (taken from Congalton & Green, 2009), the producer accuracy is estimated by dividing the total number of correct sample units in the "deciduous" category (i.e., 65) by the total number of deciduous sample units as indicated by the reference data (i.e., 75 or the column total). This division results in a “producer’s accuracy” of 87%, which is quite good. If we stopped here, one might conclude that although this classification appears to be average overall, it is more than adequate for the deciduous category. Drawing such a conclusion could be a very serious mistake. A quick calculation of the “user’s accuracy” is computed by dividing the total number of correct sample units in the "deciduous" category (i.e., 65) by the total number of sample units classified as deciduous (i.e., 115 or the row total) reveals a value of 57%. In other words, although 87% of the deciduous areas have been correctly identified as deciduous, only 57% of the areas called deciduous on the map are actually deciduous on the ground. The high producer’s accuracy occurs because too much of the map is labeled "deciduous".
+
+<p align="center">
+<img src="../images/mangrove/Accuracy.png" vspace="10" width="600">
+</p>
+
+In GEE, we can estimate the user and producer accuracy using the previous errox matrix calculated.
+
+```javascript
 // User and Producer Accuracy
 var producerAccuracy = errorMatrixVal.producersAccuracy();
 var userAccuracy = errorMatrixVal.consumersAccuracy();
 print('Producer Accuracy: ',producerAccuracy);
 print('User Accuracy: ',userAccuracy);
 ```
+
+We can see that mangroves were mapped with a producer accuracy of 74% and an user accuracy of 89%.
+
+<p align="center">
+<img src="../images/mangrove/T5_3_09.png" vspace="10" width="500">
+</p>
+
+### 5. Extra: Area calculation & Export map
+
+We can estimate the area that was classified as mangrove. First, we need to select only mangrove pixels and calculate the area of each pixel, in theis case the pixels are 10x10 m or 100 m2. Then, we can apply a reducer to sum all of those areas. The output number will be in m2, so we need to convert into km2.
+
+```javascript
+////// Area Calculation //////////
+// We will define the pixel category that correspond to mangrove (1):
+var Area = rfMapClean.eq(1).multiply(ee.Image.pixelArea());
+
+//Apply reducer to sum the area of all pixels:
+var reducerArea = Area.reduceRegion({
+  reducer: ee.Reducer.sum(),
+  geometry: finalImage.geometry(),
+  scale: 10,
+  crs: 'EPSG:4326',
+  maxPixels: 1e13
+  });
+
+// Convert m^2 to km^2
+var areaSqKm = ee.Number(reducerArea.get('classification')).divide(1e6);
+print('Area (km^2):',areaSqKm);
+```
+
+The area is 1015 km2 of mangrove detected.
+
+If we want to export the map to aour assets we can use the following code:
+
+```javascript
+//// Export
+// Mangrove map (Random Forest)
+Export.image.toAsset({
+  image: rfMapClean,
+  description: 'MangroveMap_RF',
+  assetId: 'Suriname/MangroveMap_RF',
+  region: aoi,
+  scale: 10,
+  crs: 'EPSG:4326',
+  maxPixels: 1e13
+});
+```
+
+Congratulations, you have completed the mangrove mapping module!
