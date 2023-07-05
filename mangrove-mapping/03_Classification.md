@@ -5,6 +5,9 @@ parent: Intermediate Google Earth Engine - Mangrove Mapping
 nav_order: 3
 ---
 
+## Script
+The script of this section is available [here](https://code.earthengine.google.com/129691c331fe7f7b2079117107c674f9).
+
 # Classification & Accuracy Assessment
 
 ## Steps
