@@ -1,4 +1,4 @@
- ---
+---
 layout: page
 title: Classification
 parent: Intermediate Google Earth Engine - Mangrove Mapping
