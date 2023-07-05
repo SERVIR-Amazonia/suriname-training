@@ -245,7 +245,7 @@ Map.addLayer(maxentMap, vis2,'Maxent');
 <img src="../images/mangrove/T5_3_06.png" vspace="10" width="1000">
 </p>
 
-We can apply a kernel to obtain a smoother map and filter pixels by higher values than 0.7 (>70% probability).
+We can apply a kernel to obtain a smoother map, and then filter pixels by higher values than 0.7 (>70% probability).
 
 ```javascript
 //Create kernel
@@ -302,7 +302,7 @@ print('Producer Accuracy: ',producerAccuracy);
 print('User Accuracy: ',userAccuracy);
 ```
 
-We can see that mangroves were mapped with a producer accuracy of 74% and an user accuracy of 89%.
+We can see that mangroves were mapped with a producer accuracy of 74% and user accuracy of 89%.
 
 <p align="center">
 <img src="../images/mangrove/T5_3_09.png" vspace="10" width="500">
@@ -310,7 +310,7 @@ We can see that mangroves were mapped with a producer accuracy of 74% and an use
 
 ### 5. Extra: Area calculation & Export map
 
-We can estimate the area that was classified as mangrove. First, we need to select only mangrove pixels and calculate the area of each pixel, in theis case the pixels are 10x10 m or 100 m2. Then, we can apply a reducer to sum all of those areas. The output number will be in m2, so we need to convert into km2.
+We can estimate the area that was classified as mangrove. First, we need to select only mangrove pixels and calculate the area of each pixel, in this case the pixels are 10x10 m or 100 m2. Then, we can apply a reducer to sum all of those areas. The output number will be in m2, so we need to convert it into km2.
 
 ```javascript
 ////// Area Calculation //////////
