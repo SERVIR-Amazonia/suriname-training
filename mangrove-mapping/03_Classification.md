@@ -75,7 +75,7 @@ print('Bands', finalImage.bandNames());
 ```
 
 <p align="center">
-<img src="../images/mangrove/T5_3_01.png" vspace="10" width="500">
+<img src="../images/mangrove/T5_3_01.png" vspace="10" width="400">
 </p>
 
 ### 2. Data sampling (Training & Validation data)
@@ -106,7 +106,7 @@ var samples = finalImage.select(bands).sampleRegions({
 If we print the collection of samples, we will see the specific values per band at each location.
 
 <p align="center">
-<img src="../images/mangrove/T5_3_02.png" vspace="10" width="500">
+<img src="../images/mangrove/T5_3_02.png" vspace="10" width="400">
 </p>
 
 We will split our collection of points into training and validation points. Usually, training set is 80% of the total collection, while the validation set is 20%. The collection of points will be randomly split by adding a column with random numbers using `randomColumn('random')`, and then filtering points higher and lower than 0.8, which is our threshold for spliting the data.
@@ -128,10 +128,21 @@ print('Validation points:', validation.aggregate_histogram(property));
 
 ### 3. Training & Classification
 
+We will use our training set of points to train the model or classifier. In this case, we will use the Random Forest classifier, which can be called in GEE by the function `ee.Classifier.smileRandomForest()`. This classifier is made of n number of decision trees, which help to take a final decision by majority voting. 
+
+<p align="center">
+<img src="../images/mangrove/RandomForest.png" vspace="10" width="600">
+</p>
+
+In GEE, the RF classifier requires to specify the number of trees to use. Additionally, we can specify the maximum number of nodes and seed number. This can help to improve our classification output. We will use 10 trees, with 5 nodes, and a seed of 100. The seed number help to ensure we will have the same output every time we run the script. Once the classifier is set, we proceed to train it with the specific training points and bands.
 
 ```javascript
 // Train Random Forest classifier with 10 trees:
-var rf = ee.Classifier.smileRandomForest(10).train({
+var rf = ee.Classifier.smileRandomForest({
+  numberOfTrees: 10,
+  maxNodes: 5,
+  seed: 100 // Randomization at seed 100
+}).train({
    features: training,
    classProperty: property,
    inputProperties: bands
