@@ -1,4 +1,4 @@
----
+ ---
 layout: page
 title: Classification
 parent: Intermediate Google Earth Engine - Mangrove Mapping
@@ -158,7 +158,7 @@ Map.addLayer(rfMap, vis,'RF');
 <img src="../images/mangrove/T5_3_03.png" vspace="10" width="1000">
 </p>
 
-The classification does not look as the best and not very realistic. We can try to 'clean' areas of no interest, where we can assume mmangrove trees do not grow. We will draw a polygon and then clip it.
+The classification does not look as the best and not very realistic. We can try to 'clean' areas of no interest, where we assume mangrove trees do not grow. We will draw a polygon and then clip it.
 
 ```javascript
 var aoi = 
@@ -244,7 +244,7 @@ var aoi =
 <img src="../images/mangrove/T5_3_04.png" vspace="10" width="1000">
 </p>
 
-Clip the mangrove map to the area of interest, where we assume there is higher probabilities to observe mangrove trees growing.
+Clip the mangrove map to the area of interest, where we assume there are higher probabilities to observe mangrove trees growing.
 
 ```javascript
 // Clean Map
