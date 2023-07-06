@@ -6,7 +6,7 @@ nav_order: 3
 ---
 
 ## Script
-The script of this section is available [here](https://code.earthengine.google.com/129691c331fe7f7b2079117107c674f9).
+The script of this section is available [here](https://code.earthengine.google.com/90d8afd88b278de889c065e6859255de).
 
 # Classification & Accuracy Assessment
 
@@ -92,6 +92,9 @@ var points = ee.FeatureCollection('users/lsandoval-sig/Suriname/Mangrove_samples
 
 // Define bands to sample:
 var bands = ['B1','B2', 'B3', 'B4', 'B5', 'B6', 'B7','B8','B8A','B9','B11', 'DEM', 'NDVI','NDWI'];
+
+// Define product scale (m):
+var scale = 10; // Sentinel-2 at 10 m per pixel.
 
 // Property name containing the mangrove classes.
 var property = 'mangroves';
