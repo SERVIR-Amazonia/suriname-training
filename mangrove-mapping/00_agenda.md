@@ -8,6 +8,10 @@ nav_order: 7
 
 # Intermediate Google Earth Engine - Mangrove Mapping
 
+<p align="center">
+<img src="../images/mangrove/mangrovesAerial.jpg" vspace="10" width="600">
+</p>
+
 Navigate through the different lesson sections by using the menu on the lefthand side or the table of contents below.
 
 ## Session Agenda
