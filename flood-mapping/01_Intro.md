@@ -11,5 +11,5 @@ The script of this section is available [here]().
 # Dataset Identification and Preparation
 
 <p align="center">
-<img src="../images/mangrove/MangroveForest.jpeg" vspace="10" width="600">
+<img src="../images/flood/file.jpeg" vspace="10" width="600">
 </p>
