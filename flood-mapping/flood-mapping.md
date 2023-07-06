@@ -8,6 +8,10 @@ nav_order: 8
 
 # Intermediate Google Earth Engine - Flood Mapping
 
+<p align="center">
+<img src="../images/flood/floodMap.jpg" vspace="10" width="600">
+</p>
+
 Navigate through the different lesson sections by using the menu on the lefthand side or the table of contents below.
 
 ## Session Agenda
