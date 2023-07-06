@@ -115,6 +115,12 @@ If we print the collection of samples, we will see the specific values per band 
 <img src="../images/mangrove/T5_3_02.png" vspace="10" width="400">
 </p>
 
+If we plot those we will see the spectral response of mangroves vs no mangroves points is not very different and have similar ranges at each spectral band. However, some other differences can be observed in the DEM, NDVI, and NDWI data, than help to improve the classification (0: No mangrove, 1: Mangrove).
+
+<p align="center">
+<img src="../images/mangrove/spectraMangroves.png" vspace="10" width="1000">
+</p>
+
 We will split our collection of points into training and validation points. Usually, training set is 80% of the total collection, while the validation set is 20%. The collection of points will be randomly split by adding a column with random numbers using `randomColumn('random')`, and then filtering points higher and lower than 0.8, which is our threshold for spliting the data.
 
 ```javascript
