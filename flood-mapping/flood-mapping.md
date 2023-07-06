@@ -16,4 +16,13 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 **Instructors:** Luis Lizcano-Sandoval (lsandoval@sig-gis.com)
 
-Agenda and Content coming soon...
+
+|      Time     |                                Topics                               |
+|:-------------:|:-------------------------------------------------------------------:|
+| 09:00 – 09:45 |                         |
+| 09:45 – 10:45 |                                       |
+| 10:45 – 11:00 |                             Coffee break                            |
+| 11:00 – 13:00 |             |
+| 13:00 – 14:00 |                                Lunch                                |
+| 14:00 – 15:00 |                                                  |
+
