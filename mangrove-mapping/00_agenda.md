@@ -22,6 +22,6 @@ Navigate through the different lesson sections by using the menu on the lefthand
 | 09:00 – 09:45 | Welcome and GEE Recap from previous sessions                        |
 | 09:45 – 10:45 | Identify and Prepare Datasets                                       |
 | 10:45 – 11:00 |                             Coffee break                            |
-| 11:00 – 12:00 | Mangrove Data Collection                                            |
-| 12:00 – 13:00 |                                Lunch                                |
-| 13:00 – 15:00 | Model Training, Classification, and Accuracy Assessment             |
+| 11:00 – 13:00 | Mangrove Data Collection, Model Training, Classification            |
+| 13:00 – 14:00 |                                Lunch                                |
+| 14:00 – 15:00 | Accuracy Assessment                                                 |
