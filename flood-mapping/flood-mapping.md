@@ -14,6 +14,6 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 **Date**: July 19, 2023
 
-**Instructors:** TBD
+**Instructors:** Luis Lizcano-Sandoval (lsandoval@sig-gis.com)
 
 Agenda and Content coming soon...
