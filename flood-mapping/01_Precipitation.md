@@ -159,3 +159,9 @@ precChartMonthly.setOptions({
 // Print chart
 print(precChartMonthly);
 ```
+
+We can see that March 2022 had the highest precipitation in the period 2019-2022, which coincide with the flooding events in Suriname.
+
+<p align="center">
+<img src="../images/flood/T6_1_03.png" vspace="10" width="600">
+</p>
