@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Introduction
+title: Flood Mapping
 parent: Intermediate Google Earth Engine - Flood Mapping
-nav_order: 1
+nav_order: 2
 ---
 
 ## Script
