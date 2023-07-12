@@ -101,5 +101,61 @@ var years = ee.List.sequence(2019, 2022);
 var sum = ee.Reducer.sum();
 ```
 
+The next function will help to get monthly precipitation data over a defined period of months and years, in a numerically format, as defined in the variables  `months` and `years`. Additionally, for this function to run it is required an image collection, and a specified reducer, which need to be `ee.Reducer.sum()`.
 
+```javascript
+// Function to get time series of monthly precipitation data
+function monthlyData(collection, years, months, reducer){ 
+  var mapYears = years.map(function(y){
+    return months.map(function(m){
+      var process = collection
+                .filter(ee.Filter.calendarRange(y, y, 'year'))
+                .filter(ee.Filter.calendarRange(m, m, 'month'))
+                .reduce(reducer)
+                .set('month', m)
+                .set('year', y)
+                .set("system:time_start", ee.Date.fromYMD(y, m, 1).millis());
+      return process;
+    });
+  });
+  return mapYears;
+}
+```
 
+We proceed to prepare our collection by filtering and applying the function to get monthly precipitation:
+
+```javascript
+// Filter collection
+var prec2 = chirps
+            .filterDate(iniDate, endDate)
+            .filterBounds(pin);
+
+// Apply function and transform data to ee.Images
+var precMonthly = ee.ImageCollection.fromImages(monthlyData(prec2, years, months, sum).flatten());
+```
+
+Now, the collection of the variable `precMonthly` is ready to be plotted:
+
+```javascript
+// Create chart of monthly precipitation:
+var precChartMonthly = ui.Chart.image.seriesByRegion({
+  imageCollection: precMonthly,
+  regions: pin,
+  reducer: ee.Reducer.mean(),
+  scale: 5500,
+});
+
+// Set chart type
+precChartMonthly.setChartType('ColumnChart');
+
+// Chart settings
+precChartMonthly.setOptions({
+  title: 'Monthly Precipitation',
+  vAxis: {
+    title: 'Precipitation (mm)',
+  }
+});
+
+// Print chart
+print(precChartMonthly);
+```
