@@ -87,3 +87,19 @@ print(precChart);
 <p align="center">
 <img src="../images/flood/T6_1_02.png" vspace="10" width="600">
 </p>
+
+Another way to explore the precipitation seasonality and changes over time is plotting time series data. For this example we will calculate monthly precipitation data over the period 2019-01-01 - 2022-12-31. Let's define some variables first:
+
+```javascript
+// Define initial and end dates:
+var iniDate = '2019-01-01';
+var endDate = '2022-12-31';
+
+// List of months and years of interest, and create reducer
+var months = ee.List.sequence(1, 12);
+var years = ee.List.sequence(2019, 2022);
+var sum = ee.Reducer.sum();
+```
+
+
+
