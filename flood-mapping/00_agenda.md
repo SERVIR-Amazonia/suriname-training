@@ -23,10 +23,10 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 |      Time     |                                Topics                               |
 |:-------------:|:-------------------------------------------------------------------:|
-| 09:00 – 09:45 |                         |
-| 09:45 – 10:45 |                                       |
+| 09:00 – 09:30 |  Mangrove Mapping Recap, Q&A                                        |
+| 09:30 – 10:45 |  Precipitation Data                                                 |
 | 10:45 – 11:00 |                             Coffee break                            |
-| 11:00 – 13:00 |             |
+| 11:00 – 13:00 |  Flood Mapping Using SAR Data                                       |
 | 13:00 – 14:00 |                                Lunch                                |
-| 14:00 – 15:00 |                                                  |
+| 14:00 – 15:00 |  Continuation, Final Remarks, Q&A                                   |
 
