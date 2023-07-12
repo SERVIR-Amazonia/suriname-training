@@ -65,7 +65,7 @@ We need to print the variable containing the chart to visualize it. But, before 
 var precChart = ui.Chart.image.seriesByRegion({
   imageCollection: prec,
   regions: pin,
-  reducer: ee.Reducer.mean(),
+  reducer: ee.Reducer.sum(),
   scale: 5500,
 });
 
