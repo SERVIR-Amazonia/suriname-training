@@ -12,6 +12,13 @@ The script of this section is available [here]().
 
 In this section, we will review how to import, visualize, and get precipitation data. High precipitation levels can determine whether floodings are observed. We will use the [CHIRPS (Climate Hazards Group InfraRed Precipitation With Station Data) daily data](https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY), which provides daily global data at 5.5 km from 1981 to present.
 
+## Steps
+1. Import collections and visualize precipitation map
+2. Create a chart
+3. Time series of monthly data
+
+
+## 1. Import collections and visualize precipitation map
 ```javascript
 // Define country boundaries
 var suriname = ee.FeatureCollection("USDOS/LSIB/2017")
@@ -43,6 +50,8 @@ Map.addLayer(precMonth,{min:0, max:850, palette:palette},'Precipitation');
 <img src="../images/flood/T6_1_01.png" vspace="10" width="600">
 </p>
 
+## 2. Create a chart
+
 We can get daily values of precipitation at an individual point or location for March 2022 and plot it. In this case, we require to draw a point in the area where higher precipitations were observed, and then create a chart using the `ui.Chart.image.seriesByRegion()` function.
 
 ```javascript
@@ -61,14 +70,6 @@ var precChart = ui.Chart.image.seriesByRegion({
 We need to print the variable containing the chart to visualize it. But, before doing that let's set some settings. We can set the type of chart by using `.setChartType()` and set more options with `.setOptions()`. We will use the `'ColumnChart'` type, but other types are available such as `'ScatterChart', 'LineChart', 'BarChart','PieChart', 'AreaChart'`. More info about chart styling can be found [here](https://developers.google.com/earth-engine/guides/charts_style).
 
 ```javascript
-// Create chart of monthly precipitation:
-var precChart = ui.Chart.image.seriesByRegion({
-  imageCollection: prec,
-  regions: pin,
-  reducer: ee.Reducer.sum(),
-  scale: 5500,
-});
-
 // Set chart type
 precChart.setChartType('ColumnChart');
 
@@ -87,6 +88,8 @@ print(precChart);
 <p align="center">
 <img src="../images/flood/T6_1_02.png" vspace="10" width="600">
 </p>
+
+## 3. Time series of monthly data
 
 Another way to explore the precipitation seasonality and changes over time is plotting time series data. For this example we will calculate monthly precipitation data over the period 2019-01-01 - 2022-12-31. Let's define some variables first:
 
