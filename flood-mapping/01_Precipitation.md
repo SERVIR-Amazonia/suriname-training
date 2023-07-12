@@ -59,3 +59,31 @@ var precChart = ui.Chart.image.seriesByRegion({
 ```
 
 We need to print the variable containing the chart to visualize it. But, before doing that let's set some settings. We can set the type of chart by using `.setChartType()` and set more options with `.setOptions()`. We will use the `'ColumnChart'` type, but other types are available such as `'ScatterChart', 'LineChart', 'BarChart','PieChart', 'AreaChart'`. More info about chart styling can be found [here](https://developers.google.com/earth-engine/guides/charts_style).
+
+```javascript
+// Create chart of monthly precipitation:
+var precChart = ui.Chart.image.seriesByRegion({
+  imageCollection: prec,
+  regions: pin,
+  reducer: ee.Reducer.mean(),
+  scale: 5500,
+});
+
+// Set chart type
+precChart.setChartType('ColumnChart');
+
+// Chart settings
+precChart.setOptions({
+  title: 'Daily Precipitation',
+  vAxis: {
+    title: 'Precipitation (mm)',
+  }
+});
+
+// Print chart
+print(precChart);
+```
+
+<p align="center">
+<img src="../images/flood/T6_1_02.png" vspace="10" width="600">
+</p>
