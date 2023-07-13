@@ -25,6 +25,7 @@ We will do flood mapping of the [flooding events reported on March 2022 in Surin
 1. Import collections
 2. Filter images before/after the event
 3. Detect flooded areas
+4. Estimate flooded area
 
 ## 1. Import collections
 
@@ -76,7 +77,88 @@ Additionally, we printed the filtered collection and the date of each image in a
 
 ## 2. Filter images before/after the event
 
+Once the collections are ready to be used, we will filter the SAR collection to get images from any day before the floods and the closest day after the flood.
+
+```javascript
+// Filter images BEFORE the event and apply filter to reduce noise:
+var sarBefore = sar.filterDate('2022-01-16','2022-01-17')
+                  .mean()
+                  .focalMean(10);
+
+// Filter images AFTER the event and apply filter to reduce noise:
+var sarAfter = sar.filterDate('2022-03-17','2022-03-18')
+                  .mean()
+                  .focalMean(10);
+
+// Visualize BEFORE and AFTER images:
+var sarVis = {min:-15, max:0, palette:['blue','white', 'white']};
+Map.addLayer(sarBefore, sarVis, 'SAR_Before');
+Map.addLayer(sarAfter, sarVis, 'SAR_After');
+```
+
+
 
 
 ## 3. Detect flooded areas
 
+
+```javascript
+// Get the difference between the before and after images.
+// And set a threshold for obtaining flooded pixels
+var diff = sarAfter.subtract(sarBefore);
+Map.addLayer(diff,{min: -3, max:4, palette:['red','white','white','white','blue']},'Difference',false);
+```
+
+
+```javascript
+// A threshold value between -2 and -3 seems to be OK
+var thr = diff.lt(-2).clip(aoi);
+Map.addLayer(thr.selfMask(),{palette:'red'},'Flooding Pixels',false);
+```
+
+
+```javascript
+// Optionally export the flooding pixels image to assets:
+Export.image.toAsset({
+  image: thr.selfMask(),
+  description: 'Flooding_Suriname',
+  assetId: 'Suriname/Flooding_Suriname',
+  region: aoi,
+  scale: 10,
+  crs: 'EPSG:4326',
+  maxPixels: 1e13
+});
+
+// Import flooding pixels image if it was exported
+var thr = ee.Image('users/lsandoval-sig/Suriname/Flooding_Suriname').mask();
+```
+
+```javascript
+// Merge the JRC and flooding layers to create a flooding map:
+var flood = jrc.mask()
+               .add(thr.multiply(2))
+               .selfMask();
+Map.addLayer(flood,{palette:['blue','red'],min:1,max:2},'Flooding Map',false);
+```
+
+
+## 4. Estimate flooded area
+
+
+```javascript
+/////////////  Estimate Flooded Area  //////////////
+var area = flood.eq(2).multiply(ee.Image.pixelArea());
+
+// Apply reducer to sum areas per pixel
+var reducerArea = area.reduceRegion({
+  reducer: ee.Reducer.sum(),
+  geometry: aoi,
+  scale: 10,
+  crs: 'EPSG:4326',
+  maxPixels: 1e15
+  });
+
+// Convert m^2 to km^2
+var areaSqKm = ee.Number(reducerArea.get('occurrence')).divide(1e6);
+print('Flooded Area (km^2):',areaSqKm);
+```
