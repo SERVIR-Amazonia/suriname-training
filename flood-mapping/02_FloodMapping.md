@@ -28,6 +28,50 @@ We will do flood mapping of the [flooding events reported on March 2022 in Surin
 
 ## 1. Import collections
 
+We will import the Sentinel-1 collection, the Suriname boundary, and the [JRC collection of global surface](https://developers.google.com/earth-engine/datasets/catalog/JRC_GSW1_4_GlobalSurfaceWater). The JRC collection provides water occurrence at 30 m per pixel and will help to identify water bodies of Suriname, before detecting floods.
+
+```javascript
+// Reported flooding events on March 10, 2022.
+// Let's set a wide time range between January and May
+var ini = '2022-01-01';
+var end = '2022-05-30';
+
+// Define country boundaries
+var suriname = ee.FeatureCollection("USDOS/LSIB/2017")
+                .filter(ee.Filter.eq('COUNTRY_NA','Suriname'));
+Map.addLayer(suriname, {}, 'Suriname');
+
+// Import JRC collection of global surface water:
+var jrc = ee.Image("JRC/GSW1_4/GlobalSurfaceWater")
+            .select('occurrence')
+            .clip(suriname)
+            .gt(40).selfMask();
+
+Map.addLayer(jrc,{palette:['#001eff']},'Water Occurrence');
+```
+
+The Sentinel-1 collection will be filtered using several properties to get specific images. We will use images with VV polarization, interferometric wide swath mode (IW mode - see more [here](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/acquisition-modes)), and 10 m resolution. The time period to filter will be from January 2022 to May 2022.
+
+```javascript
+// Prepare the Sentinel-1 collection
+var sar = ee.ImageCollection("COPERNICUS/S1_GRD")
+          .filterBounds(aoi)
+          .filterDate(ini, end)
+          .filter(ee.Filter.eq('instrumentMode', 'IW'))
+          .filterMetadata('resolution_meters', 'equals', 10)
+          .select('VV');
+
+// Collection details
+print('SAR Collection:', sar);
+print('Dates:', sar.aggregate_array('system:time_start')
+                      .map(function(x){return ee.Date(x)}));
+```
+
+Additionally, we printed the filtered collection and the date of each image in a readable format.
+
+<p align="center">
+<img src="../images/flood/T6_2_02.png" vspace="10" width="500">
+</p>
 
 
 ## 2. Filter images before/after the event
