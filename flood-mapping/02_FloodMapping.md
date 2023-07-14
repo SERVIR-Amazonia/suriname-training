@@ -51,7 +51,7 @@ var jrc = ee.Image("JRC/GSW1_4/GlobalSurfaceWater")
 Map.addLayer(jrc,{palette:['#001eff']},'Water Occurrence');
 ```
 
-The Sentinel-1 collection will be filtered using several properties to get specific images. We will use images with VV polarization, interferometric wide swath mode (IW mode - see more [here](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/acquisition-modes)), and 10 m resolution. The time period to filter will be from January 2022 to May 2022.
+The Sentinel-1 collection will be filtered using several properties to get specific images. We will use images with VV polarization, interferometric wide swath mode (IW mode - see more [here](https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-1-sar)), and 10 m resolution. The time period to filter will be from January 2022 to May 2022.
 
 ```javascript
 // Prepare the Sentinel-1 collection
@@ -77,7 +77,7 @@ Additionally, we printed the filtered collection and the date of each image in a
 
 ## 2. Filter images before/after the event
 
-Once the collections are ready to be used, we will filter the SAR collection to get images from any day before the floods and the closest day after the flood.
+Once the collections are ready to be used, we will filter the SAR collection to get images from any day before the floods and the closest day after the flood. In this example, we will use images from 2022-01-16 and 2022-03-17 for the before and after, respectively. Unfortunately, there was no enough record of images between March 5 and March 17, when the flooding was at its maximum.
 
 ```javascript
 // Filter images BEFORE the event and apply filter to reduce noise:
@@ -96,11 +96,15 @@ Map.addLayer(sarBefore, sarVis, 'SAR_Before');
 Map.addLayer(sarAfter, sarVis, 'SAR_After');
 ```
 
+Note we used the function `.focalMean()`, which helps to reduce the pixel noise, usual in SAR images due to backscattering and interferences. In this case, we applied the focal mean in a window of 10x10 pixels.
 
-
+<p align="center">
+<img src="../images/flood/T6_2_03.png" vspace="10" width="800">
+</p>
 
 ## 3. Detect flooded areas
 
+It is time to detect pixels that can be considered as flooded areas. Unfortunately, there were not images some days before March 17, when the flooding was its maximum in the locations of interest. The first step to detect flooded areas is to get a difference of pixel values between the before and after images.
 
 ```javascript
 // Get the difference between the before and after images.
@@ -108,6 +112,12 @@ Map.addLayer(sarAfter, sarVis, 'SAR_After');
 var diff = sarAfter.subtract(sarBefore);
 Map.addLayer(diff,{min: -3, max:4, palette:['red','white','white','white','blue']},'Difference',false);
 ```
+
+In this case, there is a good example of pixels representing flooded areas (in red) in between the Southwest Brokopondo resorvoir and Northwest Pokigron village.
+
+<p align="center">
+<img src="../images/flood/T6_2_04.png" vspace="10" width="700">
+</p>
 
 
 ```javascript
