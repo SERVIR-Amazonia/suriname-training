@@ -187,5 +187,5 @@ We can see that March 2022 had the highest precipitation in the period 2019-2022
 3. Get monthly precipitation data of only January from 2000 to 2022, just change the list sequence values of the variable *months* to work with only this month. Plot it as a `ColumnChart`. Where do you see the lowest and highest precipitation over 2000-2022?
 
 <p align="center">
-<img src="../images/flood/T6_1_05.png" vspace="10" width="600">
+<img src="../images/flood/T6_1_06.png" vspace="10" width="600">
 </p>
