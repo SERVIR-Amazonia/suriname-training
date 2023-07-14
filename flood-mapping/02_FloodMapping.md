@@ -110,7 +110,7 @@ It is time to detect pixels that can be considered as flooded areas. Unfortunate
 // Get the difference between the before and after images.
 // And set a threshold for obtaining flooded pixels
 var diff = sarAfter.subtract(sarBefore);
-Map.addLayer(diff,{min: -3, max:4, palette:['red','white','white','white','blue']},'Difference',false);
+Map.addLayer(diff,{min: -3, max:4, palette:['red','white','white','white','blue']},'Difference');
 ```
 
 In this case, there is a good example of pixels representing flooded areas (in red) in between the Southwest Brokopondo resorvoir and Northwest Pokigron village.
@@ -119,13 +119,19 @@ In this case, there is a good example of pixels representing flooded areas (in r
 <img src="../images/flood/T6_2_04.png" vspace="10" width="700">
 </p>
 
+When we use the *inspector* tool over those pixels in red well see some values, which can be from different magnitudes in different cases. In this case, we can see that pixels around -2 and -3 are indicating there was a flood, when we compared the images before and after. This process is made visually, there is no a specific threshold value for indicaing flooding. So, let's use the function `.lt(-2)` on the image in the variable *diff*. This will create a mask image that we can visualize better by using the function `.selfMask()` to keep only valid (or unmasked) pixels.
 
 ```javascript
 // A threshold value between -2 and -3 seems to be OK
 var thr = diff.lt(-2).clip(aoi);
-Map.addLayer(thr.selfMask(),{palette:'red'},'Flooding Pixels',false);
+Map.addLayer(thr.selfMask(),{palette:'red'},'Flooding Pixels');
 ```
 
+<p align="center">
+<img src="../images/flood/T6_2_05.png" vspace="10" width="700">
+</p>
+
+Optionally, to improve performance of the next blocks of code we can export this image to our assets and then import it, and convert it to a mask again.
 
 ```javascript
 // Optionally export the flooding pixels image to assets:
@@ -143,17 +149,26 @@ Export.image.toAsset({
 var thr = ee.Image('users/lsandoval-sig/Suriname/Flooding_Suriname').mask();
 ```
 
+Now, for visualization purposes we can try to merge the JRC layer with our flood map. We will need to differentiate the pixels from both images. We will keep pixels indicating water from the JRC image as 1, and the pixels indicating flooding as 2. So, we will multiply the flood map by 2. Remember that hose pixels already have a value of 1. Use the *inspector* tool to explore pixel values from each image.
+
 ```javascript
 // Merge the JRC and flooding layers to create a flooding map:
 var flood = jrc.mask()
                .add(thr.multiply(2))
                .selfMask();
-Map.addLayer(flood,{palette:['blue','red'],min:1,max:2},'Flooding Map',false);
+Map.addLayer(flood,{palette:['blue','red'],min:1,max:2},'Flooding Map');
 ```
+
+THe final product will look like this, in red the flooded areas:
+
+<p align="center">
+<img src="../images/flood/T6_2_06.png" vspace="10" width="700">
+</p>
 
 
 ## 4. Estimate flooded area
 
+We can estimate the flooded area from our whole region of interest. In this case, as we are interested only on those pixels indicating flooding we need to select pixels with value of 2 from our flood map. Then apply the reducer to sum pixel areas and convert the areas to km2.
 
 ```javascript
 /////////////  Estimate Flooded Area  //////////////
@@ -172,3 +187,5 @@ var reducerArea = area.reduceRegion({
 var areaSqKm = ee.Number(reducerArea.get('occurrence')).divide(1e6);
 print('Flooded Area (km^2):',areaSqKm);
 ```
+
+The estimated flooded area is 265 km2.
