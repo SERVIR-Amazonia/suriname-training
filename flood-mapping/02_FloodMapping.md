@@ -189,3 +189,50 @@ print('Flooded Area (km^2):',areaSqKm);
 ```
 
 The estimated flooded area is 265 km2.
+
+
+## Extra tool
+
+We can create a split panel to visualize and compare two images at the same time, ideal for visualizing changes or two different stages of a same location.
+
+Let's create two 'empty' maps a put them in two variables:
+
+```javascript
+// Put "empty" maps for left and right side in two different variables
+var leftMap = ui.Map();
+var rightMap = ui.Map();
+```
+
+Then, we can add respective maps or layers in each one. Let's use our before and after images:
+
+```javascript
+// Add layers to each map:
+leftMap.addLayer(sarBefore, rgbVis, 'SAR_Before');
+rightMap.addLayer(sarAfter, rgbVis, 'SAR_After');
+```
+
+We create our split panel and specify wich maps are going to be in the left and right sides, respectively. Additionally, we specify the we want an *horizontal* orientation and a *wipe* tool.
+
+```javascript
+// Create split panel and define map positions
+var split = ui.SplitPanel({
+  firstPanel: leftMap,
+  secondPanel: rightMap,
+  orientation: 'horizontal',
+  wipe: true,
+  style: {stretch: 'both'}
+});
+```
+
+Finally, we need to make sure to erase all the previous layers visualized in our code by using a *reset* and adding our variable *split* containing the split panel. We use a *linker* to synchronize the view of both maps, and center the view.
+
+```javascript
+// Make sure to reset all previous layers and keep the new ones:
+ui.root.widgets().reset([split]);
+
+// Link the view of both maps
+var linker = ui.Map.Linker([leftMap, rightMap]);
+
+// Center view:
+leftMap.centerObject(suriname, 8);
+```
