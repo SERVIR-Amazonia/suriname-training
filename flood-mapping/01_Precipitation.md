@@ -168,3 +168,24 @@ We can see that March 2022 had the highest precipitation in the period 2019-2022
 <p align="center">
 <img src="../images/flood/T6_1_03.png" vspace="10" width="600">
 </p>
+
+
+## Exercises
+
+1. How does the precipitation data look if we move our *pin* to the city of Paramaribo and run the script? Is the precipitation cicle look different than i our previous location?
+
+<p align="center">
+<img src="../images/flood/T6_1_04.png" vspace="10" width="600">
+</p>
+
+2. Now, get the montly precipitation data from 2000 to 2022 and plot the data as a `LineChart`. Where do you see the highest precipitation ver this period?
+
+<p align="center">
+<img src="../images/flood/T6_1_05.png" vspace="10" width="600">
+</p>
+
+3. Get monthly precipitation data of only January from 2000 to 2022, just change the list sequence values of the variable *months* to work with only this month. Plot it as a `ColumnChart`. Where do you see the lowest and highest precipitation over 2000-2022?
+
+<p align="center">
+<img src="../images/flood/T6_1_05.png" vspace="10" width="600">
+</p>
