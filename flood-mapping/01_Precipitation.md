@@ -172,7 +172,7 @@ We can see that March 2022 had the highest precipitation in the period 2019-2022
 
 ## Exercises
 
-1. How does the precipitation data look if we move our *pin* to the city of Paramaribo and run the script? Is the precipitation cicle look different than our previous location?
+1. How does the precipitation data look if we move our *pin* to the city of Paramaribo and run the script? Is the precipitation cycle look different than the previous location?
 
 <p align="center">
 <img src="../images/flood/T6_1_04.png" vspace="10" width="600">
