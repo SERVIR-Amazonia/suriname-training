@@ -191,7 +191,7 @@ print('Flooded Area (km^2):',areaSqKm);
 The estimated flooded area is 265 km2.
 
 
-## Extra tool
+## Extra: Split panel
 
 We can create a split panel to visualize and compare two images at the same time, ideal for visualizing changes or two different stages of a same location.
 
@@ -236,3 +236,9 @@ var linker = ui.Map.Linker([leftMap, rightMap]);
 // Center view:
 leftMap.centerObject(suriname, 8);
 ```
+
+<p align="center">
+<img src="../images/flood/T6_2_07.gif" vspace="10" width="700">
+</p>
+
+We have completed the training on flood mapping in GEE!
