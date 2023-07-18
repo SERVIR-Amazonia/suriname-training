@@ -113,7 +113,7 @@ var diff = sarAfter.subtract(sarBefore);
 Map.addLayer(diff,{min: -3, max:4, palette:['red','white','white','white','blue']},'Difference');
 ```
 
-In this case, there is a good example of pixels representing flooded areas (in red) in between the Southwest Brokopondo resorvoir and Northest Pokigron village.
+In this case, there is a good example of pixels representing flooded areas (in red) in between the Southwest Brokopondo resorvoir and Northeast Pokigron village.
 
 <p align="center">
 <img src="../images/flood/T6_2_04.png" vspace="10" width="700">
@@ -159,7 +159,7 @@ var flood = jrc.mask()
 Map.addLayer(flood,{palette:['blue','red'],min:1,max:2},'Flooding Map');
 ```
 
-THe final product will look like this, in red the flooded areas:
+The final product will look like this, in red the flooded areas:
 
 <p align="center">
 <img src="../images/flood/T6_2_06.png" vspace="10" width="700">
