@@ -113,7 +113,7 @@ var diff = sarAfter.subtract(sarBefore);
 Map.addLayer(diff,{min: -3, max:4, palette:['red','white','white','white','blue']},'Difference');
 ```
 
-In this case, there is a good example of pixels representing flooded areas (in red) in between the Southwest Brokopondo resorvoir and Northwest Pokigron village.
+In this case, there is a good example of pixels representing flooded areas (in red) in between the Southwest Brokopondo resorvoir and Northest Pokigron village.
 
 <p align="center">
 <img src="../images/flood/T6_2_04.png" vspace="10" width="700">
