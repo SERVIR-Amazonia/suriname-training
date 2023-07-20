@@ -21,8 +21,7 @@ In this section, we will review how to import, visualize, and get precipitation 
 ## 1. Import collections and visualize precipitation map
 ```javascript
 // Define country boundaries
-var suriname = ee.FeatureCollection("USDOS/LSIB/2017")
-                .filter(ee.Filter.eq('COUNTRY_NA','Suriname'));
+var suriname = ee.FeatureCollection('projects/caribbean-trainings/assets/suriname-2023/boundary');
 Map.addLayer(suriname, {}, 'Suriname');
 
 // Import the CHIRPS daily precipitation data:
