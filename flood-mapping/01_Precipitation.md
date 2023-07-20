@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 ## Script
-The script of this section is available [here](https://code.earthengine.google.com/7d46f44a3fadd6ae116c7e08144eeabf).
+The script of this section is available [here](https://code.earthengine.google.com/97381edb55d2dc3032a2424b83c1b0c9).
 
 # Precipitation Data
 
