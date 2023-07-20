@@ -6,7 +6,7 @@ nav_order: 2
 ---
 
 ## Script
-The script of this section is available [here](https://code.earthengine.google.com/fc46135953363d61c4e79e4236701a50).
+The script of this section is available [here](https://code.earthengine.google.com/dc06b45c23cfc494e9bbf77374c6e389).
 
 # Flood Mapping
 
