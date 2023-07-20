@@ -38,8 +38,7 @@ var ini = '2022-01-01';
 var end = '2022-05-30';
 
 // Define country boundaries
-var suriname = ee.FeatureCollection("USDOS/LSIB/2017")
-                .filter(ee.Filter.eq('COUNTRY_NA','Suriname'));
+var suriname = ee.FeatureCollection('projects/caribbean-trainings/assets/suriname-2023/boundary');
 Map.addLayer(suriname, {}, 'Suriname');
 
 // Import JRC collection of global surface water:
