@@ -98,9 +98,9 @@ var chart2 = ui.Chart.image
 print(chart2);
 ```
 
-<img align="center" src="../images/change-detection-1/spectralsignature_chart.png" hspace="15" vspace="10" width="600">
+<img align="center" src="../images/change-detection-1/spectralsignature_chart.png" hspace="15" vspace="10" width="700">
 
-<img align="center" src="../images/change-detection-1/index_chart.png" hspace="15" vspace="10" width="600">
+<img align="center" src="../images/change-detection-1/index_chart.png" hspace="15" vspace="10" width="700">
 
 # Run Random Forest Classification
 
@@ -261,6 +261,6 @@ Where was forest gained or lost? Do you think some of these "changes" might just
 
 # Result Reliability
 
-It is important to remember that in such two-date change detection with simple differencing between land cover classifications or spectral indices, many errors are propogated through the process and are inherently present in your final results.  For example, there are errors in the satellite data (sensor failures), errors in the preprocessing algorithms (both what is done by the data creators like NASA/ESA and what is done by you), errors in the sample data (you incorrectly identified forest as agriculture or urban as bare soil), and errors in the classification (misclassifications where spectral differences were similar or training data was poor). It is also very difficult to quantify these errors, and it is hard to know what is an over- or underestimate of the true values.  There are several ways to minimize these errors - or at least statistically quantify their direction and magnitude.  One of these is [time series change detection](https://servir-amazonia.github.io/suriname-training/change-detection-2), which is covered in the next lesson, and another is [sample-based map validation and area estimation](https://servir-amazonia.github.io/guyana-training/ceo), which is partially covered in a later lesson.
+It is important to remember that in such two-date change detection with simple differencing between land cover classifications or spectral indices, many errors are propogated through the process and are inherently present in your final results.  For example, there are errors in the satellite data (sensor failures or cloud cover), errors in the preprocessing algorithms (what is done by the data creators (like NASA/ESA) and what is done by you), errors in the sample data (you incorrectly identify forest as agriculture or urban as bare soil), and errors in the classification (misclassifications where spectral differences are similar or training data is poor). It is also very difficult to quantify these errors, and it is hard to know whether they are over- or underestimates of the true values.  There are several ways to minimize these errors - or at least statistically quantify their direction and magnitude.  One of these is [time series change detection](https://servir-amazonia.github.io/suriname-training/change-detection-2), which is covered in the next lesson, and another is [sample-based map validation and area estimation](https://servir-amazonia.github.io/guyana-training/ceo), which is partially covered in a later lesson.
 
 Code Checkpoint: [https://code.earthengine.google.com/a8022f1bde4e04735e6a2957b6fab6e8](https://code.earthengine.google.com/a8022f1bde4e04735e6a2957b6fab6e8)

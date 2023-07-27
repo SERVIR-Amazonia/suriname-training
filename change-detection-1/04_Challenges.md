@@ -27,23 +27,22 @@ Conduct an accuracy assessment on both of your land cover maps for Year 1 and Ye
 
 ### **Your actual maps and values will look different from the ones below if you use a different date range of interest, area of interest, or training data.  This is just *roughly* what they should look like.**
 
+Uncomment the code at the bottom to get challenge solutions: [https://code.earthengine.google.com/7e90a6699ce0c91f96f0343617d49929](https://code.earthengine.google.com/7e90a6699ce0c91f96f0343617d49929)
+
 ## Challenge 1
 
 <img align="center" src="../images/change-detection-1/landcoverarea_print.png" hspace="15" vspace="10" width="300">
 
 ## Challenge 2 
 
-<img align="center" src="../images/change-detection-1/waterchange.png" hspace="15" vspace="10" height="400">
-<img align="center" src="../images/change-detection-1/urbanchange.png" hspace="15" vspace="10" height="400">
-<img align="center" src="../images/change-detection-1/agriculturechange.png" hspace="15" vspace="10" height="400">
-<img align="center" src="../images/change-detection-1/baresoilchange.png" hspace="15" vspace="10" height="400">
+<img align="center" src="../images/change-detection-1/waterchange.png" hspace="15" vspace="10" width="300">
+<img align="center" src="../images/change-detection-1/urbanchange.png" hspace="15" vspace="10" width="300">
+<img align="center" src="../images/change-detection-1/agriculturechange.png" hspace="15" vspace="10" width="300">
+<img align="center" src="../images/change-detection-1/baresoilchange.png" hspace="15" vspace="10" width="300">
 
 <img align="center" src="../images/change-detection-1/forestchange_detailed.png" hspace="15" vspace="10" width="600">
 
 ## Challenge 3
 
-<img align="center" src="../images/change-detection-1/accuracyy1_print.png" hspace="15" vspace="10" width="300">
+<img align="center" src="../images/change-detection-1/accuracy_print.png" hspace="15" vspace="10" width="300">
 
-<img align="center" src="../images/change-detection-1/accuracyy2_print.png" hspace="15" vspace="10" width="300">
-
-Uncomment the code at the bottom to get challenge solutions: [https://code.earthengine.google.com/7e90a6699ce0c91f96f0343617d49929](https://code.earthengine.google.com/7e90a6699ce0c91f96f0343617d49929)
