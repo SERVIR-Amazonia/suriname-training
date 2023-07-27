@@ -104,7 +104,7 @@ print(chart2);
 
 # Run Random Forest Classification
 
-We choose a classifier algorithm from `ee.Classifier` family of functions, and train it on the `training_y1` and `training_y2` `FeatureCollection`s with `train()`. We must specify the `classProperty` to be the property we want to map, or predict, with the model, and the `inputProperties` as the Landsat band and index values defined by the `predictionBands` variable. Then, we run the classifier on the `preImage` and `postImage` with `classify()`
+We choose a classifier algorithm from `ee.Classifier` family of functions, and train it on the `training_y1` and `training_y2` `FeatureCollection`s with `train()`. We must specify the `classProperty` to be the property we want to map, or predict, with the model, and the `inputProperties` as the Landsat band and index values defined by the `predictionBands` variable. Then, we run the classifier on the `preImage` and `postImage` with `classify()`.
 
 We use a Random Forest classifier, which puts each individual pixel through many decision trees (with some random element to them) that each place the pixel in one of our pre-defined classes based on the pixel's spectral similarity to our training points. The final class of the pixel will be the class that the majority of the decision trees gave that pixel.  We print out our decision trees to see how the classifier decided to categorize pixels based on their spectral values.
 
@@ -157,6 +157,7 @@ var classVis = {min:1,max:5,palette:['00a661','00a0cd','a40000', 'd5ff6a','d3d2c
 Map.addLayer(RFclassification_y1,classVis,'Year 1 - classification')
 Map.addLayer(RFclassification_y2,classVis,'Year 2 - classification')
 ```
+Display the results, and modify the color palette if needed.
 
 <img align="center" src="../images/change-detection-1/RFclassification.png" hspace="15" vspace="10" width="600">
 
@@ -210,7 +211,9 @@ print('Forested Area - year 2 (km^2):',areaSqKmForest_y2);
 
 # Create Change Map
 
-Lastly, we create a map showing gains, losses, and stable areas of each land cover type.  We do this by writing a function that checks what whether the `landcover` was forest in both Year 1 and Year 2, and creates a new bands called `change` in which it labels the pixel as either loss, gain, or stable based on those original `landcover` values.
+The last step classifying our image into a thematic map consisting of stable and change classes. This can be done rather simply by creating rules or thresholds based on the differences in land cover or index values. In the end, resources, timing, and the patterns of the phenomenon you are trying to map will determine which approach is suitable — or perhaps the activity you are trying to track requires something more advanced, such as a time-series approach that uses more than two dates of imagery.
+
+Here, we create a map showing gains, losses, and stable areas of each land cover type.  We do this by writing a function that checks what whether the `landcover` was forest in both Year 1 and Year 2, and creates a new bands called `change` in which it labels the pixel as either loss, gain, or stable based on those original `landcover` values.
 
 Here, we do this process just for our Forest class, but it can be done for all the other classes as well!
 

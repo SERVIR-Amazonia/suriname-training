@@ -52,7 +52,7 @@ Landsat data comes in a variety of "Levels", "Collections", and "Tiers", based o
 
 <img align="center" src="../images/change-detection-1/landsat5_imagecollection.png" hspace="15" vspace="10" width="600">
 
-We always want to apply filters to `ImageCollections` as early in our workflow as we can to reduce the amount of effort the GEE servers will require. We already know the area that we'd like to pull data for (our AOI), and that we want relatively few clouds in our images, so we apply a boundary and a cloud cover filter.
+We always want to apply filters to `ImageCollections` as early in our workflow as we can to reduce the amount of effort the GEE servers will require. We already know the area that we'd like to pull data for our AOI, and that we want relatively few clouds in our images, so we apply a boundary and a cloud cover filter.
 
 *Tip: Since there are differences in the amount and the order of bands on each Landsat mission, we use a dictionary (`sensorBandDictLandsatSR`) and a list (`bandNamesLandsatSR`) to standardize this information for us going forward using `select()` - it saves us quite a bit of typing when doing this for multiple collections.*
 
@@ -165,15 +165,17 @@ function applyScaleFactors(image) {
 }
 ```
 
-In the third function, we generate several spectral indices from the pre-existing spectral bands that might be useful for distinguishing between different land cover classes. The indices are added as new bands to each image.  They are all normalized difference indinces, so their values range from -1 to 1.
+In the third function, we generate several spectral indices from the pre-existing spectral bands that might be useful for distinguishing between different land cover classes. The indices are added as new bands to each image.  In the indeces we are using, the difference of the variables divided is by their sum.  This is referred to as a **normalized difference** equation, and the resulting value will always fall between −1 and 1.  First, we calculate the indices using the built-in `normalizedDifference()` function. Then, rename each image band with the built-in `rename()` function.
 
 Working with indices known to highlight the land cover conditions before and after a change event of interest is a good starting point for any change detection workflow. For example, the Normalized Difference Water Index is good for mapping water level changes during flooding events; the Normalized Burn Ratio is good at detecting soil brightness; and the Normalized Difference Vegetation Index is good for tracking changes in vegetation (although this index does saturate quickly). In some cases, using derived band combinations that have been customized to represent the phenomenon of interest is is best, such as using the Normalized Difference Fraction Index to monitor forest degradation.
 
-**NDVI:** Normalized Difference Vegetation Index - quantifies vegetation by measuring the difference between near-infrared (which vegetation strongly reflects) and red light (which vegetation absorbs)
+- **NDVI:** Normalized Difference Vegetation Index - vegetation health/presence; quantifies vegetation by measuring the difference between near-infrared (which vegetation strongly reflects) and red light (which vegetation absorbs)
 
-**NDMI:** Normalized Difference Moisture Index - determines vegetation water content (calculated as a ratio between the NIR and SWIR values)
+- **NDMI:** Normalized Difference Moisture Index - vegetation water content; determines vegetation water content (calculated as a ratio between the NIR and SWIR values)
 
-**MNDWI:** Modified Normalized Difference Water Index - uses green and SWIR bands for the enhancement of open water features (diminishes built-up area features that are often correlated with open water in other indices)
+- **MNDWI:** Modified Normalized Difference Water Index - open water; uses green and SWIR bands for the enhancement of open water features (diminishes built-up area features that are often correlated with open water in other indices)
+
+Looking at the spectral curves of different objects, we can begin to pick out which bands (wavelengths) of light can be most useful in making indices that distinguish between these different objects.
 
 <img align="center" src="../images/change-detection-1/spectralsignatures.png" hspace="15" vspace="10" width="600">
 
@@ -260,9 +262,9 @@ Map.addLayer(firstPreProcessed,
 
 # Composite Landsat Data
 
-Now, let's merge our preprocessed Landsat `ImageCollection`s together into one. We now have a single `ImageCollection` consisting of data from multiple Landsat sensors for our area and date range of interest. 
+Now, let's merge our preprocessed Landsat `ImageCollection`s into one. We will have a single `ImageCollection` consisting of data from multiple Landsat sensors for our area and date range of interest. 
 
-We also need to choose two specific date ranges with which we'll train our land cover classification models. We also need to reduce the size of our input data by making a composite of the `ImageCollection` and clipping it to our AOI.
+Then, we need to choose two specific date ranges with which we'll train our land cover classification models. We also need to reduce the size of our input data by making a composite of the `ImageCollection` for each date range and clipping it to our AOI.
 
 Right now, we will look at 2015 and 2022.  We use the `.median()` function to select the median value for every pixel in that date range.  Median is the measure of central tendency that is most resistant to extreme outliers, which are a frequent occurrence due to errors in satellite data (extremely bright or dark pixels).  Try out the other aggregating functions.  How would these change the values and the meanings of your maps?
 
@@ -301,11 +303,11 @@ var postImage = mergedLandsat
 // .min(); .max(); .mean(); .median()
 ```
 
-Before running any sort of change detection analysis, it is useful to first visualize your input images to get a sense of the landscape, visually inspect where changes might occur, and identify any problems in the inputs. Here, we visualize both true-color and false-color NIR compoistes.
+Before running any sort of change detection analysis, it is useful to first visualize your input images to get a sense of the landscape, visually inspect where changes might occur, and identify any problems in the inputs. Here, we visualize both true-color and false-color NIR composites.
 
 False-color composites draw other bands from multispectral sensors in the red, green, and blue channels in ways that are designed to illustrate contrast in imagery. Below, we produce a false-color composite using NIR in the red channel, green in the green channel, and blue in the blue channel.  NIR false-color composites can help highlight vegetation and standing water because NIR is strongly absorbed by water and strongly reflected by plants.
 
-Following the format in the code block below, first create a variable `visParamNIR` and `visParamtrue` to hold the display parameters, selecting the correct bands and defining the `min` and `max` values. After adding the composites to the amp, click and drag the opacity slider on the image layers back and forth to view the changes between your two images. 
+Following the format in the code block below, first create a variable `visParamNIR` and `visParamtrue` to hold the display parameters, selecting the correct bands and defining the `min` and `max` values. After adding the composites to the map, click and drag the opacity slider on the image layers back and forth to view the changes between your two images. 
 
 ``` javascript
 //--------------------------------------------------------------
@@ -343,6 +345,8 @@ Map.addLayer(postImage, visParamtrue, 'Year 2 - true color', false);
 To run a supervised classification like Random Forest, we must collect reference data to "train" the classifier and validate the classification. This involves collecting representative samples of spectral data for each map class of interest.
 
 Using the true color and false-color Landsat composites in your map, we draw representative polygons for several classes: Forest, Water, Urban, Agriculture, and Bare Soil.  **We draw two separate sets of polygons for each year, using ONLY the Landsat imagery from that specific year.**
+
+*Tip: If you want to use the exact same polygons that I used, you can import them from my **Assets** here: [Year 1](https://code.earthengine.google.com/?asset=users/ebihari/TrainingPolygonsY1Suriname), [Year 2](https://code.earthengine.google.com/?asset=users/ebihari/TrainingPolygonsY2Suriname)*
 
 Below is the workflow for creating reference data directly in Earth Engine. We will use `Forest_year1` as the example.
 
