@@ -6,16 +6,16 @@ nav_order: 1
 ---
 
 # Introduction
-Welcome to an Map Validation and Area Estimation with Collect Earth Online (CEO)! This workshop will give an overview of CEO and how to use it for data collection (particularly for map validation and area estimation).  For the hands-on portion of the activity, the workflow will also incorporate GEE, CEO, and SEPAL.
+Welcome to an Map Validation with Collect Earth Online (CEO)! This workshop will give an overview of CEO and how to use it for data collection (particularly for map validation).  For the hands-on portion of the activity, the workflow will also incorporate GEE.
 
 ## Pre-Workshop Set Up
 
 ### **[Detailed instructions on pre-workshop setup](https://docs.google.com/document/d/16N5wXbWi767AG4k-BPusu9Gc0HXKrY9qACFN9JZkiAA/edit?usp=sharing)**     
 
 1. Create a [CEO account](https://app.collect.earth/register). Remember the email address you used to make this account.
-2. Join the CEO institution for this workshop **“Guyana Geospatial Workshop”**. If your organization already has a CEO Institution, request to join that institution. We will also cover this step in the workshop, and make an institution if your organization does not have one.
+2. Join the CEO institution for this workshop **“Suriname Geospatial Workshop”**. If your organization already has a CEO Institution, request to join that institution. We will also cover this step in the workshop, and make an institution if your organization does not have one.
 3. Install [Google Earth Pro](https://support.google.com/earth/answer/21955?hl=en) on your computer.
-4. Create a [SEPAL](https://docs.sepal.io/en/latest/setup/register.html) account and request additional resources.
+
 
 ## Objectives
 1. Understand the uses and benefits of CEO.
@@ -29,8 +29,8 @@ Welcome to an Map Validation and Area Estimation with Collect Earth Online (CEO)
 CEO marks a new approach to data collection. For any Earth observation inventory or mapping effort, gathering reference data is essential. Relying on local experts to interpret satellite imagery offers a cost-effective way to calibrate data and assess map accuracy, eliminating the need for time-consuming data collection in the field.
 
 CEO can be used for a variety of projects related to remote sensing, map making, and resource inventories. Some of the most common uses for CEO are: 
-* Producing reference data for sample-based area estimation
 * Producing reference data for map validation 
+* Producing reference data for sample-based area estimation
 * Producing training data for modeling methods
 
 CEO brings science to non-specialists by providing a free, open-source, intuitive platform for interpreting satellite imagery and answering environmentally critical questions regarding land cover, land use, forestry, and agriculture. CEO has attracted a dedicated global community of users who rely on the platform to drive high-impact work monitoring deforestation and other types of land use change. Initially developed by SERVIR—a joint venture of the National Aeronautics and Space Agency (NASA) and the U.S. Agency for International Development (USAID)—CEO is now supported by a broad base of partners.  

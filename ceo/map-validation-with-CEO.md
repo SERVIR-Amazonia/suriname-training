@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Map Validation
+title: Map Validation with CEO
 parent: "Map Validation with Collect Earth Online"
 nav_order: 6
 ---
