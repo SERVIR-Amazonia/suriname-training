@@ -35,10 +35,10 @@ Uncomment the code at the bottom to get challenge solutions: [https://code.earth
 
 ## Challenge 2 
 
-<img align="center" src="../images/change-detection-1/waterchange.png" hspace="15" vspace="10" width="300">
-<img align="center" src="../images/change-detection-1/urbanchange.png" hspace="15" vspace="10" width="300">
-<img align="center" src="../images/change-detection-1/agriculturechange.png" hspace="15" vspace="10" width="300">
-<img align="center" src="../images/change-detection-1/baresoilchange.png" hspace="15" vspace="10" width="300">
+<img align="center" src="../images/change-detection-1/waterchange.png" hspace="15" vspace="10" height="400">
+<img align="center" src="../images/change-detection-1/urbanchange.png" hspace="15" vspace="10" height="400">
+<img align="center" src="../images/change-detection-1/agriculturechange.png" hspace="15" vspace="10" height="400">
+<img align="center" src="../images/change-detection-1/baresoilchange.png" hspace="15" vspace="10" height="400">
 
 <img align="center" src="../images/change-detection-1/forestchange_detailed.png" hspace="15" vspace="10" width="600">
 
