@@ -395,16 +395,16 @@ Now that we have reference polygons for our map classes, we merge their `Feature
 // 5. bare soil
 
 // Merge training FeatureCollections 
-var year1_FC = forest_year1
-    .merge(water_year1)
-    .merge(urban_year1)
-    .merge(agriculture_year1)
-    .merge(baresoil_year1);
-var year2_FC = forest_year2
-    .merge(water_year2)
-    .merge(urban_year2)
-    .merge(agriculture_year2)
-    .merge(baresoil_year2);
+// var year1_FC = forest_year1
+//     .merge(water_year1)
+//     .merge(urban_year1)
+//     .merge(agriculture_year1)
+//     .merge(baresoil_year1);
+// var year2_FC = forest_year2
+//     .merge(water_year2)
+//     .merge(urban_year2)
+//     .merge(agriculture_year2)
+//     .merge(baresoil_year2);
 
 // Add merged training FeatureCollections to map
 // Map.addLayer(year1_FC, {}, "Year 1 - training polygons", false);
