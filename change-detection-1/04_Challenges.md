@@ -44,5 +44,5 @@ Uncomment the code at the bottom to get challenge solutions: [https://code.earth
 
 ## Challenge 3
 
-<img align="center" src="../images/change-detection-1/accuracy_print.png" hspace="15" vspace="10" width="300">
+<img align="center" src="../images/change-detection-1/accuracy_print.png" hspace="15" vspace="10" width="200">
 

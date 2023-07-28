@@ -346,7 +346,18 @@ To run a supervised classification like Random Forest, we must collect reference
 
 Using the true color and false-color Landsat composites in your map, we draw representative polygons for several classes: Forest, Water, Urban, Agriculture, and Bare Soil.  **We draw two separate sets of polygons for each year, using ONLY the Landsat imagery from that specific year.**
 
-*Tip: If you want to use the exact same polygons that I used, you can import them from my **Assets** here: [Year 1](https://code.earthengine.google.com/?asset=users/ebihari/TrainingPolygonsY1Suriname), [Year 2](https://code.earthengine.google.com/?asset=users/ebihari/TrainingPolygonsY2Suriname)*
+*Tip: If you want to use the exact same polygons that I used, you can import them from my **Assets** here:*
+
+*[Year 1](https://code.earthengine.google.com/?asset=users/ebihari/TrainingPolygonsY1Suriname)*
+*[Year 2](https://code.earthengine.google.com/?asset=users/ebihari/TrainingPolygonsY2Suriname)*
+
+*Type this into the code editor to import my polygons:*
+
+``` javascript
+// Import Eni's polygons from her Assets
+var year1_FC = ee.FeatureCollection("users/ebihari/TrainingPolygonsY1Suriname");
+var year2_FC = ee.FeatureCollection("users/ebihari/TrainingPolygonsY2Suriname");
+```
 
 Below is the workflow for creating reference data directly in Earth Engine. We will use `Forest_year1` as the example.
 
