@@ -420,7 +420,7 @@ var samples_y1 = preImage.sampleRegions({
   collection:year1_FC,
   properties:['landcover'],
   scale:30});
-var samples_y2 = preImage.sampleRegions({
+var samples_y2 = postImage.sampleRegions({
   collection:year2_FC,
   properties:['landcover'],
   scale:30});

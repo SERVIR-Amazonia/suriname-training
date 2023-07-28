@@ -262,6 +262,55 @@ Map.addLayer(forestChange.selfMask(),
 
 Where was forest gained or lost? Do you think some of these "changes" might just be due to errors in the data prep and classification process?
 
+# Calculate Change Areas
+
+Now, using the same process as before, we can calculate the area of each kind of change for each land cover class. What is the difference in the information you can calculate from the land cover maps vs. the change map?
+
+Overall, does net forest area increase/decrease between 2015 and 2022, or does it remain roughly the same? Does this value tell the full story of what is actually going on in the study area? Does gross forest area increase/decrease tell a different story? Are there significant gains and losses that are happening that seem to "balance" each other out when calculating net forest area?
+
+``` javascript
+//--------------------------------------------------------------
+// Calculate change areas
+//--------------------------------------------------------------
+
+// Define the pixel category that corresponds to forest loss and gain
+var forestLossArea = forestChange.eq(3).multiply(ee.Image.pixelArea());
+var forestGainArea = forestChange.eq(2).multiply(ee.Image.pixelArea());
+var forestStableArea = forestChange.eq(1).multiply(ee.Image.pixelArea());
+
+// Apply reducer to sum areas per pixel
+var reducerAreaForestLoss = forestLossArea.reduceRegion({
+  reducer: ee.Reducer.sum(),
+  geometry: aoi,
+  scale: 30,
+  crs: 'EPSG:4326',
+  maxPixels: 1e15
+  });
+var reducerAreaForestGain = forestGainArea.reduceRegion({
+  reducer: ee.Reducer.sum(),
+  geometry: aoi,
+  scale: 30,
+  crs: 'EPSG:4326',
+  maxPixels: 1e15
+  });
+  var reducerAreaForestStable = forestStableArea.reduceRegion({
+  reducer: ee.Reducer.sum(),
+  geometry: aoi,
+  scale: 30,
+  crs: 'EPSG:4326',
+  maxPixels: 1e15
+  });
+
+// Convert m^2 to km^2
+var areaSqKmForestLoss = ee.Number(reducerAreaForestLoss.get('change')).divide(1e6);
+print('Forest Loss (km^2):',areaSqKmForestLoss);
+var areaSqKmForestGain = ee.Number(reducerAreaForestGain.get('change')).divide(1e6);
+print('Forest Gain (km^2):',areaSqKmForestGain);
+var areaSqKmForestStable = ee.Number(reducerAreaForestStable.get('change')).divide(1e6);
+print('Stable Forest (km^2):',areaSqKmForestStable);
+
+```
+
 # Result Reliability
 
 It is important to remember that in such two-date change detection with simple differencing between land cover classifications or spectral indices, many errors are propogated through the process and are inherently present in your final results.  For example, there are errors in the satellite data (sensor failures or cloud cover), errors in the preprocessing algorithms (what is done by the data creators (like NASA/ESA) and what is done by you), errors in the sample data (you incorrectly identify forest as agriculture or urban as bare soil), and errors in the classification (misclassifications where spectral differences are similar or training data is poor). It is also very difficult to quantify these errors, and it is hard to know whether they are over- or underestimates of the true values.  There are several ways to minimize these errors - or at least statistically quantify their direction and magnitude.  One of these is [time series change detection](https://servir-amazonia.github.io/suriname-training/change-detection-2), which is covered in the next lesson, and another is [sample-based map validation and area estimation](https://servir-amazonia.github.io/guyana-training/ceo), which is partially covered in a later lesson.
