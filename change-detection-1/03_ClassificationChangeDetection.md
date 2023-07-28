@@ -151,6 +151,12 @@ var RFclassification_y2 = postImage
 
 // Define visualization parameters
 // adjust colors according to your land cover stratification
+// define visualization parameters
+// 1 = forest; green
+// 2 = water; blue
+// 3 = urban; red
+// 4 = agriculture; light green
+// 5 = bare soil; grey
 var classVis = {min:1,max:5,palette:['00a661','00a0cd','a40000', 'd5ff6a','d3d2cb']}
 
 // Add classifications to the map
@@ -247,6 +253,9 @@ var classifyChanges = function(image1, image2, landcover) {
 var forestChange = classifyChanges(RFclassification_y1, RFclassification_y2, landcover);
 
 // define visualization parameters
+// 1 = stable; light green
+// 2 = gain; dark green
+// 3 = loss; red
 var changeVis = {
     palette: ['e5ffd0','72ad00','c32148'],
     min: 1,
