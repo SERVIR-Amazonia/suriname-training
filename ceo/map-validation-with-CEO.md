@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Map Validation & Area Estimation
-parent: "Map Validation and Area Estimation with Collect Earth Online"
+title: Map Validation with CEO
+parent: "Map Validation with Collect Earth Online"
 nav_order: 6
 ---
 

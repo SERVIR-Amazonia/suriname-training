@@ -20,7 +20,7 @@ Using Collect Earth Online and SEPAL for accuracy assessment and unbiased area e
 
 |Time           |  Topics       |
 |:-------------:|:-------------:|
-| 09:00 – 9:30  | Previous Session Recap <br> Q&A <br> Setup Check |
+| 09:00 – 9:30  | What is CEO and how is it used? <br> Setup Check <br> Making a CEO account<br>  Making and joining a CEO institution |
 | 9:30 – 10:30  | Introduction to Stratified Random Sampling, Map Validation, & Unbiased Area Estimation |
 | 10:30 – 10:45 | Coffee break |
 | 10:45 – 12:00 | Introduction to Collect Earth Online |
