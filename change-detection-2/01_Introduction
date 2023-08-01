@@ -47,4 +47,6 @@ Landtrendr (and similar time series segmentation algorithms) have some big advan
 
 <img align="center" src="../images/change-detection-2/LandTrendr_explanation3.png" hspace="15" vspace="10" width="600">
 
-Images taken from [https://emapr.github.io/LT-GEE/landtrendr.html](https://emapr.github.io/LT-GEE/landtrendr.html)
+<img align="center" src="../images/change-detection-2/LandTrendr_explanation4.png" hspace="15" vspace="10" width="600">
+
+Images taken from [https://emapr.github.io/LT-GEE/landtrendr.html](https://emapr.github.io/LT-GEE/landtrendr.html) and [https://github.com/wespestad/MRV/blob/9380035aff6fd7b65dc8b28bb28ae3e9f4deff3d/Modules_2/change_detection_landtrendr_v3.md#353-exploring-impacts-of-the-fitting-parameters](https://github.com/wespestad/MRV/blob/9380035aff6fd7b65dc8b28bb28ae3e9f4deff3d/Modules_2/change_detection_landtrendr_v3.md#353-exploring-impacts-of-the-fitting-parameters)
