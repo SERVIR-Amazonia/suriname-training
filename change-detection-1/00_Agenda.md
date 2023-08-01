@@ -7,6 +7,7 @@ nav_order: 9
 ---
 
 # Advanced Google Earth Engine - Change Detection 1
+# Two-Date Change Detection
 
 Navigate through the different lesson sections by using the menu on the lefthand side or the table of contents below.
 

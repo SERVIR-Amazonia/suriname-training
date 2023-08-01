@@ -10,7 +10,7 @@ nav_order: 11
 Navigate through the different lesson sections by using the menu on the lefthand side or the table of contents below.
 
 ## Session Agenda
-**Date**: August 4, 2023
+**Date**: August 11, 2023
 
 **Instructor(s):** 
 
@@ -20,7 +20,7 @@ Using Collect Earth Online and SEPAL for accuracy assessment and unbiased area e
 
 |Time           |  Topics       |
 |:-------------:|:-------------:|
-| 09:00 – 9:30  | What is CEO and how is it used? <br> Setup Check <br> Making a CEO account<br>  Making and joining a CEO institution |
+| 09:00 – 9:30  | What is CEO and how is it used? <br> Setup Check <br> Making a CEO account <br> Making and joining a CEO institution |
 | 9:30 – 10:30  | Introduction to Stratified Random Sampling, Map Validation, & Unbiased Area Estimation |
 | 10:30 – 10:45 | Coffee break |
 | 10:45 – 12:00 | Introduction to Collect Earth Online |
