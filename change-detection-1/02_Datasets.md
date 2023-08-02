@@ -234,19 +234,14 @@ Let's add the first raw and first pre-processed Landsat 8 image to the map.  Tog
 // Visualize a raw and pre-processed images
 //--------------------------------------------------------------
 
-// Define visualization parameters for true-color imagery
-var visParamtrue = {
-    'bands': ['red', 'green', 'blue'],
-    'min': 0,
-    'max': 0.2 // I changed the min and max values 
-};
-
 // Select first raw image
 var firstNonProcessed = lc8.first();
 
 // Add image to map
 Map.addLayer(firstNonProcessed, 
-            visParamtrue, 
+            {'bands': ['red', 'green', 'blue'],
+            'min': 7000,
+            'max': 12000}, 
             'First raw LC8 image', false);
 
 // Select first pre-processed image
@@ -254,7 +249,9 @@ var firstPreProcessed = lc8_preprocessed.first();
 
 // Add image to map
 Map.addLayer(firstPreProcessed, 
-            visParamtrue, 
+            {'bands': ['red', 'green', 'blue'],
+            'min': 0,
+            'max': 0.2}, 
             'First pre-processed LC8 image', false);
 ```
 
