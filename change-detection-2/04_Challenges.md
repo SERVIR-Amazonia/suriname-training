@@ -49,3 +49,7 @@ Export the results from Challenge 2 as an asset, and import them into the [LandT
 Uncomment the code at the bottom to get the challenge solutions: [https://code.earthengine.google.com/a0e260252869bad5d9a6984876a01f60](https://code.earthengine.google.com/a0e260252869bad5d9a6984876a01f60)
 
 <img align="center" src="../images/change-detection-2/LTsimp_magnitudeNBR.png" hspace="15" vspace="10" width="600">
+
+<img align="center" src="../images/change-detection-2/LTsimp_magnitudeNDMI.png" hspace="15" vspace="10" width="600">
+
+<img align="center" src="../images/change-detection-2/LTsimp_magnitudeNDVI.png" hspace="15" vspace="10" width="600">
