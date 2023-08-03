@@ -26,7 +26,7 @@ For this
 
 # Background
 
-*You can read more about LandTrendr in the [EEFA Book Chapter F4.5](https://www.eefabook.org/go-to-the-book.html) and the [eMaprR website](https://emapr.github.io/LT-GEE/landtrendr.html).*
+*You can read more about LandTrendr in the [EEFA Book Chapter F4.5](https://www.eefabook.org/go-to-the-book.html), [eMaprR website](https://emapr.github.io/LT-GEE/landtrendr.html), and [openMRV website](https://openmrv.org/web/guest/w/modules/mrv/modules_2/landtrendr#21-pre-requisites).*
 
 This is how the EEFA book describes LandTrendr:
 

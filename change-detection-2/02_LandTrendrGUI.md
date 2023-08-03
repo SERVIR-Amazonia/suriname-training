@@ -5,13 +5,13 @@ parent: "Advanced Google Earth Engine - Change Detection 2"
 nav_order: 2
 ---
 
+# LandtTrendr GUI
+
 # Explore the LandTrendr GUI
 
 1. Go to the `SurinameWS` repository ([https://code.earthengine.google.com/?accept_repo=users/ebihari/SurinameWS](https://code.earthengine.google.com/?accept_repo=users/ebihari/SurinameWS)), and open the folder named **LandTrendr App - Suriname version**. 
 2. In this folder, open the script named **LandTrendr App - Data Visualization and Download**. 
 3. Run this script.  In a few seconds, the LandTrendr GUI should load right there in GEE.
-
-# LandTrendr GUI
 
 *Tip: A video showing basic orientation to the GUI is here: [https://youtu.be/tdpuxV7Ad8g](https://youtu.be/tdpuxV7Ad8g).*
 

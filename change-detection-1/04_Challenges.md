@@ -7,6 +7,8 @@ nav_order: 4
 
 # Challenges
 
+Do these challenges in any order you'd like to!
+
 ## Challenge 1
 
 Calculate the areas of the other land cover classes in Year 1 and Year 2. Which land cover types increased and decreased in area between the two years?
