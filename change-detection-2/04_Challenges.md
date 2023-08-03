@@ -18,6 +18,7 @@ In the [simple LandTrendr script](https://code.earthengine.google.com/a0e2602528
 * filter the results to show **fastest gain**
 * filter the results to show a **duration** less than **10 years** and a **minimum mapping unit** of **20**
 * visualize the **magnitude** of the change (instead of the year of detection)
+* change the visualization parameters to a **min** and **max** that make sense
 
 Add/remove the three layers and click around in **Inspector** mode to see whether some changes are captured differently by the three different indices.
 
