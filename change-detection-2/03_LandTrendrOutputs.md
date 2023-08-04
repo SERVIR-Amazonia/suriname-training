@@ -109,7 +109,7 @@ Here are some important things to remember about these outputs:
 
 Here is another very short script that runs LandTrendr:
 
-[simple LandTrendr script](https://code.earthengine.google.com/a0e260252869bad5d9a6984876a01f60)
+[simple LandTrendr script](https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3ALandTrendr%20App%20-%20Suriname%20Version%2FLandTrendr%20-%20Simplified%20Code)
 
 <img align="center" src="../images/change-detection-2/LT_script1.png" hspace="15" vspace="10" width="700">
 
@@ -125,6 +125,6 @@ It can help you understand a bit better what happens in the background within th
 
 ## Script to visualize LandTrendr outputs
 
-[LandTrendr visualization script](https://code.earthengine.google.com/f9e1b1cf47b5871567bafa832629ee65)
+[LandTrendr visualization script](https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3ALandTrendr%20App%20-%20Suriname%20Version%2FLandTrendr%20-%20Outputs)
 
 It can help you compare different of the outputs we exported from the GUI.
