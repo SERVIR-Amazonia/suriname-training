@@ -29,7 +29,7 @@ Conduct an accuracy assessment on both of your land cover maps for Year 1 and Ye
 
 ### **Your actual maps and values will look different from the ones below if you use a different date range of interest, area of interest, or training data.  This is just *roughly* what they should look like.**
 
-Uncomment the code at the bottom to get challenge solutions: [https://code.earthengine.google.com/7e90a6699ce0c91f96f0343617d49929](https://code.earthengine.google.com/7e90a6699ce0c91f96f0343617d49929)
+Uncomment the code at the bottom to get challenge solutions: [https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3AChange%20Detection%20-%20Two%20Date%20v3](https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3AChange%20Detection%20-%20Two%20Date%20v3)
 
 ## Challenge 1
 

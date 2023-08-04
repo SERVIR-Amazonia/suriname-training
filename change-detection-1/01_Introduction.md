@@ -18,7 +18,7 @@ Follow along by copying and pasting each code block in the lesson into your own 
 1. Ensure you are logged into your Google Earth Engine account.
 2. Click this link to accept the Suriname GEE script repository - [https://code.earthengine.google.com/?accept_repo=users/ebihari/SurinameWS](https://code.earthengine.google.com/?accept_repo=users/ebihari/SurinameWS)
 3. Create a new script file in your own script repository - name it **Change Detection - Two Date**. 
-4. A master copy of the script is available in the script repository -[https://code.earthengine.google.com/a8022f1bde4e04735e6a2957b6fab6e8](https://code.earthengine.google.com/a8022f1bde4e04735e6a2957b6fab6e8)
+4. A master copy of the script is available in the script repository -[https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3AChange%20Detection%20-%20Two%20Date%20v3](https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3AChange%20Detection%20-%20Two%20Date%20v3)
 
 ## Objectives
 1. Run a random forest land cover classification based on spectral signature differences of land cover types.

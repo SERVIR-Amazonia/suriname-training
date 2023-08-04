@@ -449,4 +449,4 @@ var testing_y2 = random_y2.filter(ee.Filter.gt('random',0.8));
 
 We now finished importing, creating, and preprocessing our data sets.  Continue to the next section for running the land cover classifications and calculating land cover changes.
 
-Code Checkpoint: [https://code.earthengine.google.com/a8022f1bde4e04735e6a2957b6fab6e8](https://code.earthengine.google.com/a8022f1bde4e04735e6a2957b6fab6e8)
+Code Checkpoint: [https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3AChange%20Detection%20-%20Two%20Date%20v3](https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3AChange%20Detection%20-%20Two%20Date%20v3)
