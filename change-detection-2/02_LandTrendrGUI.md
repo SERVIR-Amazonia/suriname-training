@@ -178,7 +178,7 @@ If an area sees consistent growth in vegetation across all years, it will have r
 
 If there is persistent decline in vegetation over the full time period, red will be highest, followed by green and then blue,  making some shade of brown or orange on the map.
 
-<img align="center" src="../change-detection-2/RGB_spectralindex6.png" hspace="15" vspace="10" width="600">
+<img align="center" src="../images/change-detection-2/RGB_spectralindex6.png" hspace="15" vspace="10" width="600">
 
 # Interpret color from RGB change images using the pixel-level time series
 
