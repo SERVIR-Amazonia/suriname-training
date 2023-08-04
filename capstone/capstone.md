@@ -17,3 +17,5 @@ Navigate through the different lesson sections by using the menu on the lefthand
 **Instructors:** TBD & Sophie Álvarez ([b.sophie.alvarez@gmail.com ](b.sophie.alvarez@gmail.com ))
 
 Agenda and Content coming soon...
+
+[Capstone brainstorm ideas](https://docs.google.com/document/d/1dKqgU2g2xqAZOgWeSUD4RFg5RARJER9BkUp3TvCyoEY/edit)
