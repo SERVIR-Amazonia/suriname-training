@@ -6,6 +6,10 @@ nav_order: 15
 
 # Resources
 
+## Capstone
+
+[Capstone brainstorm ideas](https://docs.google.com/document/d/1dKqgU2g2xqAZOgWeSUD4RFg5RARJER9BkUp3TvCyoEY/edit)
+
 ## GIS
 
 - [A Gentle GIS Introduction](https://docs.qgis.org/3.22/en/docs/gentle_gis_introduction/index.html)
