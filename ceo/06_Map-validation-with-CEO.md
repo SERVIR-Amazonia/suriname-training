@@ -15,7 +15,7 @@ In this workflow, we will create a stratified random sample of a land cover map,
 
 In the [Advanced Google Earth Engine - Change Detection 1](https://servir-amazonia.github.io/suriname-training/change-detection-1) module, we made a random forest land cover classification for two years.  Here, we will write a short snippet of code to export our land cover classification for 2022 (Year 2) as a GEE Asset.
 
-Open your script titled **Change Detection - Two Date**, insert this code is in the script, and run the script.
+Open your script titled **Change Detection - Two Date**, insert into the script, and run the script.
 
 ```javascript
 //--------------------------------------------------------------
