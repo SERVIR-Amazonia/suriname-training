@@ -12,20 +12,20 @@ Navigate through the different lesson sections by using the menu on the lefthand
 ## Session Agenda
 **Date**: August 11, 2023
 
-**Instructor(s):** 
+**Instructor(s):** Enikoe (Eni) Bhiari ebihari@sig-gis.com
 
-Using Collect Earth Online and SEPAL for accuracy assessment and unbiased area estimation of maps
-
+Using Collect Earth Online for accuracy assessment and unbiased area estimation of maps
 
 
 |Time           |  Topics       |
 |:-------------:|:-------------:|
-| 09:00 – 9:30  | What is CEO and how is it used? <br> Setup Check <br> Making a CEO account <br> Making and joining a CEO institution |
-| 9:30 – 10:30  | Introduction to Stratified Random Sampling, Map Validation, & Unbiased Area Estimation |
-| 10:30 – 10:45 | Coffee break |
-| 10:45 – 12:00 | Introduction to Collect Earth Online |
-| 12:00 – 13:00 | Lunch |
-| 13:00 –15:00  | Map Validation and Area Estimation with GEE, CEO, and SEPAL <br> Challenges - Improve Your Stratified Random Sample and Interpretation <br> Daily Recap <br> Final Survey|
+| 09:00 – 9:30  | Previous Session Recap <br> Q&A <br> Setup Check |
+| 9:30 – 10:00  | Introduction to Stratified Random Sampling, Map Validation, & Unbiased Area Estimation |
+| 10:00 – 11:00 | Introduction to Collect Earth Online |
+| 11:00 – 11:15 | Coffee break |
+| 11:15 – 13:00 | Map Validation and Area Estimation with CEO |
+| 13:00 - 14:00 | Lunch |
+| 13:00 – 15:00 | Challenges <br> Daily Recap |
 
 ## Sources 
 Material for this overview was gathered and modified from:

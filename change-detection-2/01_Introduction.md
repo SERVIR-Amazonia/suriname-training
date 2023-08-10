@@ -11,8 +11,6 @@ Welcome to time series change detection! In this workshop, we will explore a tim
 
 *Content for this workshop was adapted from [EEFA Book Chapter F4.5](https://www.eefabook.org/go-to-the-book.html)*
 
-For this 
-
 ## Pre-workshop Set-up 
 
 1. Ensure you are logged into your Google Earth Engine account.

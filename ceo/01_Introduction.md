@@ -6,22 +6,37 @@ nav_order: 1
 ---
 
 # Introduction
-Welcome to an Map Validation with Collect Earth Online (CEO)! This workshop will give an overview of CEO and how to use it for data collection (particularly for map validation).  For the hands-on portion of the activity, the workflow will also incorporate GEE.
 
-## Pre-Workshop Set Up
+Welcome to Map Validation with Collect Earth Online (CEO)! This workshop will give an overview of CEO and how to use it for data collection (particularly for map validation).  For the hands-on portion of the activity, the workflow will also incorporate GEE and either Microsoft Excel or Google Sheets.
 
-### **[Detailed instructions on pre-workshop setup](https://docs.google.com/document/d/16N5wXbWi767AG4k-BPusu9Gc0HXKrY9qACFN9JZkiAA/edit?usp=sharing)**     
+## Pre-Workshop Set Up   
+
+**GEE**
+
+1. Ensure you are logged into your Google Earth Engine account.
+2. Click this link to accept the Suriname GEE script repository - [https://code.earthengine.google.com/?accept_repo=users/ebihari/SurinameWS](https://code.earthengine.google.com/?accept_repo=users/ebihari/SurinameWS)
+3. Create a new script file in your own script repository - name it **Map Validation - Sample Design**. 
+4. A master copy of the script is available in the script repository - [https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3AMap%20Validation%20-%20Sample%20Design](https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3AMap%20Validation%20-%20Sample%20Design)
+
+**CEO**
 
 1. Create a [CEO account](https://app.collect.earth/register). Remember the email address you used to make this account.
-2. Join the CEO institution for this workshop **“Suriname Geospatial Workshop”**. If your organization already has a CEO Institution, request to join that institution. We will also cover this step in the workshop, and make an institution if your organization does not have one.
+2. Join the CEO institution for this workshop **Suriname Geospatial Workshop**. If your organization already has a CEO Institution, request to join that institution. We will also cover this step in the workshop, and make an institution if your organization does not have one.
 3. Install [Google Earth Pro](https://support.google.com/earth/answer/21955?hl=en) on your computer.
 
+**Google Sheets**
+
+1. Access all relevant .csv files in the Suriname Google Drive folder for training 9 - [https://drive.google.com/drive/u/2/folders/1czeYS5ZdCimR7tlQg-dE7QK8d08mzzIX](https://drive.google.com/drive/u/2/folders/1czeYS5ZdCimR7tlQg-dE7QK8d08mzzIX)
+
+*For the accuracy assessment and area estimate portion of this exercise, we will use a spreadsheet tool such as Microsoft Excel or Google Sheets. However, you can also use a fantastic tool called the System for Earth Observation Data Access, Processing, & Analysis for Land Monitoring (SEPAL). It is a cloud-based computing software designed by the United Nation’s Food and Agricultural Organization (FAO) to aid in remote sensing applications in developing countries.*
+
+*SEPAL is essentially a system for accessing, processing, & analyzing earth observation data for land monitoring.  It enables users to create image composites, process images, download files, create stratified sampling designs, and more.  SEPAL is part of the Open Foris suite of tools,, and it integrates with Collect Earth Online (CEO) and the Google Earth Engine (GEE). Instructions on how to do this kind of analysis in SEPAL can be found in the [SEPAL documentation](https://docs.sepal.io/en/latest/workflows/area_estimation.html#sample-based-estimation-of-area-and-accuracy).*
 
 ## Objectives
 1. Understand the uses and benefits of CEO.
 2. Get set up on CEO with an account and institution, and learn how to create a CEO project for data collection.
 3. Understand sample design and interpretation best practices.
-4. Learn how to do map validation and unbiased area estimation using GEE, CEO, and SEPAL.
+4. Learn how to do map validation and unbiased area estimation using CEO.
 
 ## What is CEO?
 >Collect Earth Online (CEO) is a custom built, open-source, **satellite image viewing and interpretation platform** created to collect reference data needed to classify and monitor land cover / land use change. CEO aims to help organizations across the world gain **an accurate picture of what’s happening on the ground**, detecting the effects of deforestation, forest degradation, crop loss, and other changes in land use.
