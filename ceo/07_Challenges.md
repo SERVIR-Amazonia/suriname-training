@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Challenges - SEPAL Sample Design and CEO Project Creation 
+title: Challenges 
 parent: "Map Validation with Collect Earth Online"
 nav_order: 7
 ---
