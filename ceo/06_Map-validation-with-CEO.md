@@ -231,6 +231,77 @@ Once the tasks have finished running, we can open the exported .csv files in Goo
 
 From your Google Drive, download these .csv files to your computer.
 
+*Extra: Add legend.*
+
+``` javascript
+//--------------------------------------------------------------
+// Add Legend
+//--------------------------------------------------------------
+
+// Set position of panel
+var legend = ui.Panel({
+  style: {
+    position: 'bottom-right',
+    padding: '8px 15px'
+  }
+});
+
+// Create legend title
+var legendTitle = ui.Label({
+  value: 'Land Cover Classes - 2022',
+  style: {
+    fontWeight: 'bold',
+    fontSize: '18px',
+    margin: '0 0 4px 0',
+    padding: '0'
+    }
+});
+
+// Add title to legend panel
+legend.add(legendTitle);
+    
+// Write a fcuntion that creates and styles 1 row of the legend
+var makeRow = function(color, name) {
+      
+      // Create the label that is actually the colored box
+      var colorBox = ui.Label({
+        style: {
+          backgroundColor: '#' + color,
+          // Use padding to give the box height and width
+          padding: '8px',
+          margin: '0 0 4px 0'
+        }
+      });
+      
+      // Create the label that is the description text
+      var description = ui.Label({
+        value: name,
+        style: {margin: '0 0 4px 6px'}
+      });
+      
+      // Return the panel
+      return ui.Panel({
+        widgets: [colorBox, description],
+        layout: ui.Panel.Layout.Flow('horizontal')
+      });
+};
+
+// list with the class colors
+var palette = visParam.palette;
+
+// list with class names
+var names = ['forest','water','urban','agriculture','bare soil'];
+
+
+// Add color and and names to legend panel
+for (var i = 0; i < 5; i++) {
+  legend.add(makeRow(palette[i], names[i]));
+  }  
+
+// Add legend to map (alternatively you can also print the legend to the console)  
+Map.add(legend);  
+```
+
 Code Checkpoint: [https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3AMap%20Validation%20-%20Sample%20Design](https://code.earthengine.google.com/?scriptPath=users%2Febihari%2FSurinameWS%3AMap%20Validation%20-%20Sample%20Design)
 
 # Collect Validation Data in CEO
