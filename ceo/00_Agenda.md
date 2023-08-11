@@ -12,7 +12,9 @@ Navigate through the different lesson sections by using the menu on the lefthand
 ## Session Agenda
 **Date**: August 11, 2023
 
-**Instructor(s):** Enikoe (Eni) Bhiari ebihari@sig-gis.com
+**Instructor(s):** Enikoe (Eni) Bihari 
+
+ebihari@sig-gis.com
 
 Using Collect Earth Online for accuracy assessment and unbiased area estimation of maps
 
