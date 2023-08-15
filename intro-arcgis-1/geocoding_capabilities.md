@@ -11,7 +11,7 @@ ArcGIS Online Geocoding enables you to take a list with addresses and transform 
 
 
 ### EXERCISE: Geocode a list with ArcGIS Online 
-Locate the list with government buildings provided by the trainer [here](https://github.com/SERVIR-Amazonia/suriname-training/blob/main/intro-arcgis-1/Overheidsgebouwen.csv). If you create your own list, ensure it is saved in CSV UTF-8. You can open your list in MS Excel and then choose `save` as type CSV UTF-8.  
+Locate the list with government buildings provided by the trainer [here](https://www.dropbox.com/sh/wgexybbxmmoepeg/AAAjghLOCbbHExsuC-BtmOENa?dl=0). If you create your own list, ensure it is saved in CSV UTF-8. You can open your list in MS Excel and then choose `save` as type CSV UTF-8.  
 
 To geocode your list, open the map in `Map Viewer Classic` onto which you want to add your geocoded list.  
 Drag and drop you CSV list onto the map and follow the wizard.
