@@ -5,7 +5,7 @@ parent: "Introduction to ArcGIS Online and ArcGIS Pro 1"
 nav_order: 3
 ---
 
-# ArcGIS Online Geocoding Capabilities 
+# ArcGIS Online Geocoding Capabilities
 
 ArcGIS Online Geocoding enables you to take a list with addresses and transform the addresses to points on the map. The Esri Geocoder automatically transforms addresses into latitude and longitude coordinates.  
 
