@@ -10,9 +10,9 @@ nav_order: 1
 >**_The information contained on this page is created in collaboration with the GISsat company and Lybra company in Suriname. Lybra is partner of Servir Amazonia working together in bringing relevant Geospatial capacity building programs in Suriname. The information on this page is created for the training program conducted in 2023. Information may be become outdated as the ArcGIS platform keeps evolving. For more detailed and up to date information about the ArcGIS component of this training program, please contact [info@lybragroup.com](mailto:info@lybragroup.com)_**
 
 Welcome to an Introduction to ArcGIS Online (AGOL). This workshop will provide an overview of: 
-- what the ArcGIS Online cloud-based geospatial platform is, 
-- how it seamlessly integrates with ArcGIS Pro Desktop geospatial software,  
-- how to access a large catalog of analysis ready remote sensing datasets, web map applications, geospatial feature services within Suriname
+- What the ArcGIS Online cloud-based geospatial platform is, 
+- How it seamlessly integrates with ArcGIS Pro Desktop geospatial software,  
+- How to access a large catalog of analysis ready remote sensing datasets, web map applications, geospatial feature services within Suriname
 
 Esri inc. is the maker of the ArcGIS Online platform. Below are some quick facts about Esri. 
 
@@ -22,7 +22,7 @@ Find out more about Esri [here](https://www.esri.com/en-us/about/media-relations
 
 **GISsat n.v. established in 1999 is the distributor of Esri in Suriname**, ArcGIS technology in Suriname. More about GISsat can be found here: [www.gissat.com](www.gissat.com)
 
-**Lybra n.v. established in 2010 is Esri partner in Suriname**, integrating information systems with ArcGIS Online and providing ArcGIS training. More about Lybra can be found here: [www.lybragroup.com](www.lybragroup.com)  
+**Lybra n.v. established in 2011 is Esri partner in Suriname**, integrating information systems with ArcGIS Online and providing ArcGIS training. More about Lybra can be found here: [www.lybragroup.com](www.lybragroup.com)  
 
 
 ## How to log in?    
