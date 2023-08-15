@@ -20,11 +20,11 @@ Drag and drop you CSV list onto the map and follow the wizard.
 
 ArcGIS Online looks for location fields in your list. In the case of the government buildings, ArcGIS recognizes the `District` and `Adres` attributes and asks you to review if those are the actual location fields. If you have reviewed and ensured the correct location fields are chosen, click `ADD LAYER`.
 
-<img align="center" src="../images/intro-arcgis-1/map_csv2.png"  vspace="10" width="600">
+<img align="center" src="../images/intro-arcgis-1/map_csv2.png"  vspace="10" width="400">
 
 ArcGIS Online automatically chooses an attribute to show on the map, choose `District` and notice what happens on the map. 
 
-<img align="center" src="../images/intro-arcgis-1/map_csv_style.png"  vspace="10" width="600">
+<img align="center" src="../images/intro-arcgis-1/map_csv_style.png"  vspace="10" width="400">
 
 
 
@@ -33,7 +33,7 @@ ArcGIS Online automatically chooses an attribute to show on the map, choose `Dis
 
 Configure the pop up, click on one of the cluster and notice
 
-<img align="center" src="../images/intro-arcgis-1/map_pop-up3.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_pop-up3.png"  vspace="10" width="600">
 
 
 
