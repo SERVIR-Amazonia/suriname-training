@@ -42,12 +42,14 @@ You should see a blank map as illustrated below.
 The buttons of the panel above the map are elaborated below: 
 
 - `Details` button; this button shows you information about all your layers. Read the instructions how to make your own map.
-  <img align="center" src="../images/intro-arcgis-1/map_nav.png"  vspace="10" width="400">
+  
+  <img align="center" src="../images/intro-arcgis-1/map_nav.png"  vspace="10" width="200">
 - `Add`; the add button allows you to add layers by  
 a) searching for layers within and outside of your organization,  
 b) browsing the Living Atlas which contains analysis-ready satellite imagery, e.g. Sentinel 2,  
 c) adding a layer via web, e.g. the MI-GLIS percelen online layer, or the GONINI WMS layers 
 d) adding a layer from file, e.g. KML or Shapefiles
+
   <img align="center" src="../images/intro-arcgis-1/map_add_layer.png"  vspace="10" width="400">
 - `Basemap`; this button allows you to quickly choose the imagery or topographic basemap. Your ArcGIS Online organization can add more basemaps, e.g gray scale basemap to emphasize your layers.
 - `Analysis`; this button provides powerful geoprocessing tools, such as ‘Analyze patterns’ to find hot spots or to calculate density.
@@ -74,7 +76,7 @@ For this exercise we will be adding layers which are publicly available via ArcG
 
 Ensure you see that the feature layer is of ‘Management Instituut GLIS’ – the land administration office in Suriname and click `+ Add` to add the layer to your map.
 
-<img align="center" src="../images/intro-arcgis-1/map_agol.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_agol.png"  vspace="10" width="200">
 
 Repeat steps 1 to 3 above and search for: 
 1) ‘dorpen suriname’,
