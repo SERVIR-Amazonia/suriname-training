@@ -2,14 +2,14 @@
 layout: page
 title: "ArcGIS Online Interface"
 parent: "Introduction to ArcGIS Online and ArcGIS Pro 1"
-nav_order: 1
+nav_order: 2
 ---
 
 # ArcGIS Online Interface 
 
 The Content section of your ArcGIS Online organization contains all your items.
 
-<img align="center" src="../images/intro-arcgis-1/agol_content.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/agol_content.png"  vspace="10" width="800">
 
 In ArcGIS Online, `items` refer to the individual pieces of content that you can create, upload, or reference within the platform. These items can encompass a wide range of geographical data, maps, applications, documents, and more. Each item is associated with specific metadata and attributes that describe its content, purpose, and usage.  
 
@@ -27,17 +27,17 @@ Each of these items can be managed, shared, and utilized in various ways within 
 ### EXERCISE: my first ArcGIS Online Webmap     
 Click on the `Map` section 
 
-<img align="center" src="../images/intro-arcgis-1/map_section.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_section.png"  vspace="10" width="600">
 
 In this training we will be only using the `Map Viewer Classic`. Click `Open` in `Map Viewer Classic`.
 
-<img align="center" src="../images/intro-arcgis-1/map_viewer.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_viewer.png"  vspace="10" width="600">
 
 You should see a blank map as illustrated below.
 
-<img align="center" src="../images/intro-arcgis-1/map_viewer_classic.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_viewer_classic.png"  vspace="10" width="600">
 
-<img align="center" src="../images/intro-arcgis-1/map_panel.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_panel.png"  vspace="10" width="1000">
 
 The buttons of the panel above the map are elaborated below: 
 
@@ -51,12 +51,13 @@ d) adding a layer from file, e.g. KML or Shapefiles
   <img align="center" src="../images/intro-arcgis-1/map_add_layer.png"  vspace="10" width="400">
 - `Basemap`; this button allows you to quickly choose the imagery or topographic basemap. Your ArcGIS Online organization can add more basemaps, e.g gray scale basemap to emphasize your layers.
 - `Analysis`; this button provides powerful geoprocessing tools, such as ‘Analyze patterns’ to find hot spots or to calculate density.
-  <img align="center" src="../images/intro-arcgis-1/map-analysis.png"  vspace="10" width="400">
-  <img align="center" src="../images/intro-arcgis-1/map_panel2.png"  vspace="10" width="400">
+  <img align="center" src="../images/intro-arcgis-1/map_analysis.png"  vspace="10" width="400">
+  
+  <img align="center" src="../images/intro-arcgis-1/map_panel2.png"  vspace="10" width="900">
 - The `Save` button allows you to save your map 
 - The `Share` button allows you to share your map with ‘Everyone’ (public), within your organization or with members of a specific group within ArcGIS Online. Notice the unique hyperlink to your map. 
   The `Share` button also opens the `Create A Web App`. WebApps are configurable apps with pre-defined widgets or ArcGIS Dashboards. We will work more with Dashboards in the following sections
-  <img align="center" src="../images/intro-arcgis-1/web_app.png"  vspace="10" width="400">
+  <img align="center" src="../images/intro-arcgis-1/web_app.png"  vspace="10" width="600">
 
 
 ### EXERCISE: let’s add various layers and create a webmap
@@ -97,15 +98,15 @@ We are not going to style based on an attribute. We will choose `Single Symbol` 
 
 Then click `Symbols`
 
-<img align="center" src="../images/intro-arcgis-1/map_symbols.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_symbols.png"  vspace="10" width="200">
 
 In the `FILL` section, choose `No Color`
 
-<img align="center" src="../images/intro-arcgis-1/map_color.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_color.png"  vspace="10" width="200">
 
 In the `OUTLINE` section, choose a light green `#4CE600` color and check `Adjust outline automatically`
 
-<img align="center" src="../images/intro-arcgis-1/map_color2.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_color2.png"  vspace="10" width="200">
 
 Remember to click `OK` all the way at the bottom and then `DONE`. When you are done you should see the change from this 
 
