@@ -31,7 +31,7 @@ ArcGIS Online automatically chooses an attribute to show on the map, choose `Dis
 ### EXERCISE: cluster points
 <img align="center" src="../images/intro-arcgis-1/map_cluster.png"  vspace="10" width="400">
 
-Configure the pop up, click on one of the cluster and notice
+It is possible to cluster the points on the map you just now geo-coded. Go to your layer `Overheidsgebouwen` and click on the `cluster` button and follow the instructions.
 
 <img align="center" src="../images/intro-arcgis-1/map_pop-up3.png"  vspace="10" width="600">
 
