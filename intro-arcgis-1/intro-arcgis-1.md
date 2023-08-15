@@ -8,7 +8,7 @@ nav_order: 12
 
 # Introduction to ArcGIS Online and ArcGIS Pro 1
 
-Navigate through the different lesson sections by using the menu on the lefthand side or the table of contents below.
+Navigate through the different lesson sections by using the menu on the left hand side or the table of contents below.
 
 ## Session Agenda
 
