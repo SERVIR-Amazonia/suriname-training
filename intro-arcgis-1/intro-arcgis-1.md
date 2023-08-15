@@ -16,7 +16,7 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 **Instructors:** Krieshen Ramkhelawan, Meredith Kartosentiko, Liza Nabibaks
 
-Agenda
+
 |Time           |  Topics       |
 |:-------------:|:-------------:|
 | 9:00 – 9:30   | Introductions <br> Q&A <br> Setup Check |
