@@ -19,10 +19,10 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 |Time           |  Topics       |
 |:-------------:|:-------------:|
-| 9:00 – 9:30   | Introductions <br> Q&A <br> Setup Check |
-| 9:30 – 11:00  | Import, Create, and Prepare Data |
-| 11:00 – 11:15 | Coffee break |
-| 11:15 – 12:00 | Run Land Cover Classifications |
+| 9:00 – 9:30   | Welcome and set-up check up |
+| 9:30 – 10:45  | Overview ArcGIS Online |
+| 10:45 – 11:00 | Coffee break |
+| 11:00 – 13:00 | Creating Webmaps in ArcGIS Online |
 | 12:00 – 13:00 | Lunch |
 | 13:00 –14:00  | Calculate Land Cover Change |
 | 14:00 –15:00  | Challenges <br> Daily Recap |
