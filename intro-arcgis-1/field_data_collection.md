@@ -13,12 +13,13 @@ Field Data Collection Tools within the ArcGIS Online platform refer to a suite o
 <b>Target Audience</b>: Organizations and individuals who need to conduct surveys, assessments, and data collection in the field. This includes field researchers, environmental monitors, public health workers, and organizations involved in community engagement and data gathering.
 
 <b>Features</b>:
-•	Design custom surveys with various question types.
-•	Access surveys on mobile devices for on-site data collection.
-•	Attach media and notes to survey responses.
-•	Integrate external devices and GPS receivers.
-•	Seamlessly integrate collected data with ArcGIS Online.
- 
+<ul>
+ <li>Design custom surveys with various question types.</li>
+ <li>Access surveys on mobile devices for on-site data collection.</li>
+ <li>Attach media and notes to survey responses.</li>
+ <li>Integrate external devices and GPS receivers.</li>
+ <li>Seamlessly integrate collected data with ArcGIS Online.</li>
+</ul>
 
 ## Find Locations 
 ArcGIS Online includes analysis tools that help users find locations based on specified criteria. For example, users can find existing or similar locations, identify new locations, choose the best facilities, create view or watersheds and trace downstream, and locate centroids.  
