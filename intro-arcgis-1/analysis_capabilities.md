@@ -5,7 +5,7 @@ parent: "Introduction to ArcGIS Online and ArcGIS Pro 1"
 nav_order: 4
 ---
 
-# ArcGIS Online Analysis Capabilities 
+# ArcGIS Online Analysis Capabilities
 
 With ArcGIS Online, users can explore, model, and interpret their data so they can make better decisions. 
 
