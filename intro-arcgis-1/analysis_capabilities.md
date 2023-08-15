@@ -52,11 +52,11 @@ Transportation officials can find patterns related to traffic accidents at inter
 ### EXERCISE: calculate density of Chikungunya 
 Geocode the Chikungunya CSV file. Then go to the `Analysis` section, choose `Analyze Patterns` and choose `Calculate Density`. Ensure the layer `Chikungunya` is selected and then click `Run Analysis` 
 
-<img align="center" src="../images/intro-arcgis-1/map_analysis2.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_analysis2.png"  vspace="10" width="200">
 
 The results should like this  
 
-<img align="center" src="../images/intro-arcgis-1/map_analysis_result.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_analysis_result.png"  vspace="10" width="800">
 
 ## Use Proximity 
 The proximity tools in ArcGIS Online help users answer one of the most common questions that arise in spatial analysis: what features or areas are near others? With these tools, users can generate buffers, create drive-time areas, find nearest features and locations, plan routes, and connect origins to destinations. 
@@ -71,25 +71,25 @@ Choose `Add Layer from Web`
 
 Choose `A WMS OGC Web Service` 
 
-<img align="center" src="../images/intro-arcgis-1/map_buffer2.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_buffer2.png"  vspace="10" width="600">
 
 Paste the WMS URL in the URL field and click `GET LAYERS` 
 
-<img align="center" src="../images/intro-arcgis-1/map_buffer3.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_buffer3.png"  vspace="10" width="600">
 
 Look for the `Mercury Observatory` layer and only check mark that layer, then click `ADD LAYER`
 
-<img align="center" src="../images/intro-arcgis-1/map_buffer4.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_buffer4.png"  vspace="10" width="600">
 
 Note that you cannot perform geoprocessing analysis on WMS layers. The workaround is to create an overlay vector-based feature layer. For that, follow these steps: 
 - Go to `Content` section 
 - Click `+New item` 
 
-<img align="center" src="../images/intro-arcgis-1/add_new.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/add_new.png"  vspace="10" width="600">
 
 <img align="center" src="../images/intro-arcgis-1/create_layer.png"  vspace="10" width="400">
 
-<img align="center" src="../images/intro-arcgis-1/create_layer2.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/create_layer2.png"  vspace="10" width="600">
 
 Give your item a name 
 
@@ -118,11 +118,11 @@ The Villages of Suriname dataset can be downloaded in various formats on the Arc
 
 Click on `Gallery` 
 
-<img align="center" src="../images/intro-arcgis-1/home_gallery.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/home_gallery.png"  vspace="10" width="800">
 
 In the Gallery of Suriname Online portal, look for `Villages of Suriname`, click the `Download` button to download the shapefile of this dataset. 
 
-<img align="center" src="../images/intro-arcgis-1/home_gallery2.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/home_gallery2.png"  vspace="10" width="800">
 
 Let’s now add the Villages shapefile onto the map, so that we can perform analysis. Recall, that we earlier added the villages as a feature service layer, which does not allow for analysis. 
 
