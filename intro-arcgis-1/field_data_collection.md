@@ -5,34 +5,20 @@ parent: "Introduction to ArcGIS Online and ArcGIS Pro 1"
 nav_order: 5
 ---
 
-# ArcGIS Online Analysis Capabilities 
+# ArcGIS Online Field Data Collection Capabilities 
 
-With ArcGIS Online, users can explore, model, and interpret their data so they can make better decisions. 
+Field Data Collection Tools within the ArcGIS Online platform refer to a suite of features and applications designed to facilitate the collection of geographic data in the field using mobile devices. These tools empower users to gather accurate location-based information, conduct surveys, and contribute valuable data directly to their organization's ArcGIS Online account. Some key components of these tools include:  
 
-ArcGIS Online provides spatial analysis tools that let users quantify and explore patterns and relationships in their data and display the results as maps, tables, charts, and more. These spatial analysis tools provide greater insight than visualization alone and give users critical information to inform their actions. 
-Using the analysis tools in ArcGIS Online, users can answer questions like: 
-- How many facilities are in an area?
-- Which sites meet my criteria?
-- What are the characteristics of this place?
-- How are my assets distributed?
-- What land features are near, adjacent to, or on top of what?
-- How are these places or features related? 
+## 1) ArcGIS Survey123:
+<b>Target Audience</b>: Organizations and individuals who need to conduct surveys, assessments, and data collection in the field. This includes field researchers, environmental monitors, public health workers, and organizations involved in community engagement and data gathering.
 
-With ArcGIS Online, users can apply summary tools to estimate the number of people impacted by an event in a particular area. They can identify the number and type of amenities within a certain distance using proximity tools. They can also learn more about locations by gathering information about people, places of interest, and businesses through data enrichment.  
-
-ArcGIS analysis capabilities are organized into categories of tools that allow users to: 
-- Summarize data
-- Find locations
-- Analyze patterns
-- Use proximity
-- Enrich data 
-
-ArcGIS Online also supports specialized analytical workflows including raster, real-time, and big data analytics. These advanced analytical tools are available through ArcGIS Image for ArcGIS Online and ArcGIS Velocity, which organizations can purchase as add-ons to their ArcGIS Online subscription. 
-
-## Summarize Data 
-With ArcGIS Online spatial analysis tools, users can summarize their data in ways that provide meaningful insights. These tools allow users to aggregate points, join features and data layers, and summarize data based on spatial relationships (summarizing data from features within a boundary, for example). These tools can also calculate total counts, lengths, areas, and basic descriptive statistics of features and their attributes.  
-
-Summary tools are valuable for users across industries. For example, crime analysts can join crime data to police districts to better understand what’s happening within each district. Assessors can join land use descriptions to land use polygons to better inform constituents. Store owners can calculate the total population within a five-minute drive time of a proposed store location. Planners can determine the number of highway exit ramps within a one-mile driving distance of a proposed mall to help evaluate accessibility. Epidemiologists can find the dispersion of disease occurrences across a state. These tools help users better understand their data, identify patterns, improve communication, and make informed decisions. 
+<b>Features</b>:
+•	Design custom surveys with various question types.
+•	Access surveys on mobile devices for on-site data collection.
+•	Attach media and notes to survey responses.
+•	Integrate external devices and GPS receivers.
+•	Seamlessly integrate collected data with ArcGIS Online.
+ 
 
 ## Find Locations 
 ArcGIS Online includes analysis tools that help users find locations based on specified criteria. For example, users can find existing or similar locations, identify new locations, choose the best facilities, create view or watersheds and trace downstream, and locate centroids.  
