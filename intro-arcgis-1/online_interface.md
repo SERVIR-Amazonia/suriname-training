@@ -45,20 +45,25 @@ The buttons of the panel above the map are elaborated below:
   
   <img align="center" src="../images/intro-arcgis-1/map_nav.png"  vspace="10" width="200">
 - `Add`; the add button allows you to add layers by  
-a) searching for layers within and outside of your organization,  
-b) browsing the Living Atlas which contains analysis-ready satellite imagery, e.g. Sentinel 2,  
-c) adding a layer via web, e.g. the MI-GLIS percelen online layer, or the GONINI WMS layers 
-d) adding a layer from file, e.g. KML or Shapefiles
+  1. searching for layers within and outside of your organization,
+  2. browsing the Living Atlas which contains analysis-ready satellite imagery, e.g. Sentinel 2,
+  3. adding a layer via web, e.g. the MI-GLIS percelen online layer, or the GONINI WMS layers,
+  4. adding a layer from file, e.g. KML or Shapefiles
 
   <img align="center" src="../images/intro-arcgis-1/map_add_layer.png"  vspace="10" width="400">
 - `Basemap`; this button allows you to quickly choose the imagery or topographic basemap. Your ArcGIS Online organization can add more basemaps, e.g gray scale basemap to emphasize your layers.
-- `Analysis`; this button provides powerful geoprocessing tools, such as ‘Analyze patterns’ to find hot spots or to calculate density.
-  <img align="center" src="../images/intro-arcgis-1/map_analysis.png"  vspace="10" width="400">
-  
-  <img align="center" src="../images/intro-arcgis-1/map_panel2.png"  vspace="10" width="900">
-- The `Save` button allows you to save your map 
-- The `Share` button allows you to share your map with ‘Everyone’ (public), within your organization or with members of a specific group within ArcGIS Online. Notice the unique hyperlink to your map. 
-  The `Share` button also opens the `Create A Web App`. WebApps are configurable apps with pre-defined widgets or ArcGIS Dashboards. We will work more with Dashboards in the following sections
+- `Analysis`; this button provides powerful geoprocessing tools, such as `Analyze patterns` to find hot spots or to calculate density.
+
+<img align="center" src="../images/intro-arcgis-1/map_analysis.png"  vspace="10" width="400">
+
+<img align="center" src="../images/intro-arcgis-1/map_panel2.png"  vspace="10" width="900">
+
+- The `Save` button allows you to save your map
+- The `Share` button allows you to share your map with ‘Everyone’ (public), within your organization or with members of a specific group within ArcGIS Online. Notice the unique hyperlink to your map.
+
+<img align="center" src="../images/intro-arcgis-1/map_share.png"  vspace="10" width="600">
+
+- The `Share` button also opens the `Create A Web App`. WebApps are configurable apps with pre-defined widgets or ArcGIS Dashboards. We will work more with Dashboards in the following sections
   <img align="center" src="../images/intro-arcgis-1/web_app.png"  vspace="10" width="600">
 
 
@@ -79,12 +84,12 @@ Ensure you see that the feature layer is of ‘Management Instituut GLIS’ – 
 <img align="center" src="../images/intro-arcgis-1/map_agol.png"  vspace="10" width="200">
 
 Repeat steps 1 to 3 above and search for: 
-1) ‘dorpen suriname’,
-2) ‘rivieren suriname’, 
-3) ‘beschermde gebieden Suriname’,
-4) ‘soil map suriname’,
-5) ‘districten suriname’,
-6) ‘ressorten suriname’.
+1. ‘dorpen suriname’,
+2. ‘rivieren suriname’,
+3. ‘beschermde gebieden Suriname’,
+4. ‘soil map suriname’,
+5. ‘districten suriname’,
+6. ‘ressorten suriname’.
 
 You will have added 5 layers, drag the layers as such so that you have the `districts`, `resorts` and `soil` map as the layers at the bottom. 
 
