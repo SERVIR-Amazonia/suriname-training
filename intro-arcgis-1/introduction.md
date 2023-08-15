@@ -16,7 +16,7 @@ Welcome to an Introduction to ArcGIS Online (AGOL). This workshop will provide a
 
 Esri inc. is the maker of the ArcGIS Online platform. Below are some quick facts about Esri. 
 
-<img align="center" src="../images/intro-arcgis-1/quick_facts.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/quick_facts.png"  vspace="10" width="900">
 
 Find out more about Esri [here](https://www.esri.com/en-us/about/media-relations/fact-sheet)
 
@@ -117,7 +117,6 @@ By visualizing data in different ways, users can answer questions like:
 ### Make Data-Driven Maps 
 ArcGIS Online users can quickly create beautiful, informative maps using basemaps, smart mapping tools, and custom map styles. These tools make it easy for users—from novices to experienced GIS professionals—to make data-driven maps.  
 
->[!NOTE]
 >**To create a map, users simply choose a basemap, add layers, pick a style, configure pop-ups, and save.**
 
 ArcGIS Online comes with a suite of basemaps that provide reference maps for the world and context for users work. These are built from the best available data from a community of authoritative data providers, maintained by Esri, and represented in multiple styles and formats—including raster and vector. The maps are designed to emphasize different views of our world ranging from physical to political. For example, users can select basemaps that highlight streets and highways, topography, oceans, terrain, administrative boundaries, historic time periods, and more. They can also choose muted canvas maps that emphasize their data, imagery maps that provide real-world views, or a combination of the two. 
@@ -146,8 +145,7 @@ ArcGIS Online gives users full control over who can view the maps they create an
 
 ArcGIS Online allows users to share maps through a variety of channels. For example, they can embed them in their website, social media posts, and blog articles. They can also make it easy for anyone to engage with their maps on any device by sharing them as interactive web apps. Users can choose from Esri’s many targeted configurable apps or create their own using no-code app builders or ArcGIS developer APIs. 
 
->[!IMPORTANT]
->ArcGIS Online scales to support peak periods of demand, meaning that thousands or even millions of users can simultaneously view maps with consistent performance across devices.
+>Importantly, ArcGIS Online scales to support peak periods of demand, meaning that thousands or even millions of users can simultaneously view maps with consistent performance across devices.
 
 ## Value
 ArcGIS Online allows users of all levels to quickly and accurately create informative, interactive maps. They can use these maps to share their stories, identify challenges, communicate opportunities, collaborate on work, and more. 
