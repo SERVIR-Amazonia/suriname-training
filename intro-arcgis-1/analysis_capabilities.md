@@ -50,7 +50,7 @@ Transportation officials can find patterns related to traffic accidents at inter
 
 
 ### EXERCISE: calculate density of Chikungunya 
-Geocode the Chikungunya CSV file. Then go to the `Analysis` section, choose `Analyze Patterns` and choose `Calculate Density`. Ensure the layer `Chikungunya` is selected and then click `Run Analysis` 
+Geocode the Chikungunya CSV file. Find it [here](https://www.dropbox.com/sh/wgexybbxmmoepeg/AAAjghLOCbbHExsuC-BtmOENa?dl=0) Then go to the `Analysis` section, choose `Analyze Patterns` and choose `Calculate Density`. Ensure the layer `Chikungunya` is selected and then click `Run Analysis` 
 
 <img align="center" src="../images/intro-arcgis-1/map_analysis2.png"  vspace="10" width="200">
 
@@ -75,7 +75,7 @@ Choose `A WMS OGC Web Service`
 
 Paste the WMS URL in the URL field and click `GET LAYERS` 
 
-<img align="center" src="../images/intro-arcgis-1/map_buffer3.png"  vspace="10" width="600">
+<img align="center" src="../images/intro-arcgis-1/map_add_layer3.png"  vspace="10" width="600">
 
 Look for the `Mercury Observatory` layer and only check mark that layer, then click `ADD LAYER`
 
@@ -95,7 +95,7 @@ Give your item a name
 
 <img align="center" src="../images/intro-arcgis-1/item_name.png"  vspace="10" width="400">
 
-Add your layer newly created vector point feature layer 
+Add your newly created vector point feature layer 
 
 <img align="center" src="../images/intro-arcgis-1/create_layer3.png"  vspace="10" width="400">
 
@@ -146,13 +146,12 @@ First we need to create buffers around the `Mercury observations`. Click `Analys
 
 Mercury has a potential spread of 50KM via riverbanks. We will create a buffer of 25KM.
 
-<img align="center" src="../images/intro-arcgis-1/map_buffer6.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_buffer10.png"  vspace="10" width="400">
 
-Let’s summarize within the buffers, how many villages are affected by Mercury. 
+We have now created a 25KM buffer around the 'Mercury_vector_layer' points we have created. Let's now find out how many villages are within the buffers.
+For this, go to `Analysis`, click `Summarize Within` and choose for the polygon layer 'Buffer_of_Mercury_vector_overlay' and choose for the layer to summarize the `Villages Suriname` layer which you've uploaded in shapefile. Then click `RUN ANALYSIS`.
 
-<img align="center" src="../images/intro-arcgis-1/map_buffer7.png"  vspace="10" width="400">
-
-<img align="center" src="../images/intro-arcgis-1/map_buffer8.png"  vspace="10" width="400">
+<img align="center" src="../images/intro-arcgis-1/map_buffer11.png"  vspace="10" width="400">
 
 Change the attribute to show on `Count of points` and notice the effect on the map. You can also try out different styling options. 
 
