@@ -14,6 +14,15 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 **Date**: August 16, 2023
 
-**Instructors:** TBD
+**Instructors:** Krieshen Ramkhelawan, Meredith Kartosentiko, Liza Nabibaks
 
-Agenda and Content coming soon...
+Agenda
+|Time           |  Topics       |
+|:-------------:|:-------------:|
+| 9:00 – 9:30   | Introductions <br> Q&A <br> Setup Check |
+| 9:30 – 11:00  | Import, Create, and Prepare Data |
+| 11:00 – 11:15 | Coffee break |
+| 11:15 – 12:00 | Run Land Cover Classifications |
+| 12:00 – 13:00 | Lunch |
+| 13:00 –14:00  | Calculate Land Cover Change |
+| 14:00 –15:00  | Challenges <br> Daily Recap |
