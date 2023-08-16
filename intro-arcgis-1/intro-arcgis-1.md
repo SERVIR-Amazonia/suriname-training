@@ -6,7 +6,7 @@ has_children: True
 nav_order: 12
 ---
 
-# Introduction to ArcGIS Online and ArcGIS Pro 1
+# Introduction to ArcGIS Online
 
 Navigate through the different lesson sections by using the menu on the left hand side or the table of contents below.
 
