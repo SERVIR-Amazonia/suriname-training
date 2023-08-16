@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Introduction"
-parent: "Introduction to ArcGIS Online"
+parent: "Introduction to ArcGIS Online and ArcGIS Pro 1"
 nav_order: 1
 ---
 
