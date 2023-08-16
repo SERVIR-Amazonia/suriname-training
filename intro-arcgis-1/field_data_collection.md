@@ -25,7 +25,7 @@ Field Data Collection Tools within the ArcGIS Online platform refer to a suite o
 Target Audience: Users who require spatial data collection and mapping capabilities in the field. This includes field technicians, natural resource managers, infrastructure inspectors, and emergency responders.
 
 <b>Features:</b>
-<lu>
+<ul>
 <li>Capture points, lines, and polygons on maps.</li>
 <li>Attach media and notes to features.</li>
 <li>Utilize GPS for accurate positioning, both online and offline.</li>
