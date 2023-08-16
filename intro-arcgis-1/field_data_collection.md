@@ -68,13 +68,13 @@ Finally, the fine-tuned data will then be available, in real-time, in an ArcGIS 
 Generic workflow:
 <img align="center" src="../images/intro-arcgis-1/servirnasaworkflow.png"  vspace="10" width="200">
 
-Let’s start with creating a Survey123 form. Go to the ‘Home’ page, click on the ‘App Launcher’ and choose the ‘Survey123’ app.
+Let’s start with creating a Survey123 form. Go to the `Home` page, click on the `App Launcher` and choose the `Survey123` app.
 <img align="center" src="../images/intro-arcgis-1/applauncher.png"  vspace="10" width="800">
 
-Click the ‘+New survey’ button
+Click the `+New survey` button
 <img align="center" src="../images/intro-arcgis-1/blanksurvey.png"  vspace="10" width="800">
 
-Choose ‘Blank Survey’ and click ‘Get started’. There are templates to choose from and you can make advanced forms with Survey123Connect. For this exercise we will use a ‘Blank Survey’.
+Choose `Blank Survey` and click `Get started`. There are templates to choose from and you can make advanced forms with Survey123Connect. For this exercise we will use a `Blank Survey`.
 <img align="center" src="../images/intro-arcgis-1/newblanksurvey.png"  vspace="10" width="800">
 
 The ArcGIS Online Survey123 app is a ‘No Code’ platform in which you design your form as you wish. For more advanced forms, you use the SurveyConnect designer.
@@ -84,10 +84,10 @@ In this exercise we are going to create a Survey123 form for citizens to report 
 Follow the instructions of the trainer.
 <img align="center" src="../images/intro-arcgis-1/survey123kwikmelding.png"  vspace="10" width="800">
 
-After publishing the Survey123 form, go to the ‘Collaborate’ tab. In the ‘Collaborate’ tab make your Survey123 Public, so that anyone with the link or QR code can fill in your form. You can use the unique link to distribute and share the form or have the QR code scanned.
+After publishing the Survey123 form, go to the `Collaborate` tab. In the `Collaborate` tab make your Survey123 Public, so that anyone with the link or QR code can fill in your form. You can use the unique link to distribute and share the form or have the QR code scanned.
 <img align="center" src="../images/intro-arcgis-1/survey123collab.png"  vspace="10" width="800">
 
-Open the ArcGIS Survey123 form here: https://arcg.is/1znay8 
+Open the ArcGIS Survey123 form here: [https://arcg.is/1znay8](https://arcg.is/1znay8) 
 You can view data submitted in the Survey123 form in the ‘Data’ tab
 <img align="center" src="../images/intro-arcgis-1/survey123data.png"  vspace="10" width="800">
 
