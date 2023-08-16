@@ -76,6 +76,19 @@ Let’s start with creating a Survey123 form. Go to the ‘Home’ page, click o
 Click the ‘+New survey’ button
 <img align="center" src="../images/intro-arcgis-1/blanksurvey.png"  vspace="10" width="800">
 
+Choose ‘Blank Survey’ and click ‘Get started’. There are templates to choose from and you can make advanced forms with Survey123Connect. For this exercise we will use a ‘Blank Survey’.
+<img align="center" src="../images/intro-arcgis-1/newblanksurvey.png"  vspace="10" width="800">
+
+The ArcGIS Online Survey123 app is a ‘No Code’ platform in which you design your form as you wish. For more advanced forms, you use the SurveyConnect designer.
+<img align="center" src="../images/intro-arcgis-1/surveynocode.png"  vspace="10" width="800">
+
+In this exercise we are going to create a Survey123 form for citizens to report Mercury observations.
+Follow the instructions of the trainer.
+<img align="center" src="../images/intro-arcgis-1/survey123kwikmelding.png"  vspace="10" width="800">
+
+After publishing the Survey123 form, go to the ‘Collaborate’ tab. In the ‘Collaborate’ tab make your Survey123 Public, so that anyone with the link or QR code can fill in your form. You can use the unique link to distribute and share the form or have the QR code scanned.
+<img align="center" src="../images/intro-arcgis-1/survey123kcollab.png"  vspace="10" width="800">
+
 
 ### EXERCISE: create buffers
 Add the `Mercury observations` from the GONINI portal via this URL: [https://gonini.org/geoserver/gonini/wms](https://gonini.org/geoserver/gonini/wms)
