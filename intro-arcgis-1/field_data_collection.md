@@ -59,10 +59,16 @@ Target Audience: Users who require spatial data collection and mapping capabilit
 
 
 
-### EXERCISE: calculate density of Chikungunya 
-Geocode the Chikungunya CSV file. Then go to the `Analysis` section, choose `Analyze Patterns` and choose `Calculate Density`. Ensure the layer `Chikungunya` is selected and then click `Run Analysis` 
+### EXERCISE: Field Data Collection with Survey123
+In the workflow from Field data collection to Desk data fine-tuning to Dashboard monitoring, ArcGIS Online provides seamless tools, depending on your context.
+In this exercise, we will be using ArcGIS Survey123 to collect field data.
+The field data will then be fine-tuned within a ArcGIS WebApp. 
+Finally, the fine-tuned data will then be available, in real-time, in an ArcGIS Dashboard.
 
-<img align="center" src="../images/intro-arcgis-1/map_analysis2.png"  vspace="10" width="200">
+Generic workflow:
+
+
+<img align="center" src="../images/intro-arcgis-1/servirnasaworkflow.png"  vspace="10" width="200">
 
 The results should like this  
 
