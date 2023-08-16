@@ -70,12 +70,11 @@ Generic workflow:
 
 <img align="center" src="../images/intro-arcgis-1/servirnasaworkflow.png"  vspace="10" width="200">
 
-The results should like this  
+Let’s start with creating a Survey123 form. Go to the ‘Home’ page, click on the ‘App Launcher’ and choose the ‘Survey123’ app.
+<img align="center" src="../images/intro-arcgis-1/applauncher.png"  vspace="10" width="800">
 
-<img align="center" src="../images/intro-arcgis-1/map_analysis_result.png"  vspace="10" width="800">
-
-## Use Proximity 
-The proximity tools in ArcGIS Online help users answer one of the most common questions that arise in spatial analysis: what features or areas are near others? With these tools, users can generate buffers, create drive-time areas, find nearest features and locations, plan routes, and connect origins to destinations. 
+Click the ‘+New survey’ button
+<img align="center" src="../images/intro-arcgis-1/blanksurvey.png"  vspace="10" width="800">
 
 
 ### EXERCISE: create buffers
