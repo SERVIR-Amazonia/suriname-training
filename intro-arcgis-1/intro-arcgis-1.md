@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Introduction to ArcGIS Online and ArcGIS Pro 1"
+title: "Introduction to ArcGIS Online"
 permalink: /intro-arcgis-1
 has_children: True
 nav_order: 12
