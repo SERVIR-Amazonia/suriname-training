@@ -35,12 +35,28 @@ Target Audience: Users who require spatial data collection and mapping capabilit
 </ul>
 
 
-## Analyze Patterns 
-With ArcGIS Online analysis tools, users can identify, quantify, and visualize spatial patterns in their data. Using these tools, they can calculate density, locate hot spots, determine outliers, find point clusters, identify areas of statistically significant clusters, and interpolate points.  
+## 3) ArcGIS QuickCapture:
+<b>Target Audience:</b> Users who need rapid and efficient data collection, especially in fast-paced scenarios. This includes emergency responders, field surveyors, public safety professionals, and organizations conducting rapid assessments.
 
-For example, healthcare organizations can calculate densities of hospitals in a county to determine where new facilities are needed, or they can identify a statistically significant hot spot for infant mortality.  
+<b>Features:</b>
+<ul>
+ <li>Rapid data capture using large, customizable buttons.</li>
+<li>Speedy data collection for quick observations.</li>
+<li>Integration with external devices.</li>
+<li>Offline capabilities for data collection in areas with limited connectivity.</li>
+<li>Real-time sharing of collected data for quick decision-making.</li>
+</ul>
 
-Transportation officials can find patterns related to traffic accidents at intersections or on highways, while public safety departments can evaluate outliers or anomalies in crime patterns across their jurisdiction. These tools help users better understand patterns within their data, so they can make more informed decisions. 
+## 4) ArcGIS SiteScan:
+<b>Target Audience:</b> Users who employ drones for aerial data collection and analysis. This includes GIS professionals, surveyors, urban planners, construction managers, and environmental scientists.
+
+<b>Features:</b>
+<ul><li>Planning, flying, and capturing drone imagery for data collection.</li>
+<li>Integration with drone hardware for efficient image capture.</li>
+<li>Automated flight paths for comprehensive coverage.</li>
+<li>Analysis and visualization of drone-captured imagery within ArcGIS.</li>
+<li>Integration of drone-captured data with other GIS sources.</li></ul>
+
 
 
 ### EXERCISE: calculate density of Chikungunya 
