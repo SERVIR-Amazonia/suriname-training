@@ -66,8 +66,6 @@ The field data will then be fine-tuned within a ArcGIS WebApp.
 Finally, the fine-tuned data will then be available, in real-time, in an ArcGIS Dashboard.
 
 Generic workflow:
-
-
 <img align="center" src="../images/intro-arcgis-1/servirnasaworkflow.png"  vspace="10" width="200">
 
 Let’s start with creating a Survey123 form. Go to the ‘Home’ page, click on the ‘App Launcher’ and choose the ‘Survey123’ app.
@@ -87,8 +85,16 @@ Follow the instructions of the trainer.
 <img align="center" src="../images/intro-arcgis-1/survey123kwikmelding.png"  vspace="10" width="800">
 
 After publishing the Survey123 form, go to the ‘Collaborate’ tab. In the ‘Collaborate’ tab make your Survey123 Public, so that anyone with the link or QR code can fill in your form. You can use the unique link to distribute and share the form or have the QR code scanned.
-<img align="center" src="../images/intro-arcgis-1/survey123kcollab.png"  vspace="10" width="800">
+<img align="center" src="../images/intro-arcgis-1/survey123collab.png"  vspace="10" width="800">
 
+Open the ArcGIS Survey123 form here: https://arcg.is/1znay8 
+
+Open the ArcGIS Survey123 form here: https://arcg.is/1znay8 
+You can view data submitted in the Survey123 form in the ‘Data’ tab
+<img align="center" src="../images/intro-arcgis-1/survey123data.png"  vspace="10" width="800">
+
+The next step in our workflow is to create a ArcGIS WebApp. The purpose of the ArcGIS WebApp is to enable responsible entities to act on the reported mercury sightings.
+<img align="center" src="../images/intro-arcgis-1/servirnasaworkflow.png"  vspace="10" width="200">
 
 ### EXERCISE: create buffers
 Add the `Mercury observations` from the GONINI portal via this URL: [https://gonini.org/geoserver/gonini/wms](https://gonini.org/geoserver/gonini/wms)
