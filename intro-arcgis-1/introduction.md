@@ -29,7 +29,7 @@ Find out more about Esri [here](https://www.esri.com/en-us/about/media-relations
 
 You will receive a username and password - on the training day - for access in a demo environment for the duration of this workshop. Your user type will be ‘Creator’ which allows you to create webmaps, apps, forms and dashboards. 
 
-Go to [https://lybra.maps.arcgis.com](https://lybra.maps.arcgis.com) or [https://surinameonline.maps.arcgis.com](https://surinameonline.maps.arcgis.com) (follow instructions from the trainer and assistents), click ‘**Sign In**’ and fill in your username and password. Find your account credentials [here](#)
+Go to [https://lybra.maps.arcgis.com](https://lybra.maps.arcgis.com) or [https://surinameonline.maps.arcgis.com](https://surinameonline.maps.arcgis.com) (follow instructions from the trainer and assistents), click ‘**Sign In**’ and fill in your username and password. Find your account credentials [here](http://bitly.ws/S2zK)
 
 <img align="center" src="../images/intro-arcgis-1/home.png"  vspace="10" width="400">
 
