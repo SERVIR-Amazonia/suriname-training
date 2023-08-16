@@ -88,8 +88,6 @@ After publishing the Survey123 form, go to the ‘Collaborate’ tab. In the ‘
 <img align="center" src="../images/intro-arcgis-1/survey123collab.png"  vspace="10" width="800">
 
 Open the ArcGIS Survey123 form here: https://arcg.is/1znay8 
-
-Open the ArcGIS Survey123 form here: https://arcg.is/1znay8 
 You can view data submitted in the Survey123 form in the ‘Data’ tab
 <img align="center" src="../images/intro-arcgis-1/survey123data.png"  vspace="10" width="800">
 
