@@ -9,6 +9,6 @@ nav_order: 6
 
 In the `Data` tab of ArcGIS Survey123, click `Open in Map Viewer`. 
 
-<img align="center" src="../images/intro-arcgis-1/survey123datapng"  vspace="10" width="200">
+<img align="center" src="../images/intro-arcgis-1/survey123data.png"  vspace="10" width="800">
 
 Within the `Map Viewer` click `Save`, fill in the necessary fields and for this exercise always add your initials in the name of the webmap. After saving the webmap, you will be able to create a WebApp based on the webmap.
