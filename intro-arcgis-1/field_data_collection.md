@@ -21,12 +21,19 @@ Field Data Collection Tools within the ArcGIS Online platform refer to a suite o
  <li>Seamlessly integrate collected data with ArcGIS Online.</li>
 </ul>
 
-## Find Locations 
-ArcGIS Online includes analysis tools that help users find locations based on specified criteria. For example, users can find existing or similar locations, identify new locations, choose the best facilities, create view or watersheds and trace downstream, and locate centroids.  
+## 2) ArcGIS FieldMaps:
+Target Audience: Users who require spatial data collection and mapping capabilities in the field. This includes field technicians, natural resource managers, infrastructure inspectors, and emergency responders.
 
-These tools are typically used for site selection when the objective is to find places that satisfy multiple criteria within a study area. This allows realtors, for example, to identify parcels that meet specific conditions such as those that are vacant, within one mile of a river, or within a town boundary.  
+<b>Features:</b>
+<lu>
+<li>Capture points, lines, and polygons on maps.</li>
+<li>Attach media and notes to features.</li>
+<li>Utilize GPS for accurate positioning, both online and offline.</li>
+<li>Integrate with external devices like barcode scanners.</li>
+<li>Share data in real-time for collaboration.</li>
+<li>Create customized forms and maps.</li>
+</ul>
 
-Service organizations like public institutions, pharmacies, or parcel delivery distribution centers can find the set of facilities that will best serve demand from surrounding areas. Natural resources organizations can create watersheds by identifying catchment areas based on locations they specify. They can then trace the downstream path to determine potential areas affected by a toxic spill. Using these tools, users can better understand and find places that best fit their identified parameters, so they can take action. 
 
 ## Analyze Patterns 
 With ArcGIS Online analysis tools, users can identify, quantify, and visualize spatial patterns in their data. Using these tools, they can calculate density, locate hot spots, determine outliers, find point clusters, identify areas of statistically significant clusters, and interpolate points.  
