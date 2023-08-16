@@ -22,7 +22,7 @@ Field Data Collection Tools within the ArcGIS Online platform refer to a suite o
 </ul>
 
 ## 2) ArcGIS FieldMaps:
-Target Audience: Users who require spatial data collection and mapping capabilities in the field. This includes field technicians, natural resource managers, infrastructure inspectors, and emergency responders.
+<b>Target Audience:</b> Users who require spatial data collection and mapping capabilities in the field. This includes field technicians, natural resource managers, infrastructure inspectors, and emergency responders.
 
 <b>Features:</b>
 <ul>
@@ -40,7 +40,7 @@ Target Audience: Users who require spatial data collection and mapping capabilit
 
 <b>Features:</b>
 <ul>
- <li>Rapid data capture using large, customizable buttons.</li>
+<li>Rapid data capture using large, customizable buttons.</li>
 <li>Speedy data collection for quick observations.</li>
 <li>Integration with external devices.</li>
 <li>Offline capabilities for data collection in areas with limited connectivity.</li>
