@@ -44,7 +44,7 @@ Service organizations like public institutions, pharmacies, or parcel delivery d
 ## Analyze Patterns 
 With ArcGIS Online analysis tools, users can identify, quantify, and visualize spatial patterns in their data. Using these tools, they can calculate density, locate hot spots, determine outliers, find point clusters, identify areas of statistically significant clusters, and interpolate points.  
 
-For example, healthcare organizations can calculate densities of hospitals in a county to determine where new facilities are needed, or they can identify a statistically significant hot spot for infant mortality.  
+For example, healthcare organizations can calculate the densities of hospitals in a county to determine where new facilities are needed, or they can identify a statistically significant hot spot for infant mortality.  
 
 Transportation officials can find patterns related to traffic accidents at intersections or on highways, while public safety departments can evaluate outliers or anomalies in crime patterns across their jurisdiction. These tools help users better understand patterns within their data, so they can make more informed decisions. 
 
