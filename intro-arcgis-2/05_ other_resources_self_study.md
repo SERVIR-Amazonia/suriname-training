@@ -11,5 +11,5 @@ nav_order: 5
 Explore Synthetic Aperture Radar (SAR) satellite imagery from the European Space Agency Copernicus Sentinel-1 mission; 
 https://learn.arcgis.com/en/paths/getting-started-with-sar-satellite-imagery/
 
-* Cool ArcGIS Dashboards from the Community;<br> 
+* Cool ArcGIS Dashboards from the Community:<br> 
 https://doc.arcgis.com/en/dashboards/gallery/
