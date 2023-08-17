@@ -14,6 +14,13 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 **Date**: August 18, 2023
 
-**Instructors:** TBD
+**Instructors:** Krieshen Ramkhelawan, Meredith Kartosentiko, Liza Nabibaks
 
-Agenda and Content coming soon...
+|Time           |  Topics       |
+|:-------------:|:-------------:|
+| 9:00 – 9:30   | Welcome and set-up check up |
+| 9:30 – 10:45  |  |
+| 10:45 – 11:00 | Coffee break |
+| 11:00 – 13:00 |  |
+| 13:00 – 14:00 | Lunch |
+| 14:00 –15:00  |  |
