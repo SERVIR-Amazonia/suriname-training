@@ -7,9 +7,6 @@ nav_order: 1
 
 # Create an ArcGIS WebApp with ArcGIS Online
 
->**_The information contained on this page is created in collaboration with the GISsat company and Lybra company in Suriname. Lybra is partner of Servir Amazonia working together in bringing relevant Geospatial capacity building programs in Suriname. The information on this page is created for the training program conducted in 2023. Information may be become outdated as the ArcGIS platform keeps evolving. For more detailed and up to date information about the ArcGIS component of this training program, please contact [info@lybragroup.com](mailto:info@lybragroup.com)_**
->
-
 <br><br>
 In the `Data` tab of ArcGIS Survey123, click `Open in Map Viewer`. Within the `Map Viewer` click `Save`, fill in the necessary fields and for this exercise always add your initials in the name of the
 webmap. After saving the webmap, you will be able to create a WebApp based on the webmap.
