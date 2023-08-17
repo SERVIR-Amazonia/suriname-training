@@ -122,14 +122,14 @@ to users in the type of application they choose to use—including in a browser 
 apps, ArcGIS Pro, and more. This gives users flexibility in how they access and apply online 
 analytics.<br>
 • ArcGIS Online lets your users scale their analytics. As a SaaS product, ArcGIS Online is 
-hosted in Esri`s cloud, available on demand, and highly scalable. ArcGIS Online doesn`t depend 
-on the organization`s infrastructure or the hardware of individual users. This allows ArcGIS Online 
+hosted in Esri's cloud, available on demand, and highly scalable. ArcGIS Online doesn't depend 
+on the organization's infrastructure or the hardware of individual users. This allows ArcGIS Online 
 to deliver powerful, performant analytics to everyone that needs it.<br>
 • ArcGIS Online supports organization-wide deployment. Due to its subscription-based 
 licensing model, ArcGIS Online allows organizations to expand licensing easily and affordably, as 
 needed, providing a cost-effective method for deploying online analytics across any organization. <br>
 • Esri provides data optimized for online analysis. We`ve created a collection of more than 600 
 ArcGIS Living Atlas of the World analysis layers that are optimized for use with online analysis 
-tools. These layers contain more generalized geometries to reduce processing times. They`re 
+tools. These layers contain more generalized geometries to reduce processing times. They're 
 also directly integrated into ArcGIS Online spatial analysis tools, making them readily available for 
 use
