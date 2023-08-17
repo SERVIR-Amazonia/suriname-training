@@ -28,8 +28,8 @@ Work in ArcGIS Pro is centered around projects. ArcGIS Pro allows you to store m
 
 ## ArcGIS Pro Interface – key components
 The ArcGIS Pro user interface consists of of three main components: 
-* A ribbon that includes tabs,
-* Groups, and
+* A ribbon that includes tabs
+* Groups
 * Tools or buttons
 * Views
 * Dockable panes
@@ -61,7 +61,7 @@ A pane is a dockable window in ArcGIS Pro. The Contents pane shows the contents 
  
 To use ArcGIS Pro, you need to Sign In with your username and password
 
-<img align="center" src="../images/intro-arcgis-2/sign_in.png"  vspace="10" width="600">
+<img align="center" src="../images/intro-arcgis-2/sign_in.png"  vspace="10" width="400">
  
 Licensing for ArcGIS Pro, Esri's advanced desktop GIS software, involves several components to ensure proper access and functionality. To use ArcGIS Pro, you need the following minimal components:<br><br>
 **License Level**: ArcGIS Pro offers three license levels: Basic, Standard, and Advanced. The license level you choose determines the set of tools and capabilities available to you. Basic provides essential GIS tools, while Standard and Advanced offer more advanced analysis and geoprocessing capabilities.<br><br>
