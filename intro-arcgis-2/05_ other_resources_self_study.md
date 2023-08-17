@@ -12,4 +12,4 @@ Explore Synthetic Aperture Radar (SAR) satellite imagery from the European Space
 https://learn.arcgis.com/en/paths/getting-started-with-sar-satellite-imagery/
 
 * Cool ArcGIS Dashboards from the Community;<br> 
-https://doc.arcgis.com/en/dashboards/gallery/ 
+https://doc.arcgis.com/en/dashboards/gallery/
