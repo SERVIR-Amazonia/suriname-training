@@ -5,6 +5,8 @@ parent: "Introduction to ArcGIS Online and ArcGIS Pro 2"
 nav_order: 2
 ---
 
+## ArcGIS Insights and Analytics with ArcGIS Dashboards
+
 An ArcGIS WebMap is the basis for creating a ArcGIS WebApp or a ArcGIS Dashboard. 
 To create the dashboard, go to you `Content` page and open the `Kiwkmelding webmap`. 
 For this exercise, you are working in the https://lybra.maps.arcgis.com 
