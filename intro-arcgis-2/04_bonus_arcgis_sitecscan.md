@@ -6,4 +6,5 @@ nav_order: 4
 ---
 
 
-## Bonus: ArcGIS SIteScan – how to effectively collect, process and share Drone imagery
+## Bonus: ArcGIS SIteScan
+How to effectively collect, process and share Drone imagery <br><br>
