@@ -55,7 +55,7 @@ When you are done, Save, optionally Preview and Launch you WebApp.
 <img align="center" src="../images/intro-arcgis-2/widget1.png"  vspace="10" width="600">
 
 Open your newly created ArcGIS WebApp and notice the Status field, which has been hidden in Survey123 for the public, because it is an internal field.
-Open the ArcGIS WebApp here: https://lybra.maps.arcgis.com/apps/webappviewer/index.html?id=c49a3bac3bb64b0c87709d367ea4257f
+Open the ArcGIS WebApp here: [ArcGIS WebApp](https://lybra.maps.arcgis.com/apps/webappviewer/index.html?id=c49a3bac3bb64b0c87709d367ea4257f)
 
 <img align="center" src="../images/intro-arcgis-2/smart_editor.png"  vspace="10" width="600">
 
