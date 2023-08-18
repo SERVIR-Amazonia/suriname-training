@@ -5,7 +5,7 @@ parent: "Introduction to ArcGIS Online and ArcGIS Pro 2"
 nav_order: 2
 ---
 
-## ArcGIS Insights and Analytics with ArcGIS Dashboards
+# ArcGIS Insights and Analytics with ArcGIS Dashboards
 
 An ArcGIS WebMap is the basis for creating a ArcGIS WebApp or a ArcGIS Dashboard. 
 To create the dashboard, go to you `Content` page and open the `Kiwkmelding webmap`. 
@@ -27,7 +27,11 @@ A ArcGIS Dashboard is built with elements. Elements can be serial charts, pie ch
 <img align="center" src="../images/intro-arcgis-2/dashboard.png"  vspace="10" width="600">
 
 Guildeline: when building a dashboard, it is important to understand the data you working with. 
-In this exercise we are working with the data coming in from the Survey123 form containing attributes; a) district, b) source of the mercury, c) status.
+In this exercise we are working with the data coming in from the Survey123 form containing attributes:
+1. district,
+2. source of the mercury,
+3. status.
+
 Think of how you want to organize your dashboard, how you want to group and filter your data.
 Let`s create a dashboard which shows:<br>
 •	Number of mercury sighting reporting per district<br>
@@ -60,7 +64,7 @@ You can also make the elements respond to your map actions, i.e. zooming, pannin
 
 Let`s continue designing your dashboard further. If you have questions please ask the trainer or assistants.
 View the draft dashboards here: 
-https://lybra.maps.arcgis.com/apps/dashboards/b21cf12704834b319105484bbbf7a970#mode=edit 
+[https://lybra.maps.arcgis.com/apps/dashboards/b21cf12704834b319105484bbbf7a970#mode=edit](https://lybra.maps.arcgis.com/apps/dashboards/b21cf12704834b319105484bbbf7a970#mode=edit) 
 
 ## Additional Analysis Tools for Specialized Workflows
 The analysis tools discussed so far are core to ArcGIS Online. Users can also support specialized 
@@ -75,9 +79,9 @@ for ArcGIS Online includes more than 150 raster functions that can be chained in
 shared across an organization or externally. These raster tools and functions allow users to turn 
 their raster data and imagery into actionable information. 
 * Video: About ArcGIS Image for ArcGIS Online:This video shows how the extension ArcGIS Image for ArcGIS Online works by using Cloud processing to work with Imagery data.
-https://youtu.be/QWzvR7OpuJU 
+[https://youtu.be/QWzvR7OpuJU](https://youtu.be/QWzvR7OpuJU) 
 * Self-study exercise: explore 40 years of Landsat imagery from around the world.
-https://learn.arcgis.com/en/projects/get-started-with-imagery/ 
+[https://learn.arcgis.com/en/projects/get-started-with-imagery/](https://learn.arcgis.com/en/projects/get-started-with-imagery/) 
 
 **ArcGIS Velocity**. ArcGIS Velocity adds real-time data and big data analysis to ArcGIS Online. 
 With ArcGIS Velocity, organizations can ingest, visualize, and analyze data from real-time feeds 
