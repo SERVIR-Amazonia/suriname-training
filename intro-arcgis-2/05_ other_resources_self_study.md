@@ -8,10 +8,10 @@ nav_order: 5
 
 # Other interesting resources for self study
 * Self-study exercise:<br>
-Explore Synthetic Aperture Radar (SAR) satellite imagery from the European Space Agency Copernicus Sentinel-1 mission:<be>
+Explore Synthetic Aperture Radar (SAR) satellite imagery from the European Space Agency Copernicus Sentinel-1 mission:
 [https://learn.arcgis.com/en/paths/getting-started-with-sar-satellite-imagery/](https://learn.arcgis.com/en/paths/getting-started-with-sar-satellite-imagery/)
 
-* Cool ArcGIS Dashboards from the Community:<be> 
+* Cool ArcGIS Dashboards from the Community:
 [https://doc.arcgis.com/en/dashboards/gallery/](https://doc.arcgis.com/en/dashboards/gallery/)
 
 * Massive Open Online Course on Climate Change by Dawn Right
