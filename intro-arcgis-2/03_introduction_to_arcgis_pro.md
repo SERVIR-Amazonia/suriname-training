@@ -75,3 +75,26 @@ Licensing for ArcGIS Pro, Esri's advanced desktop GIS software, involves several
 It's important to work closely with your organization's GIS administrators or Esri representatives to ensure you have the appropriate licenses and configurations to meet your needs. The licensing structure may vary based on factors such as the size of your organization, the specific ArcGIS platform you're using (Online or Enterprise), and the level of access and functionality required for your workflows.<br><br>
 
 ## Exercise: making folder connections in ArcGIS Pro
+Download data for this exercise here; https://www.dropbox.com/scl/fo/gwqje0ix40541h6s1ect9/h?rlkey=vn7lbqei8zry3i2jb9y6fw72g&dl=0 <br>
+Click `Map` to open a new project map. 
+
+<img align="center" src="../images/intro-arcgis-2/03_map.png"  vspace="10" width="400">
+
+Create a folder connection to the data you downloaded
+
+<img align="center" src="../images/intro-arcgis-2/03_add_folder.png"  vspace="10" width="400">
+
+Choose the location of your folder and click `OK`
+
+<img align="center" src="../images/intro-arcgis-2/03_ok.png"  vspace="10" width="400">
+
+Go into the folder, look for the `.mapx` file, right click and choose `Add` and `Open`
+
+<img align="center" src="../images/intro-arcgis-2/03_mapx.png"  vspace="10" width="400">
+
+The result should be:
+
+<img align="center" src="../images/intro-arcgis-2/03_results.png"  vspace="10" width="400">
+
+Turn off the SRTM DEM 2022 layer in the contents pane. Then go to the `Analysis` tab in the ribbon. Then choose the tool `Near`. 
+We are going to find out which `Villages` are near the `River`
