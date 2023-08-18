@@ -5,7 +5,7 @@ parent: "Introduction to ArcGIS Online and ArcGIS Pro 2"
 nav_order: 1
 ---
 
-## Create an ArcGIS WebApp with ArcGIS Online
+# Create an ArcGIS WebApp with ArcGIS Online
 
 In the `Data` tab of ArcGIS Survey123, click `Open in Map Viewer`. Within the `Map Viewer` click `Save`, fill in the necessary fields and for this exercise always add your initials in the name of the
 webmap. After saving the webmap, you will be able to create a WebApp based on the webmap.
