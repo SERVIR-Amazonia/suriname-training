@@ -96,20 +96,20 @@ existing roadways.
 With ArcGIS Online, users can access spatial analysis capabilities in the manner that best fits their 
 workflows. This flexibility allows users to choose how they want to perform their analysis to best suit their task.
 Users can access ArcGIS Online analytics tools through:<br><br>
-**Map Viewer Classic**. The most common way to access analysis tools in ArcGIS Online is 
+- **Map Viewer Classic**. The most common way to access analysis tools in ArcGIS Online is 
 through Map Viewer Classic. With Map Viewer Classic, users of any GIS knowledge level can run 
 spatial analysis directly within ArcGIS Online as well as save or share their results. Keep in mind 
 that the new default Map Viewer, released in April 2021, does not yet expose analysis tools for 
 users. This will change in future releases. For now, if users want to utilize the full set of analysis 
 tools available in ArcGIS Online, they`ll need to use Map Viewer Classic.<br><br>
-**Custom web apps and APIs**. Developers can build a custom front end or application that 
+- **Custom web apps and APIs**. Developers can build a custom front end or application that 
 leverages ArcGIS Online spatial analysis services. This can allow organizations more flexibility in 
 how they present these tools to their users and better support customized workflows.<br><br>
-**ArcGIS Notebooks**. ArcGIS Notebooks, included in ArcGIS Online, lets users create, share, and 
+- **ArcGIS Notebooks**. ArcGIS Notebooks, included in ArcGIS Online, lets users create, share, and 
 use Python notebooks. Notebooks give users another way to access ArcGIS Online analytical 
 tools, perform advanced data modeling, and document and share repeatable analytical 
 workflows.<br><br>
-**ArcGIS Pro**. ArcGIS Pro allows users to connect directly to analysis services in ArcGIS Online. 
+- **ArcGIS Pro**. ArcGIS Pro allows users to connect directly to analysis services in ArcGIS Online. 
 ArcGIS Pro users can leverage ArcGIS Online geoenrichment and geocoding services to utilize
 data they may not have. For example, a retailer might pull demographic data to better understand 
 patrons within a 10-mile radius of store locations.<br><br>
