@@ -5,7 +5,7 @@ parent: "Introduction to ArcGIS Online and ArcGIS Pro 2"
 nav_order: 3
 ---
 
-## Introduction to ArcGIS Pro
+# Introduction to ArcGIS Pro
 
 What is ArcGIS Pro and why would you and your organization want to use it?
 
@@ -75,7 +75,7 @@ Licensing for ArcGIS Pro, Esri's advanced desktop GIS software, involves several
 It's important to work closely with your organization's GIS administrators or Esri representatives to ensure you have the appropriate licenses and configurations to meet your needs. The licensing structure may vary based on factors such as the size of your organization, the specific ArcGIS platform you're using (Online or Enterprise), and the level of access and functionality required for your workflows.<br><br>
 
 ## Exercise: making folder connections in ArcGIS Pro
-Download data for this exercise here; https://www.dropbox.com/scl/fo/gwqje0ix40541h6s1ect9/h?rlkey=vn7lbqei8zry3i2jb9y6fw72g&dl=0 <br>
+Download data for this exercise [here](https://www.dropbox.com/scl/fo/gwqje0ix40541h6s1ect9/h?rlkey=vn7lbqei8zry3i2jb9y6fw72g&dl=0) <br>
 Click `Map` to open a new project map. 
 
 <img align="center" src="../images/intro-arcgis-2/03_map.png"  vspace="10" width="400">
