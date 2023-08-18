@@ -6,7 +6,7 @@ nav_order: 4
 ---
 
 
-## Planet satellite imagery add-in for ArcGIS Pro
+# Planet satellite imagery add-in for ArcGIS Pro
 With the Planet Add-in for ArcGIS Pro, Planet users can unlock the power of frequent and high-resolution imagery directly in their ArcGIS workflows.<br><br>
 
 The add-in enables you to:
@@ -16,7 +16,7 @@ The add-in enables you to:
 * Create customized search filters and metadata display, with the ability to clip imagery downloads to your AOI.
 * Leverage the ArcGIS Pro image analysis capabilities to perform remote sensing analyses, compare imagery and other geospatial data, build models, explore geo-statistical analysis and machine learning.
 
-**Download** the add-in here: https://learn.planet.com/downloads-arcgis-pro-add-in.html <br><br>
+**Download** the add-in here: [https://learn.planet.com/downloads-arcgis-pro-add-in.html](https://learn.planet.com/downloads-arcgis-pro-add-in.html) <br><br>
 
 **TIP**: sign up for the Norwegian International Climate and Forest Initiative (NICFI) satellite data program for Forestry. Through NICFI, users can now access Planet’s high-resolution, analysis-ready mosaics of the world’s tropics in order to help reduce and reverse the loss of tropical forests, combat climate change, conserve biodiversity, and facilitate sustainable development for non commercial uses.
 
