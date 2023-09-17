@@ -49,3 +49,7 @@ The recordings for each workshop session can be access by clicking the button be
 ## GEE Repository
 
 All the codes created in this workshop are available in this repository: [https://code.earthengine.google.com/?accept_repo=users/an-sig/suriname](https://code.earthengine.google.com/?accept_repo=users/an-sig/suriname).
+
+## License
+
+The accompanying program is provided under the terms of the Eclipse Public License v 2.0 ("Agreement"). Any use, reproduction or distribution of the program constitutes recipient's acceptance of this agreement. For more information go to https://github.com/SERVIR-Amazonia/suriname-trainings/blob/main/LICENSE.
