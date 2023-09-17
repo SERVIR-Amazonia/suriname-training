@@ -52,4 +52,4 @@ All the codes created in this workshop are available in this repository: [https:
 
 ## License
 
-The accompanying program is provided under the terms of the Eclipse Public License v 2.0 ("Agreement"). Any use, reproduction or distribution of the program constitutes recipient's acceptance of this agreement. For more information go to https://github.com/SERVIR-Amazonia/suriname-trainings/blob/main/LICENSE.
+The accompanying program is provided under the terms of the Eclipse Public License v 2.0 ("Agreement"). Any use, reproduction or distribution of the program constitutes recipient's acceptance of this agreement. For more information go to [https://github.com/SERVIR-Amazonia/suriname-trainings/blob/main/LICENSE](https://github.com/SERVIR-Amazonia/suriname-trainings/blob/main/LICENSE).
