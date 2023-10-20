@@ -14,7 +14,9 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 **Date**: May 12, 2023
 
-**Instructors:** Andréa Puzzi Nicolau ([apnicolau@sig-gis.com](apnicolau@sig-gis.com)) & Natalia Uribe ([N.Uribe@cgiar.org](N.Uribe@cgiar.org)) 
+**Instructors:** Andréa Puzzi Nicolau & Natalia Uribe
+
+**Contact information**: [em-trainings@sig-gis.com](em-trainings@sig-gis.com)
 
 |      Time     |                                      Topics                                      |
 |:-------------:|:--------------------------------------------------------------------------------:|

@@ -14,7 +14,9 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 **Date**: June 12, 2023
 
-**Instructors:** Andréa Puzzi Nicolau ([apnicolau@sig-gis.com](apnicolau@sig-gis.com))
+**Instructors:** Andréa Puzzi Nicolau 
+
+**Contact information**: [em-trainings@sig-gis.com](em-trainings@sig-gis.com)
 
 |      Time     |                                                                     Topics                                                                     |
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------:|

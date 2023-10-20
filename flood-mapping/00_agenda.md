@@ -18,7 +18,9 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 **Date**: July 19, 2023
 
-**Instructors:** Luis Lizcano-Sandoval (lsandoval@sig-gis.com)
+**Instructors:** Luis Lizcano-Sandoval 
+
+**Contact information**: [em-trainings@sig-gis.com](em-trainings@sig-gis.com)
 
 
 |      Time     |                                Topics                               |

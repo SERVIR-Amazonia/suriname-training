@@ -15,7 +15,9 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 **Date**: August 4, 2023
 
-**Instructors:** Enikoe (Eni) Bihari ebihari@sig-gis.com 
+**Instructors:** Enikoe (Eni) Bihari 
+
+**Contact information**: [em-trainings@sig-gis.com](em-trainings@sig-gis.com)
 
 |Time           |  Topics       |
 |:-------------:|:-------------:|

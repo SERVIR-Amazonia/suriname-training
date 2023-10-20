@@ -14,7 +14,7 @@ Navigate through the different lesson sections by using the menu on the lefthand
 
 **Instructor(s):** Enikoe (Eni) Bihari 
 
-ebihari@sig-gis.com
+**Contact information**: [em-trainings@sig-gis.com](em-trainings@sig-gis.com)
 
 Using Collect Earth Online for accuracy assessment and unbiased area estimation of maps
 
