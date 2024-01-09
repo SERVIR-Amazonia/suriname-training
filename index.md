@@ -44,7 +44,8 @@ If you have any feedback from any of the workshops, please fill out the form bel
 
 The recordings for each workshop session can be access by clicking the button below. Please do not remove any files from the folder.
 
-[View Recordings](https://drive.google.com/drive/folders/1pASYe9ovmqq2ON1tXXwXXJADCJt5U7oZ){: .btn .btn-purple }
+<!---[View Recordings](https://drive.google.com/drive/folders/1pASYe9ovmqq2ON1tXXwXXJADCJt5U7oZ){: .btn .btn-purple }-->
+[View Recordings](https://www.youtube.com/playlist?list=PLECBwDRX-k8I9Wzqd3CfXUDNuxsPMEp-A){: .btn .btn-purple }
 
 ## GEE Repository
 
